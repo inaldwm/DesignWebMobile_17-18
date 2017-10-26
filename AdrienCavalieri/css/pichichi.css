@@ -542,7 +542,7 @@ body {
 }
 
 
-/* --- header ani ------------------------------------------------ */ 
+/* --- header ani ------------------------------------------------ */
 
 .cbp-af-header {
 	position: fixed;
@@ -629,7 +629,7 @@ body {
 
 /* Example Media Queries */
 @media screen and (max-width: 55em) {
-	
+
 	.cbp-af-header .cbp-af-inner {
 		width: 100%;
 	}
@@ -729,7 +729,7 @@ body {
 	margin-top: 83px;
 	margin-left: 150px;
 	line-height: 32px;
-	background-image: url('../images/map.png');	
+	background-image: url('../images/map.png');
 }
 
 
@@ -754,7 +754,7 @@ footer {
     position: relative;
     /*width: 100%;*/
 }
- 
+
 .cbp-rfgrid li {
     position: relative;
     float: left;
@@ -763,18 +763,18 @@ footer {
     width: -webkit-calc(100% / 6);
     width: calc(100% / 6);
 }
- 
+
 .cbp-rfgrid li a,
 .cbp-rfgrid li a img {
     display: block;
     width: 100%;
     cursor: pointer;
 }
- 
+
 .cbp-rfgrid li a img {
     max-width: 100%;
 }
- 
+
 /* Flexbox is used for centering the heading */
 .cbp-rfgrid li a div {
     position: absolute;
@@ -794,11 +794,11 @@ footer {
     text-align: center;
     opacity: 0;
 }
- 
+
 .cbp-rfgrid li a:hover div {
     opacity: 1;
 }
- 
+
 .cbp-rfgrid li a div h3 {
     width: 100%;
     color: #333;
@@ -895,22 +895,22 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 
 
 
- 
+
 /* Example for media query: change number of items per row */
- 
+
 @media screen and (max-width: 1190px) {
     .cbp-rfgrid li {
         width: 20%; /* Fallback */
         width: -webkit-calc(100% / 5);
         width: calc(100% / 5);
     }
-	
+
 	#content {
 	line-height: 32px;
 	text-align: center;
 	height: 770px;
 	}
-	
+
 	#map {
 	float: left;
 	height: 425px;
@@ -918,26 +918,26 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	margin-top: 83px;
 	margin-left: 90px;
 	line-height: 32px;
-	background-image: url('../images/map.png');	
+	background-image: url('../images/map.png');
 }
-	
+
 }
- 
+
 @media screen and (max-width: 945px) {
     .cbp-rfgrid li {
         width: 25%; /* Fallback */
         width: -webkit-calc(100% / 4);
         width: calc(100% / 4);
     }
-	
+
 	#content {
 	line-height: 32px;
 	text-align: center;
 	height: 670px;
 	}
-	
+
 	#map {display: none;}
-	
+
 	#intro {
 	padding-top: 100px;
 	margin: 70px;
@@ -946,7 +946,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	font-size: 23px;
 	font-weight: 300;
 	}
-	
+
 	.cbp-af-header {
 	position: fixed;
 	width: 100%;
@@ -988,34 +988,34 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 .cbp-af-header.cbp-af-header-shrink h1 {line-height: 90px;}
 
 .cbp-af-header.cbp-af-header-shrink h1 {font-size: 2em;}
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 }
 
 
 
- 
+
 @media screen and (max-width: 660px) {
     .cbp-rfgrid li {
         width: 33.3333333%; /* Fallback */
         width: -webkit-calc(100% / 3);
         width: calc(100% / 3);
     }
-	
+
 	#content {
 	line-height: 32px;
 	text-align: center;
 	height: 770px;
 	}
-	
+
 	#map {display: none;}
-	
-	
+
+
 	#intro {
 	padding-top: 100px;
 	margin: 70px;
@@ -1025,7 +1025,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	font-weight: 300;
 	}
 
-	
+
 	.cbp-af-header {
 	position: fixed;
 	width: 100%;
@@ -1066,19 +1066,19 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 .cbp-af-header.cbp-af-header-shrink h1 {line-height: 90px;}
 
 .cbp-af-header.cbp-af-header-shrink h1 {font-size: 2em;}
-	
+
 }
- 
+
 @media screen and (max-width: 400px) {
     .cbp-rfgrid li {width: 50%; /* Fallback */width: -webkit-calc(100% / 2);width: calc(100% / 2);
     }
-	
+
 	#content {line-height: 32px;text-align: center;height: 710px;}
-	
+
 	footer {text-align: center;	margin-bottom: 70px; clear: both;}
 
 	#footersocial li {display: inline-block; font-size: 18px; padding: 23px;}
-	
+
 	input[type="text"], input[type="password"], input[type="email"], textarea, select {
     border: 1px solid rgb(204, 204, 204);
     padding: 13px 13px;
@@ -1091,7 +1091,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
     display: block;
     background: none repeat scroll 0% 0% rgb(255, 255, 255);
 	}
-	
+
 	.cbp-rfgrid li a div h3 {
     width: 100%;
     color: #333;
@@ -1101,8 +1101,8 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	text-align: center;
 	font-weight: 400;
 	}
-	
-	
+
+
 	#intro {
 	padding-top: 90px;
 	margin: 52px;
@@ -1111,8 +1111,8 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	font-size: 19px;
 	font-weight: 300;
 	}
-	
-	
+
+
 	.cbp-af-header {
 	position: fixed;
 	width: 100%;
@@ -1155,22 +1155,22 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 .cbp-af-header.cbp-af-header-shrink h1 {font-size: 2em;}
 
 
-	
+
 }
- 
+
 @media screen and (max-width: 300px) {
     .cbp-rfgrid li {
         width: 100%;
     }
-	
-	
+
+
 
 	#content {
 	line-height: 32px;
 	text-align: center;
 	height: 1900px;
 	}
-	
+
 	#contactwrapper {
 	width: 100%;
 	position:relative;
@@ -1190,11 +1190,11 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	float: left;
 
 	}
-	
+
 	footer {text-align: center;	margin-bottom: 70px; clear: both;}
 
 	#footersocial li {display: inline-block; font-size: 16px; padding: 23px;}
-	
+
 	input[type="text"], input[type="password"], input[type="email"], textarea, select {
     border: 1px solid rgb(204, 204, 204);
     padding: 13px 13px;
@@ -1264,6 +1264,13 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
     padding: 20px 0;
 }
 
+#footersocial > ul {
+   list-style:none;
+   padding: 100px;
+   margin: 0px;
+   font-size: 29px;
+}
+
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -1309,7 +1316,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
     WIDE: CSS3 Effects
    ==================== */
 
- 
+
 }
 
 @media only screen and (min-width: 1140px) {
@@ -1317,8 +1324,8 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 /* ===============
     Maximal Width
    =============== */
-   
-   
+
+
 
 }
 
