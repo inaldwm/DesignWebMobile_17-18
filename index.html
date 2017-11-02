@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Trombinoscope</title>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700|Roboto:400,100,300,500,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<div >
+			<div >
+				<h2>Trombinoscope L3 DWM 2017-2018</h2>
+			</div>
+		</div>
+		
+		<div id="content">
+			<ul class="cbp-rfgrid">
+				<script>
+				// Définition des variables globales.
+				var urlFlickr = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?";
+				var cpt = 0;
+				var tabEtudiants = [];
+				// Récupération et traitement des données des étudiants dans le fichier "data/LPDesignWebMobile_17-18.csv".
+				d3.csv("LPDesignWebMobile_17-18.csv", function(d)
+				{
+					return {numPhoto : d["num photo"], prenom : d["Votre prénom"], nom : d["Votre nom"]};
+				}, function(data)
+				{
+				  // Copie du contenu du tableau d'objets "data" vers le tableau "tabEtudiants"
+				  tabEtudiants = data;
+				  // Tri des étudiants par numéro d'étudiant (croissant)
+				  tabEtudiants.sort(function(etudiant1, etudiant2)
+				  {
+						return etudiant1.numPhoto - etudiant2.numPhoto;
+				  });
+				});
+				// Récupération des photos sur flickr grâce à l'API.
+				$.getJSON(urlFlickr, function(data)
+				{
+				    $.each(data.photoset.photo, function(i, item)
+					 {
+				      // Sockage de l'image dans une variable.
+				      var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_b.jpg';
+						// Sockage de l'url dans une variable.
+				      
+					  var url = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
+						// Ajout des photos à la liste de classe "cbp-rfgrid" et affichage des noms.
+				      $("<img/>").attr({src: photo, alt: item.title}).appendTo(".cbp-rfgrid").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a><div><p>"+ tabEtudiants[cpt].prenom + " " + tabEtudiants[cpt].nom + "</p></div></li>");
+						// Incrémentation du compteur.
+						cpt++;
+				    });
+				});
+				</script>
+			</ul>
+		</div>
+	
+		 
+	</body>
+</html>
