@@ -29,8 +29,6 @@
 			</ul>
 		</div>
 		
-		  <script src="js/classie.js"></script>
-  		  <script src="js/cbpAnimatedHeader.min.js"></script>
 	</body>
 </div>
 
