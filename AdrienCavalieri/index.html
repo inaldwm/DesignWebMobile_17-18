@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Trombinoscope des étudiants en L3 DWM (2017-2018)</title>
+		<title>Trombinoscope des étudiants</title>
 		<script src="https://d3js.org/d3.v4.min.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700|Roboto:400,100,300,500,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/pichichi.css">
@@ -11,27 +11,53 @@
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 		<div class="cbp-af-header">
 			<div class="cbp-af-inner">
-				<h1>Trombinoscope L3 DWM 2017-2018</h1>
+				<h1>Trombinoscope</h1>
 			</div>
 		</div>
 		<div id="intro">
-			Présentation des étudiants en L3 Design Web Mobile (promotion 2017-2018).
+			Présentation des étudiants en LP Design Web Mobile (promotion 2017-2018).
 		</div>
 		<div id="content">
 			<ul class="cbp-rfgrid">
 				<script>
-				// Obtention de l'API.
-				$.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?",
-				function(data){
-				    // Debut de la boucle
-				    $.each(data.photoset.photo, function(i,item){
-				        // Sockage de l'image dans une variable
-				        var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_n.jpg';
-				        // Sockage de l'url dans une variable
-				        var url= 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
-				        // Affichage des images dans la balise ul#images avec le l'url dans la balise li
-				      $("<img/>").attr({src: photo, alt: item.title}).appendTo(".cbp-rfgrid").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a></li>");
-				    }); //Fin de la boucle
+				// Définition des variables globales.
+				var urlFlickr = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?";
+				var cpt = 0;
+				var tabEtudiants = [];
+
+				// Récupération et traitement des données des étudiants dans le fichier "data/LPDesignWebMobile_17-18.csv".
+				d3.csv("data/LPDesignWebMobile_17-18.csv", function(d)
+				{
+					return {numPhoto : d["num photo"], prenom : d["Votre prénom"], nom : d["Votre nom"]};
+				}, function(data)
+				{
+				  // Copie du contenu du tableau d'objets "data" vers le tableau "tabEtudiants"
+				  tabEtudiants = data;
+
+				  // Tri des étudiants par numéro d'étudiant (croissant)
+				  tabEtudiants.sort(function(etudiant1, etudiant2)
+				  {
+						return etudiant1.numPhoto - etudiant2.numPhoto;
+				  });
+				});
+
+				// Récupération des photos sur flickr grâce à l'API.
+				$.getJSON(urlFlickr, function(data)
+				{
+				    $.each(data.photoset.photo, function(i, item)
+					 {
+				      // Sockage de l'image dans une variable.
+				      var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_b.jpg';
+
+						// Sockage de l'url dans une variable.
+				      var url = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
+
+						// Ajout des photos à la liste de classe "cbp-rfgrid" et affichage des noms.
+				      $("<img/>").attr({src: photo, alt: item.title}).appendTo(".cbp-rfgrid").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a><div><p>"+ tabEtudiants[cpt].prenom + " " + tabEtudiants[cpt].nom + "</p></div></li>");
+
+						// Incrémentation du compteur.
+						cpt++;
+				    });
 				});
 				</script>
 			</ul>
@@ -39,8 +65,8 @@
 		<footer>
 			<div id="footersocial">
 				<ul>
-					<li>Social</li>
-					<li class="zocial-flickr"></li>
+					<li>Photos prises par Samuel Szoniecky.</li>
+					<li><a href='http://www.samszo.univ-paris8.fr/'>site personnel</a></li>
 				</ul>
             </div>
         </footer>
