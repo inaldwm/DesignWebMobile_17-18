@@ -1,16 +1,8 @@
 <?php require_once 'header.php'; ?>
 <h1>Welcome to DWM</h1>  
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700|Roboto:400,100,300,500,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/pichichi.css">
-
-  <body>
-		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-		<div class="titre">
-			
-				<h3>Trombinoscope L3 DWM 2017-2018</h3>
-			
-		</div>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<body>
 		<div id="intro">
 			Présentation des étudiants en L3 Design Web Mobile.
 		</div>
