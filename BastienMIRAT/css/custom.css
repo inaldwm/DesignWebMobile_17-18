@@ -1,0 +1,96 @@
+ul.photo {
+    list-style: none !important; /* enlever les puces */
+    margin: 0 !important; /* enlever les marges automatiques */
+}
+ 
+ul li {
+    display: inline !important; /* affichage en ligne */
+}
+
+body {
+  padding-top: 50px;
+  text-align:center;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.login {
+  color: #FFF;
+}
+
+.img {
+  max-width: 25%;
+  max-height: 25%;
+}
+.btn-link{
+  border:none;
+  outline:none;
+  background:none;
+  cursor:pointer;
+  color:#286090;
+  padding:0;
+  font-family:inherit;
+  font-size:inherit;
+}
+
+#hor-minimalist-a
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	background: #fff;
+	margin: 45px;
+	width: 1100px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#hor-minimalist-a th
+{
+  text-align: center;
+  width: 130px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#hor-minimalist-a td
+{
+  width: 130px;
+  text-align: center;
+	color: #669;
+	padding: 9px 8px 0px 8px;
+}
+#hor-minimalist-a tbody tr:hover td
+{
+  background: #d0dafd;
+	color: #009;
+}
+
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.btn-primary {
+    margin-right: 410px;
+}
+
+.right {
+  padding-left: 300px;
+}
+
+.center {
+  padding-left: 240px;
+}
+
+.li2 {
+  margin-left: 300px;
+}
+
+.table1 {
+  border-width:5px;
+  border-style: dotted;
+}
+
