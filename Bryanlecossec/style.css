@@ -1,0 +1,33 @@
+
+ul.contenu {
+    list-style: none !important; /* enlever les puces */
+    margin: 0 !important; /* enlever les marges automatiques */
+}
+ 
+ul li {
+    display: inline !important; /* affichage en ligne */
+}
+
+body
+{
+	background:
+.ligne1
+{
+  width:13%;
+  height:auto;
+  box-shadow: 0  1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ligne2
+{
+  width:13%;
+  height:auto;
+  box-shadow: 0  1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ligne3
+{
+  width:13%;
+  height:auto;
+  box-shadow: 0  1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
