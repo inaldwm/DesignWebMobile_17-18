@@ -3,33 +3,64 @@
 TEST
  -->
 <html>
-	<head>
-		<title>photo de classe</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	</head>
-	<body>
+<head>
+<title>photo de classe</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<div class="content">
-						<h1> DWM</h1>
-						<h2> HELLO ! SOYEZ LES BIENVENUS  </h2>
-						<a href="#" class="button big alt"><span>Let's Go</span></a>
-					</div>
-					<a href="#" class="button hidden"><span>Let's Go</span></a>
-				</div>
-			</header>
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<div class="content">
+				<h1>DWM</h1>
+				<h2>HELLO ! SOYEZ LES BIENVENUS</h2>
+				<a href="#" class="button big alt"><span>Let's Go</span></a>
+			</div>
+			<a href="#" class="button hidden"><span>Let's Go</span></a>
+		</div>
+	</header>
 
-		<!-- Main -->
-		
-        <!-- Ou les images s'afficherons -->
-        <div id="images"></div>
+	<!-- Main -->
 
-        <script>
+	<!-- Ou les images s'afficherons -->
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+			<!-- Ou les images s'afficherons -->
+			<div class="columns" id="images">
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<a href="#" class="info fa fa-info-circle"><span>About</span></a>
+		<div class="inner">
+			<div class="content">
+				<h3>Licence professionnelle Design Web Mobile</h3>
+				<p>Etudiants de la promotion 2017-2018 .</p>
+			</div>
+			<div class="copyright">
+
+				<h3>Responsable de formation</h3>
+				<p>Samuel SZONIECKY</p>
+				<a
+					href="http://www.humanites-numeriques.univ-paris8.fr/?-LP-DesignWebMobile-">LP
+					DWM</a>. <a
+					href="http://www.humanites-numeriques.univ-paris8.fr/?Calendrier">Calendrier</a>.
+			</div>
+		</div>
+	</footer>
+
+				<script>
             //merci beaucoup à https://etienner.fr/flickr-json
 
             //on recupere les photos depuis flickr
@@ -44,38 +75,17 @@ TEST
                         var url = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
                         // Affichage des images dans la balise ul#images avec l'url dans la balise li
                         // on donne un peu de class pour permettre le hover et les bordures
-                        $("<img/>").attr({src: photo, alt: item.title, class: ""}).appendTo("#images").wrap("<ul><li class='hvr-curl-top-right hvr-bounce-in'><a href=' "+ url +" ' ></a></li></ul>");
-
+                        $("<img/>").attr({src: photo, alt: item.title, class: ""}).appendTo("#images").wrap("<div class='image fit' ><a href='detail1.html' ></a></div>");
                     });
                 });
             // Fin appel JSON
         </script>
-        <br><br>
-     </div>
-	 
 
-		<!-- Footer -->
-			<footer id="footer">
-				<a href="#" class="info fa fa-info-circle"><span>About</span></a>
-				<div class="inner">
-					<div class="content">
-						<h3> Licence professionnelle Design Web Mobile </h3>
-						<p> Etudiants de la promotion 2017-2018 .</p>
-					</div>
-					<div class="copyright">
-			
-						<h3>Responsable de formation </h3>
-						<p>Samuel SZONIECKY</p>
-						  <a href="http://www.humanites-numeriques.univ-paris8.fr/?-LP-DesignWebMobile-">LP DWM</a>. <a href="http://www.humanites-numeriques.univ-paris8.fr/?Calendrier">Calendrier</a>.
-					</div>
-				</div>
-			</footer>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
