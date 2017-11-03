@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head> 
+        <title>Design Web Mobile : trombinoscope des étudiants 17-18</title> 
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <style type="text/css">
+	       #diaporama {
+		width:500px;		/* Largeur totale du diaporama [largeur d'une miniature × (nbre photos / 10)] */
+		height:500px;		/* Hauteur totale du diaporama [hauteur d'une miniature × (nbre photos / 10)] */
+	    }
+	    #diaporama img {
+		float:left;		/* Toutes nos miniatures flotteront à gauche afin qu'elles se 
+					   collent toutes ensemble (aussi possible avec display:block;) */
+		width:50px;		/* Largeur des miniatures */
+		height:50px;		/* Hauteur des miniatures */
+	    }
+	    #diaporama .haut,
+	    #diaporama .bas {
+		width:500px;		/* Largeur du diaporama [largeur miniature × (nbre photos /10)] */
+		height:50px;		/* Hauteur des miniatures */
+	    }
+	    #diaporama .gauche {
+		float:left;		/* .gauche et .droite doivent flotter à gauche afin que 
+					   les différents <div> puissent tenir côte à côte */
+		width:50px;		/* Largeur des miniatures */
+		height:400px;		/* Hauteur des agrandissements [hauteur miniature × (nbre photos / 10)] */
+		
+	    }
+	    #diaporama .centre {
+		float:left;		/* .centre vient s'intercaler horizontalement entre .gauche 
+					   et .droite et doit donc aussi flotter à gauche */
+		width:400px;		/* Largeur des agrandissements [largeur miniature × (nbre photos / 10)] */ 
+		height:400px;    	/* Hauteur des agrandissements [hauteur miniature × (nbre photos / 10)] */
+	    }
+        </style>
+    </head>
+	
+    <body>
+	<div id="diaporama">
+	<div class="haut">
+	      <div id="container">
+          <ul id="images">
+		  </div>
+		  
+		  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		  </head>
+		  <body>
+		  <script>
+//merci beaucoup à https://etienner.fr/flickr-json
+//$.getJSON("http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=clef-API&photoset_id=le_photoset&extras=original_format&format=json&jsoncallback=?",
+$.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?",
+function(data){
+    // Debut de la boucle
+	var numTof = 1;
+    $.each(data.photoset.photo, function(i,item){
+        // Sockage de l'image dans une variable
+        var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_s.jpg';
+        // Sockage de l'url dans une variable
+        var url= 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
+        // Affichage des images dans la balise ul#images avec le l'url dans la balise li
+       // $("<img/>").attr({src: photo, alt: item.title}).appendTo("#images").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a></li>");
+	      $("#photo"+i).attr('src', photo); 
+        i++;
+    }); //Fin de la boucle
+});
+// Fin appel JSON 
+</script>
+
+    <div id="diaporama">
+	
+            <div id="haut">
+            <img src="photo1.jpg" class="photo1" id="photo1"/>
+            <img src="photo2.jpg" class="photo2" id="photo2"/>
+            <img src="photo3.jpg" class="photo3" id="photo3"/>
+            <img src="photo4.jpg" class="photo4" id="photo4"/>
+            <img src="photo5.jpg" class="photo5" id="photo5"/>
+            <img src="photo6.jpg" class="photo6" id="photo6"/>
+            <img src="photo7.jpg" class="photo7" id="photo7"/>
+			 <img src="photo14.jpg" class="photo14" id="photo14"/>
+            <img src="photo15.jpg" class="photo15" id="photo15"/>
+           
+        </div>
+        <div class="gauche">
+            <img src="photo8.jpg" class="photo8" id="photo8"/>
+            <img src="photo9.jpg" class="photo9" id="photo9"/>
+            <img src="photo10.jpg" class="photo10" id="photo10"/>
+            <img src="photo11.jpg" class="photo11" id="photo11"/>
+			 <img src="photo12.jpg" class="photo12" id="photo12"/>
+            <img src="photo13.jpg" class="photo13" id="photo13"/>
+            
+        </div>
+        <div class="centre">
+       </div>
+        
+         
+        
+        
+    </div>
+</body>
+</html>
