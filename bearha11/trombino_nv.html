@@ -5,9 +5,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Design Web Mobile : trombinoscope des Ã©tudiants 17-18</title>
 
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
 
 
 </head>
@@ -29,134 +29,39 @@ function(data){
         // Sockage de l'url dans une variable
         var url= 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
         // Affichage des images dans la balise ul#images avec le l'url dans la balise li
-        //$("<img/>").attr({src: photo, alt: item.title}).appendTo("#images").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a></li>");
+        $("<img/>").attr({src: photo, alt: item.title}).appendTo("#images").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a><div id='data"+i+"' >TOTO</div></li>");
         
-        $("#photo"+i).attr('src', photo); 
-        i++;
+        //$("#photo"+i).attr('src', photo); 
+        
+        //boucle des data
+		var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv';
+		d3.csv(url, function(data) {
+			dataForm = data;
+			/*
+			var np = dataForm[0]['num photo'];
+			var nom = dataForm[0]['Votre nom'];	
+			var prenom = dataForm[0]['Votre prénom'];	
+			d3.select("#data"+np)
+			.text(prenom+'  '+nom);
+			*/
+			//
+			dataForm.forEach(function(d){
+				var np = d['num photo'];
+				var nom = d['Votre nom'];	
+				var prenom = d['Votre prénom'];	
+				d3.select("#data"+np)
+				.text(prenom+'  '+nom);
+			});
+			//
+		});
+		
     }); //Fin de la boucle
 });
 // Fin appel JSON
 </script>
 
-<div id="images"></div>
+	<div >
+		<ul id="images"></ul>
+	</div>
 
-
-<ul>
-     <li>
-          <a href="#">
-          <img src="photo1.png"  id="photo1"/>
-          
-          </a>
-     </li>
-     <li>
-          <a href="#">
-          <img src="photo2.png"  id="photo2"/>
-          
-          </a>
-     </li>
-     
-	 <li>
-          <a href="#">
-          <img src="photo3.png"  id="photo3"/>
-          
-          </a>
-     </li>
-	 <li>
-          <a href="#">
-          <img src="photo4.png"  id="photo4"/>
-          
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo5.png"  id="photo5"/>
-          
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo6.png"  id="photo6"/>
-          
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo7.png"  id="photo7"/>
-          
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo8.png"  id="photo8"/>
-          
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo9.png"  id="photo9"/>
-          
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo10.png"  id="photo10"/>
-          
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo11.png"  id="photo11"/>
-          
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo12.png"  id="photo12"/>
-         
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo13.png"  id="photo13"/>
-         
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo14.png"  id="photo14"/>
-          
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo15.png"  id="photo15"/>
-          
-          </a>
-     </li>
-	 
-	 <li>
-          <a href="#">
-          <img src="photo16.png"  id="photo16"/>
-          
-          </a>
-     </li>
-    
-</ul>
-	
-	
-</div>
-
-
-</div>
 </body>
