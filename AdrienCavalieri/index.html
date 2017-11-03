@@ -23,10 +23,11 @@
 				// Définition des variables globales.
 				var urlFlickr = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?";
 				var cpt = 0;
+				var urlDonnees = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv";
 				var tabEtudiants = [];
 
-				// Récupération et traitement des données des étudiants dans le fichier "data/LPDesignWebMobile_17-18.csv".
-				d3.csv("data/LPDesignWebMobile_17-18.csv", function(d)
+				// Récupération et traitement des données des étudiants depuis le document en ligne".
+				d3.csv(urlDonnees, function(d)
 				{
 					return {numPhoto : d["num photo"], prenom : d["Votre prénom"], nom : d["Votre nom"]};
 				}, function(data)
@@ -39,25 +40,25 @@
 				  {
 						return etudiant1.numPhoto - etudiant2.numPhoto;
 				  });
-				});
 
-				// Récupération des photos sur flickr grâce à l'API.
-				$.getJSON(urlFlickr, function(data)
-				{
-				    $.each(data.photoset.photo, function(i, item)
-					 {
-				      // Sockage de l'image dans une variable.
-				      var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_b.jpg';
+				  // Récupération des photos sur flickr grâce à l'API.
+				  $.getJSON(urlFlickr, function(data)
+	  				{
+	  				    $.each(data.photoset.photo, function(i, item)
+	  					 {
+	  				      // Sockage de l'image dans une variable.
+	  				      var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_b.jpg';
 
-						// Sockage de l'url dans une variable.
-				      var url = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
+	  						// Sockage de l'url dans une variable.
+	  				      var url = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
 
-						// Ajout des photos à la liste de classe "cbp-rfgrid" et affichage des noms.
-				      $("<img/>").attr({src: photo, alt: item.title}).appendTo(".cbp-rfgrid").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a><div><p>"+ tabEtudiants[cpt].prenom + " " + tabEtudiants[cpt].nom + "</p></div></li>");
+	  						// Ajout des photos à la liste de classe "cbp-rfgrid" et affichage des noms.
+	  				      $("<img/>").attr({src: photo, alt: item.title}).appendTo(".cbp-rfgrid").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a><div><p>"+ tabEtudiants[cpt].prenom + " " + tabEtudiants[cpt].nom + "</p></div></li>");
 
-						// Incrémentation du compteur.
-						cpt++;
-				    });
+	  						// Incrémentation du compteur.
+	  						cpt++;
+	  				    });
+	  				});
 				});
 				</script>
 			</ul>
