@@ -26,7 +26,7 @@
 				var urlDonnees = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv";
 				var tabEtudiants = [];
 
-				// Récupération et traitement des données des étudiants dans le fichier "data/LPDesignWebMobile_17-18.csv".
+				// Récupération et traitement des données des étudiants depuis le document en ligne".
 				d3.csv(urlDonnees, function(d)
 				{
 					return {numPhoto : d["num photo"], prenom : d["Votre prénom"], nom : d["Votre nom"]};
