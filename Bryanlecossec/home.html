@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Trombinoscope LPDWM</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	</head>
+	
+	
+<body>
+ <div>
+	<ul >
+	<li id="contenu" >
+	</li>
+	</ul>
+	</div>
+ 
+ 
+				<script>
+				
+				// Obtention de l'API.
+				var ligne = 1;
+				$.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?"
+					,function(data){
+					
+						// Debut de la boucle
+					    $.each(data.photoset.photo, function(i,item){
+					// Sockage de l'image dans une variable
+					        var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_n.jpg';
+					// Sockage de l'url dans une variable
+					        var url= 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
+					// Affichage des images dans la balise ul#images avec le l'url dans la balise li
+					        $("<img/>").attr({src: photo, alt: item.title, class:'ligne'+ligne}).appendTo("#contenu");
+						
+							if(i>5)ligne = 2;
+							if(i>11)ligne = 3;
+					
+					    });					
+						
+						 //boucle data
+						var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv';
+						 d3.csv(url,function(data){
+							dataForm= data;
+							dataForm.forEach(function(d){
+								d3.select("#data"+d['num photo'])
+									.text(d['votre nom']);
+							    }); //Fin de la boucle
+							});
+						
+
+						
+				});
+				</script>
+</body>
+</html>

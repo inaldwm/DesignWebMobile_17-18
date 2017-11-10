@@ -7,7 +7,7 @@
 			Présentation des étudiants en L3 Design Web Mobile.
 		</div>
 		<div id="content">
-			<ul class="photo">
+			<ul class="photo" id="lstPhoto" >
 				
 				<script>
 				// Obtention de l'API.
@@ -21,9 +21,29 @@
 				        // Sockage de l'url dans une variable
 				        var url= 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
 				        // Affichage des images dans la balise ul#images avec le l'url dans la balise li
-				      $("<img/>").attr({src: photo, alt: item.title}).appendTo(".photo").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a></li>");
+				      $("<img/>").attr({src: photo, alt: item.title}).appendTo("#lstPhoto").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a><span id='data"+i+"'/></li>");
 				 
 				    }); //Fin de la boucle
+
+
+				  //récupération des données du formulaire google
+					var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv';
+				    //var url = "data/LPDesignWebMobile_17-18.csv";        
+					d3.csv(url, function(data) {
+						dataForm = data;
+
+						dataForm.forEach(function(d){
+							var np = d['num photo'];
+							var nom = d['Votre nom'];	
+							var prenom = d['Votre prénom'];	
+							d3.select("#data"+np)
+							.text(prenom+'  '+nom);
+						});
+						
+						
+						});		
+						
+				    
 				});
 				</script>
 			</ul>
