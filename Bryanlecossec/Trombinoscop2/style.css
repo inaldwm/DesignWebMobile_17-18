@@ -1,0 +1,40 @@
+ul.contenu {
+    list-style: none !important; /* enlever les puces */
+    margin: 0 !important; /* enlever les marges automatiques */
+}
+ 
+ul li {
+    display: inline !important; /* affichage en ligne */
+}
+
+ body { 
+ background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+ font-family: "helvetica", sans-serif;
+ font-weight: bold;
+ color: white; 
+ text-align: center;
+
+}
+
+#menu
+{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    margin-top: -10px;
+	padding-top: 50px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-position: relative;
+    height: 30px;
+     
+}
+
+#menu p
+{
+	
+     margin-top: -25px;
+	 font-family: "helvetica", sans-serif;
+     font-weight: bold;
+	 font-size: 150%;
+     color: #45D4FB;
+	 
+}
