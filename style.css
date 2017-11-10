@@ -1,0 +1,79 @@
+ul.contenu {
+    list-style: none !important; /* enlever les puces */
+    margin: 0 !important; /* enlever les marges automatiques */
+}
+ /*mise en place des images et du textes en ligne*/
+ul li {
+
+    display: inline-block !important;
+
+}
+/*travail ul pour equilibre le contenu*/
+ul{
+    margin-left: -50px;
+    margin-right: 0px;
+    
+}
+/*Degradé du BODY*/
+ body { 
+ background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+ background-position: relative;
+}
+
+/*traitement du texte présent dans le contenu(nom/prenom)*/
+#contenu{
+	font-family: "helvetica", sans-serif;
+	font-weight: bold;
+	color: white; 
+	text-align: center;
+}
+/*gestion de la bare de menu (couleur, forme, etc...)*/
+#menu
+{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    margin-top: -10px;
+	padding-top: 50px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-position: relative;
+    height: 30px;
+     
+}
+/*traitement du titre présent dans le menu*/
+#menu p
+{
+	
+     margin-top: -25px;
+	 font-family: "helvetica", sans-serif;
+     font-weight: bold;
+	 font-size: 150%;
+     color: #45D4FB;
+	 text-align: center;
+	 
+}
+
+/*traitement des images (filtres) + hover*/
+img 
+{
+  border-radius: 5%;
+  box-shadow: 0  1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left : 5%;
+  margin-right : 5% ; 
+  text-align: center;
+    
+         filter: grayscale(1);
+        -webkit-filter: grayscale(150);
+        -moz-filter: grayscale(150);
+        -o-filter: grayscale(150);
+        -ms-filter: grayscale(1);
+
+}
+
+img:hover
+{
+        filter: brightness(0%);
+        -webkit-filter: brightness(0%);
+        -moz-filter: brightness(0%);
+        -o-filter: brightness(0%);
+        -ms-filter: brightness(0%);
+}
