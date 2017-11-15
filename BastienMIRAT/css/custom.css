@@ -1,10 +1,7 @@
-ul.photo {
-    list-style: none !important; /* enlever les puces */
-    margin: 0 !important; /* enlever les marges automatiques */
-}
- 
-ul li {
-    display: inline !important; /* affichage en ligne */
+img.card-img-top {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 466.66px;
 }
 
 body {
