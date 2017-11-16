@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+TEST
+ -->
+<html>
+<head>
+<title>photo de classe</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<script
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+</head>
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<div class="content">
+				<h1>DWM</h1>
+				<h2>HELLO ! SOYEZ LES BIENVENUS</h2>
+				<a href="#" class="button big alt"><span>Let's Go</span></a>
+			</div>
+			<a href="#" class="button hidden"><span>Let's Go</span></a>
+		</div>
+	</header>
+
+	<!-- Main -->
+
+	<!-- Ou les images s'afficherons -->
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+			<!-- Ou les images s'afficherons -->
+			<div class="columns" id="images">
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<a href="#" class="info fa fa-info-circle"><span>About</span></a>
+		<div class="inner">
+			<div class="content">
+				<h3>Licence professionnelle Design Web Mobile</h3>
+				<p>Etudiants de la promotion 2017-2018 .</p>
+			</div>
+			<div class="copyright">
+
+				<h3>Responsable de formation</h3>
+				<p>Samuel SZONIECKY</p>
+				<a
+					href="http://www.humanites-numeriques.univ-paris8.fr/?-LP-DesignWebMobile-">LP
+					DWM</a>. <a
+					href="http://www.humanites-numeriques.univ-paris8.fr/?Calendrier">Calendrier</a>.
+			</div>
+		</div>
+	</footer>
+
+				<script>
+            //merci beaucoup à https://etienner.fr/flickr-json
+            //on recupere les photos depuis flickr
+            $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?",
+                function(data) {
+                    // On parcours toutes les photos tout en les stockant dans une variable
+                    var numTof = 1;
+                    $.each(data.photoset.photo, function(i, item) {
+                        // Sockage de l'image dans une variable
+                        var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_s.jpg';
+                        // Sockage de l'url dans une variable
+                        var url = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
+                        // Affichage des images dans la balise ul#images avec l'url dans la balise li
+                        // on donne un peu de class pour permettre le hover et les bordures
+                        $("<img/>").attr({src: photo, alt: item.title, class: ""}).appendTo("#images").wrap("<div class='image fit' ><a href='detail1.html' ></a></div>");
+                    });
+                
+				
+				//boucle des data
+	var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv';
+	d3.csv(url, function(data) {
+	dataForm = data;
+	dataForm.forEach(function(d){
+		var np = d['num photo'];
+		var nom = d['Votre nom'];
+		var prénom = d['Votre prénom'];
+		d3.select("#data"+np)
+		.text(prénom+' '+nom);
+	});
+	});
+
+});
+
+// Fin appel JSON
+            // Fin appel JSON
+        </script>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
