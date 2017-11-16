@@ -209,7 +209,10 @@
                             })
                             .text(' mon profil ');
                     var bfd = backFooter.append('div').attr('class','social-links text-center');
-                        bfd.append('a').attr('href','').attr('class','github').attr('title','voir mon github').append('i').attr('class','fa fa-github-square fa-fw')
+                        bfd.append('a').attr('href',function(d){
+                            return 'https://www.github.com/'+ d['Votre compte GitHub'].toLowerCase();
+                        }).attr('target','_blank')
+                        .attr('class','github').attr('title','voir mon github').append('i').attr('class','fa fa-github-square fa-fw')
                         bfd.append('a').attr('href','').attr('class','facebook').attr('title','voir mon facebook').append('i').attr('class','fa fa-facebook-square fa-fw');
 
 
