@@ -29,7 +29,7 @@
 				// Récupération et traitement des données des étudiants depuis le document en ligne".
 				d3.csv(urlDonnees, function(d)
 				{
-					return {numPhoto : d["num photo"], prenom : d["Votre prénom"], nom : d["Votre nom"]};
+					return {numPhoto : d["num photo"], prenom : d["Votre prénom"], nom : d["Votre nom"], mail : d["Votre mail"], poste : d["poste"] };
 				}, function(data)
 				{
 				  // Copie du contenu du tableau d'objets "data" vers le tableau "tabEtudiants"
@@ -52,8 +52,10 @@
 	  						// Sockage de l'url dans une variable.
 	  				      var url = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
 
-	  						// Ajout des photos à la liste de classe "cbp-rfgrid" et affichage des noms.
-	  				      $("<img/>").attr({src: photo, alt: item.title}).appendTo(".cbp-rfgrid").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a><div><p>"+ tabEtudiants[cpt].prenom + " " + tabEtudiants[cpt].nom + "</p></div></li>");
+	  						// Ajout des photos à la liste de classe "cbp-rfgrid", affichage des noms, des prénoms des mails et des postes.
+	  				      $("<img/>").attr({src: photo, alt: item.title}).appendTo(".cbp-rfgrid").wrap("<li><a href=' " + url + "' title=' " + item.title +
+							" ' ></a><div><p id=\"prenom-nom\">" + tabEtudiants[cpt].prenom + " " + tabEtudiants[cpt].nom.toUpperCase() + "<br/><span>" +
+							tabEtudiants[cpt].mail.toLowerCase() + "<br/>" + tabEtudiants[cpt].poste  + "</span></p></div></li>");
 
 	  						// Incrémentation du compteur.
 	  						cpt++;
