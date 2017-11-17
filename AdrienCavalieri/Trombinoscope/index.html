@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Trombinoscope des étudiants</title>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700|Roboto:400,100,300,500,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/pichichi.css">
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<div class="cbp-af-header">
+			<div class="cbp-af-inner">
+				<h1>Trombinoscope</h1>
+			</div>
+		</div>
+		<div id="intro">
+			Présentation des étudiants en LP Design Web Mobile (promotion 2017-2018).
+		</div>
+		<div id="content">
+			<ul class="cbp-rfgrid">
+				<script>
+				// Définition des variables globales.
+				var urlFlickr = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?";
+				var cpt = 0;
+				var urlDonnees = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv";
+				var tabEtudiants = [];
+
+				// Récupération et traitement des données des étudiants depuis le document en ligne".
+				d3.csv(urlDonnees, function(d)
+				{
+					return {numPhoto : d["num photo"], prenom : d["Votre prénom"], nom : d["Votre nom"], mail : d["Votre mail"], poste : d["poste"] };
+				}, function(data)
+				{
+				  // Copie du contenu du tableau d'objets "data" vers le tableau "tabEtudiants"
+				  tabEtudiants = data;
+
+				  // Tri des étudiants par numéro d'étudiant (croissant)
+				  tabEtudiants.sort(function(etudiant1, etudiant2)
+				  {
+						return etudiant1.numPhoto - etudiant2.numPhoto;
+				  });
+
+				  // Récupération des photos sur flickr grâce à l'API.
+				  $.getJSON(urlFlickr, function(data)
+	  				{
+	  				    $.each(data.photoset.photo, function(i, item)
+	  					 {
+	  				      // Sockage de l'image dans une variable.
+	  				      var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_b.jpg';
+
+	  						// Sockage de l'url dans une variable.
+	  				      var url = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
+
+	  						// Ajout des photos à la liste de classe "cbp-rfgrid", affichage des noms, des prénoms des mails et des postes.
+	  				      $("<img/>").attr({src: photo, alt: item.title}).appendTo(".cbp-rfgrid").wrap("<li><a href=' " + url + "' title=' " + item.title +
+							" ' ></a><div><p id=\"prenom-nom\">" + tabEtudiants[cpt].prenom + " " + tabEtudiants[cpt].nom.toUpperCase() + "<br/><span>" +
+							tabEtudiants[cpt].mail.toLowerCase() + "<br/>" + tabEtudiants[cpt].poste  + "</span></p></div></li>");
+
+	  						// Incrémentation du compteur.
+	  						cpt++;
+	  				    });
+	  				});
+				});
+				</script>
+			</ul>
+		</div>
+		<footer>
+			<div id="footersocial">
+				<ul>
+					<li>Photos prises par Samuel Szoniecky.</li>
+					<li><a href='http://www.samszo.univ-paris8.fr/'>site personnel</a></li>
+				</ul>
+            </div>
+        </footer>
+		  <script src="js/classie.js"></script>
+  		  <script src="js/cbpAnimatedHeader.min.js"></script>
+	</body>
+</html>
