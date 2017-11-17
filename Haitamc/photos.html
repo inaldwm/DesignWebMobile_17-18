@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<meta charset="UTF-8">
+<title>Design Web Mobile : trombinoscope des etudiants 17-18</title>
+<link rel="stylesheet" href="css/Style.css" media="screen,projection">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+
+
+
+<body>
+
+<div id="container">
+<ul id="images">
+
+        <h1>LP Design Web Mobile</h1>
+    
+</div> 
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+//merci beaucoup � https://etienner.fr/flickr-json
+//$.getJSON("http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=clef-API&photoset_id=le_photoset&extras=original_format&format=json&jsoncallback=?",
+$.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?",
+function(data){
+    // Debut de la boucle
+    $.each(data.photoset.photo, function(i,item){
+        // Sockage de l'image dans une variable
+        var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_s.jpg';
+        // Sockage de l'url dans une variable
+        var url= 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
+        // Affichage des images dans la balise ul#images avec le l'url dans la balise li
+        $("<img/>").attr({src: photo, alt: item.title}).appendTo("#images").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a></li>");
+    }); //Fin de la boucle
+});
+// Fin appel JSON
+/*
+d3.csv("data/LPDesignWebMobile_17-18.csv", function(data) {
+	  d3.select("body")
+	  .selectAll("p")
+	  .data(data)
+	  .enter().append("p")
+	    .text(function(d) { 
+	    	return d['Pr�nom'] + ' ' + d['Nom']; 
+	    	});
+	});
+*/
+</script>
+</body>
+</html>
