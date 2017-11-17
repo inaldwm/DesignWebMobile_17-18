@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="800"
+   height="600"
+   viewBox="0 0 225.77777 169.33334"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="point.svg">
   <defs
      id="defs2" />
@@ -26,16 +26,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="400"
-     inkscape:cy="560"
+     inkscape:cx="345.71429"
+     inkscape:cy="514.28571"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1">
+     inkscape:window-width="1280"
+     inkscape:window-height="923"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     units="px">
     <inkscape:grid
        type="xygrid"
        id="grid3765" />
@@ -55,42 +56,47 @@
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <circle
-       id="path3769"
-       cx="63.5"
-       cy="64.166664"
-       r="31.75"
-       style="stroke-width:0.26458332" />
-    <circle
-       id="path3771"
-       cx="148.16667"
-       cy="64.166664"
-       r="31.75"
-       style="stroke-width:0.26458332" />
-    <circle
-       style="stroke-width:0.26458332"
-       r="31.75"
-       cy="148.83333"
-       cx="148.16666"
-       id="circle3779" />
-    <circle
-       style="stroke-width:0.26458332"
-       r="31.75"
-       cy="148.83333"
-       cx="63.5"
-       id="circle3781" />
-    <circle
-       id="circle3783"
-       cx="63.499996"
-       cy="233.5"
-       r="31.75"
-       style="stroke-width:0.26458332" />
-    <circle
-       style="stroke-width:0.26458332"
-       r="31.75"
-       cy="233.5"
-       cx="148.16667"
-       id="circle3785" />
+     id="layer1"
+     transform="translate(0,-127.66663)">
+    <g
+       id="g4140"
+       transform="matrix(0,0.70612245,-0.70612245,0,220.94966,134.57823)">
+      <circle
+         style="stroke-width:0.26458332"
+         r="31.75"
+         cy="64.166664"
+         cx="63.5"
+         id="path3769" />
+      <circle
+         style="stroke-width:0.26458332"
+         r="31.75"
+         cy="64.166664"
+         cx="148.16667"
+         id="path3771" />
+      <circle
+         id="circle3779"
+         cx="148.16666"
+         cy="148.83333"
+         r="31.75"
+         style="stroke-width:0.26458332" />
+      <circle
+         id="circle3781"
+         cx="63.5"
+         cy="148.83333"
+         r="31.75"
+         style="stroke-width:0.26458332" />
+      <circle
+         style="stroke-width:0.26458332"
+         r="31.75"
+         cy="233.5"
+         cx="63.499996"
+         id="circle3783" />
+      <circle
+         id="circle3785"
+         cx="148.16667"
+         cy="233.5"
+         r="31.75"
+         style="stroke-width:0.26458332" />
+    </g>
   </g>
 </svg>
