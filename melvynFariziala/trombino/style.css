@@ -1,1223 +1,328 @@
-/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
-
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-
-/**
- * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
- */
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary
-{
-    display: block;
-}
-
-/**
- * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
- */
-
-audio, canvas, video
-{
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-
-audio:not([controls])
-{
-    display: none;
-    height: 0;
-}
-
-/**
- * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
- * Known issue: no IE 6 support.
- */
-
-[hidden]
-{
-    display: none;
-}
-
-/* ==========================================================================
-   Base
-   ========================================================================== */
-
-/**
- * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
- *    `em` units.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-
-html
-{
-    font-size: 100%; /* 1 */
-    -ms-text-size-adjust: 100%; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-/**
- * Address `font-family` inconsistency between `textarea` and other form
- * elements.
- */
-
-html, button, input, select, textarea
-{
-    font-family: sans-serif;
-}
-
-/**
- * Address margins handled incorrectly in IE 6/7.
- */
-
-body
-{
-    margin: 0;
-}
-
-/* ==========================================================================
-   Links
-   ========================================================================== */
-
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-
-a:focus
-{
-    outline: thin dotted;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-
-a:active, a:hover
-{
-    outline: 0;
-}
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-
-/**
- * Address font sizes and margins set differently in IE 6/7.
- * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
- * and Chrome.
- */
-
-h1
-{
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-
-h2
-{
-    font-size: 1.5em;
-    margin: 0.83em 0;
-}
-
-h3
-{
-    font-size: 1.17em;
-    margin: 1em 0;
-}
-
-h4
-{
-    font-size: 1em;
-    margin: 1.33em 0;
-}
-
-h5
-{
-    font-size: 0.83em;
-    margin: 1.67em 0;
-}
-
-h6
-{
-    font-size: 0.67em;
-    margin: 2.33em 0;
-}
-
-/**
- * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
- */
-
-abbr[title]
-{
-    border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
- */
-
-b, strong
-{
-    font-weight: bold;
-}
-
-blockquote
-{
-    margin: 1em 40px;
-}
-
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-
-dfn
-{
-    font-style: italic;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- * Known issue: no IE 6/7 normalization.
- */
-
-hr
-{
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0;
-}
-
-/**
- * Address styling not present in IE 6/7/8/9.
- */
-
-mark
-{
-    background: #ff0;
-    color: #000;
-}
-
-/**
- * Address margins set differently in IE 6/7.
- */
-
-p, pre
-{
-    margin: 1em 0;
-}
-
-/**
- * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
- */
-
-code, kbd, pre, samp
-{
-    font-family: monospace, serif;
-    _font-family: 'courier new', monospace;
-    font-size: 1em;
-}
-
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-
-pre
-{
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-/**
- * Address CSS quotes not supported in IE 6/7.
- */
-
-q
-{
-    quotes: none;
-}
-
-/**
- * Address `quotes` property not supported in Safari 4.
- */
-
-q:before, q:after
-{
-    content: '';
-    content: none;
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-
-small
-{
-    font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-
-sub, sup
-{
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sup
-{
-    top: -0.5em;
-}
-
-sub
-{
-    bottom: -0.25em;
-}
-
-/* ==========================================================================
-   Lists
-   ========================================================================== */
-
-/**
- * Address margins set differently in IE 6/7.
- */
-
-dl, menu, ol, ul
-{
-    margin: 1em 0;
-}
-
-dd
-{
-    margin: 0 0 0 40px;
-}
-
-/**
- * Address paddings set differently in IE 6/7.
- */
-
-menu, ol, ul
-{
-    padding: 0 0 0 40px;
-}
-
-/**
- * Correct list images handled incorrectly in IE 7.
- */
-
-nav ul, nav ol
-{
-    list-style: none;
-    list-style-image: none;
-}
-
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-
-/**
- * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
- * 2. Improve image quality when scaled in IE 7.
- */
-
-img
-{
-    border: 0; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
-}
-
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-
-svg:not(:root)
-{
-    overflow: hidden;
-}
-
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-
-/**
- * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
- */
-
-figure
-{
-    margin: 0;
-}
-
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-
-/**
- * Remove most spacing between table cells.
- */
-
-table
-{
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-
-body
-{
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-	font-family: 'Roboto', 'Roboto Slab', serif, 'Roboto', sans-serif;
-}
-
-
-/* --- header ani ------------------------------------------------ */
-
-.cbp-af-header
-{
-	position: fixed;
-	width: 100%;
-	top: 0px;
-	left: 0px;
-	background: #FFF;
-	z-index: 10000;
-	height: 150px;
-	overflow: hidden;
-	-webkit-transition: height 0.3s;
-	-moz-transition: height 0.3s;
-	transition: height 0.3s;
-	border-bottom: 2px solid #EEE;
-}
-
-.cbp-af-header .cbp-af-inner
-{
-	width: 90%;
-	max-width: 69em;
-	margin: 0 auto;
-	padding: 0 1.875em;
-}
-
-
-.cbp-af-header h1, .cbp-af-header nav
-{
-	position: relative;
-}
-
- /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
-.cbp-af-header h1, .cbp-af-header nav a
-{
-	line-height: 150px;
-}
-
-.cbp-af-header h1
-{
-	text-transform: uppercase;
-	color: #333;
-	letter-spacing: 4px;
-	font-size: 3.5em;
+/*
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+*/
+
+body {
 	margin: 0;
-	font-family: 'Roboto Slab', serif;
-	text-align: center;
+	padding: 0;
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #414141;
 }
 
-.cbp-af-header nav
-{
-	float: left;
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
 }
 
-.cbp-af-header nav a
-{
-	color: #aaa;
-	font-weight: 300;
-	margin: 0 0 0 30px;
-	font-size: 1.2em;
-}
-
-.cbp-af-header nav a:hover
-{
-	color: #333;
-}
-
-/* Transitions and class for reduced height */
-.cbp-af-header h1, .cbp-af-header nav a
-{
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.cbp-af-header.cbp-af-header-shrink
-{
-	height: 90px;
-}
-
-.cbp-af-header.cbp-af-header-shrink h1, .cbp-af-header.cbp-af-header-shrink nav a
-{
-	line-height: 90px;
-}
-
-.cbp-af-header.cbp-af-header-shrink h1
-{
+h1 {
 	font-size: 2em;
 }
 
-.cbp-af-header.cbp-af-header-shrink nav a
-{
-	font-size: 0.9em;
+h2 {
+	margin: 0px;
+	padding: 0px 0px 20px 0px;
+	letter-spacing: -2px;
+	font-size: 2.8em;
+	color: #FFFFFF;
 }
 
-/* Example Media Queries */
-@media screen and (max-width: 55em)
-{
-
-	.cbp-af-header .cbp-af-inner
-   {
-		width: 100%;
-	}
-
-	.cbp-af-header h1, .cbp-af-header nav
-   {
-		display: block;
-		margin: 0 auto;
-		text-align: center;
-		float: none;
-	}
-
-	.cbp-af-header h1, .cbp-af-header nav a
-   {
-		line-height: 115px;
-	}
-
-	.cbp-af-header nav a
-   {
-		margin: 0 10px;
-	}
-
-	.cbp-af-header.cbp-af-header-shrink h1, .cbp-af-header.cbp-af-header-shrink nav a
-   {
-		line-height: 45px;
-	}
-
-	.cbp-af-header.cbp-af-header-shrink h1
-   {
-		font-size: 2em;
-	}
-
-	.cbp-af-header.cbp-af-header-shrink nav a
-   {
-		font-size: 1em;
-	}
+h3 {
+	font-size: 1.6em;
 }
 
-@media screen and (max-width: 32.25em)
-{
-	.cbp-af-header nav a
-   {
-		font-size: 1em;
-	}
+p, ul, ol {
+	margin-top: 0;
+	line-height: 200%;
 }
 
-@media screen and (max-width: 24em)
-{
-	.cbp-af-header nav a, .cbp-af-header.cbp-af-header-shrink nav a
-   {
-		line-height: 1;
-	}
+p, ol {
 }
 
-#intro {
-	padding-top: 150px;
-	margin: 70px;
-	line-height: 46px;
+ul, ol {
+}
+
+a {
+	color: #8A8A8A;
+}
+
+a:hover {
+}
+
+#wrapper {
+	background: url(images/img02.jpg) no-repeat center 115px;
+}
+
+.container {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+/* Header */
+
+#header {
+	width: 900px;
+	height: 115px;
+	margin: 0 auto;
+	padding: 0px 50px;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+}
+
+#logo h1, #logo p {
+}
+
+#logo h1 {
+	padding:10px 0px 0px 0px;
+	letter-spacing: -2px;
+	text-transform: lowercase;
+	font-size: 3.8em;
+}
+
+#logo h1 a {
+	color: #FFFFFF;
+}
+
+#logo p {
+	margin: 0;
+	padding: 0px 0 0 0px;
+	letter-spacing: -1px;
+	font: normal 18px Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	color: #8E8E8E;
+}
+
+#logo p a {
+	color: #8E8E8E;
+}
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #000000;
+}
+
+/* Splash */
+
+#splash {
+	width: 960px;
+	height: 300px;
+	margin: 0px auto;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 280px;
+	height: 60px;
+	padding: 20px 0px 0px 0px;
+}
+
+#search form {
+	height: 41px;
+	margin: 0;
+	padding: 10px 0 0 20px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search-text {
+	width: 170px;
+	padding: 6px 5px 2px 5px;
+	border: 1px solid #E7EBED;
+	background: #FFFFFF;
+	text-transform: lowercase;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #5D781D;
+}
+
+#search-submit {
+	width: 50px;
+	height: 22px;
+	border: none;
+	background: #B9B9B9;
+	color: #000000;
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+	width: 500px;
+	height: 20px;
+	margin: 0 auto;
+	padding: 70px 0px 0px 0px;
+}
+
+#menu ul {
+	float: right;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	height: 20px;
+	margin: 0px;
+	padding: 0px 15px;
+	letter-spacing: -1px;
+	text-decoration: none;
 	text-align: center;
-	font-size: 23px;
-	font-weight: 300;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+}
+
+#menu .current_page_item a {
+}
+
+/* Background */
+
+#bg1 {
+	background: url(images/img06.jpg) repeat-y left top;
+}
+
+#bg2 {
+	background: url(images/img05.jpg) no-repeat left top;
+}
+
+#bg3 {
+	overflow: hidden;
+	padding: 50px;
+	background: url(images/img07.jpg) no-repeat left bottom;
+}
+
+
+/* Page */
+
+#page {
+	overflow: hidden;
+	width: 940px;
+	margin: 0px auto;
 }
 
 
 #content {
-	line-height: 32px;
-	text-align: center;
-	height: 570px;
+		float: right;
+	width: 530px;
 }
 
-
-footer
-{
-	text-align: center;
-	margin-bottom: 70px;
-	clear: both;
+#sidebar {
+	float: left;
+	width: 270px;
 }
 
-#footersocial li
-{
-   font-size: 10px;
+#poptrox {
+	width: 960px;
+	margin: 0px auto;
 }
 
-
-/* Responsive grid */
-.cbp-rfgrid
-{
-    margin: 35px 0 0 0;
-    padding-left: 61px;
-	 padding-right: 61px;
-    list-style: none;
-    position: relative;
+.cbp-rfgrid {
+	
+	
+	list-style: none;
+ 
 }
 
-.cbp-rfgrid li
-{
-   margin: 2px;
-    position: relative;
+.cbp-rfgrid li {
+	
+	margin: 10px;
+	padding: 10px;
     float: left;
-    overflow: hidden;
-    width: -webkit-calc(100% / 6.12);
-    width: calc(100% / 6.12);
+    position: relative;
+   	width: 20%;
+    
 }
-
-.cbp-rfgrid li a, .cbp-rfgrid li img
-{
-    display: block;
-    width: 100%;
-    cursor: pointer;
-}
-
 .cbp-rfgrid li img
 {
-    max-width: 100%;
-}
-
-/* Flexbox is used for centering the heading */
-.cbp-rfgrid li div
-{
-    position: absolute;
-    left: 20px;
-    top: 240px;
-    right: 20px;
-    bottom: 10px;
-    background: rgba(68, 68, 68, 0.6);
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: flex;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-}
-
-
-@media screen and (max-width: 945px)
-{
-    .cbp-rfgrid li
-    {
-       width: 25%; /* Fallback */
-       width: -webkit-calc(100% / 4);
-       width: calc(100% / 4);
-    }
-
-	#content
-   {
-   	line-height: 32px;
-   	text-align: center;
-   	height: 670px;
-	}
-
-	#intro
-   {
-   	padding-top: 100px;
-   	margin: 70px;
-   	line-height: 46px;
-   	text-align: center;
-   	font-size: 23px;
-   	font-weight: 300;
-	}
-
-	.cbp-af-header
-   {
-   	position: fixed;
-   	width: 100%;
-   	top: 0px;
-   	left: 0px;
-   	background: #FFF;
-   	z-index: 10000;
-   	height: 130px;
-   	overflow: hidden;
-   	-webkit-transition: height 0.3s;
-   	-moz-transition: height 0.3s;
-   	transition: height 0.3s;
-   	border-bottom: 2px solid #EEE;
-   }
-
-   .cbp-af-header .cbp-af-inner
-   {
-   	width: 270px;
-   	margin: 0 auto;
-   	text-align: center;
-   }
-
-   .cbp-af-header h1
-   {
-   	text-transform: uppercase;
-   	color: #333;
-   	letter-spacing: 4px;
-   	font-size: 3.5em;
-   	line-height: 125px;
-   	margin: 0px;
-   	font-family: 'Roboto Slab', serif;
-   	text-align: center;
-   }
-
-
-   /* Transitions and class for reduced height */
-   .cbp-af-header h1
-   {
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink
-   {
-      height: 90px;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink h1
-   {
-      line-height: 90px;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink h1
-   {
-      font-size: 2em;
-   }
-}
-
-@media screen and (max-width: 660px)
-{
-   .cbp-rfgrid li
-   {
-      width: 33.3333333%; /* Fallback */
-      width: -webkit-calc(100% / 3);
-      width: calc(100% / 3);
-   }
-
-	#content
-   {
-   	line-height: 32px;
-   	text-align: center;
-   	height: 770px;
-	}
-
-	#intro
-   {
-   	padding-top: 100px;
-   	margin: 70px;
-   	line-height: 46px;
-   	text-align: center;
-   	font-size: 23px;
-   	font-weight: 300;
-	}
-
-
-	.cbp-af-header
-   {
-   	position: fixed;
-   	width: 100%;
-   	top: 0px;
-   	left: 0px;
-   	background: #FFF;
-   	z-index: 10000;
-   	height: 120px;
-   	overflow: hidden;
-   	-webkit-transition: height 0.3s;
-   	-moz-transition: height 0.3s;
-   	transition: height 0.3s;
-   	border-bottom: 2px solid #EEE;
-   }
-
-   .cbp-af-header .cbp-af-inner
-   {
-   	width: 240px;
-   	margin: 0 auto;
-   	text-align: center;
-   }
-
-   .cbp-af-header h1
-   {
-   	text-transform: uppercase;
-   	color: #333;
-   	letter-spacing: 4px;
-   	font-size: 3em;
-   	margin: 0px;
-   	font-family: 'Roboto Slab', serif;
-   	text-align: center;
-   }
-
-   /* Transitions and class for reduced height */
-   .cbp-af-header h1
-   {
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink
-   {
-      height: 90px;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink h1
-   {
-      line-height: 90px;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink h1
-   {
-      font-size: 2em;
-   }
-
-}
-
-@media screen and (max-width: 400px)
-{
-    .cbp-rfgrid li
-    {
-      width: 50%; /* Fallback */
-      width: -webkit-calc(100% / 2);
-      width: calc(100% / 2);
-    }
-
-	#content
-   {
-      line-height: 32px;
-      text-align: center;
-      height: 710px;
-   }
-
-	footer
-   {
-      text-align: center;
-      margin-bottom: 70px;
-      clear: both;
-   }
-
-	#footersocial li
-   {
-      display: inline-block;
-      font-size: 18px;
-      padding: 23px;
-   }
-
-	.cbp-rfgrid li a div h3
-   {
-       width: 100%;
-       color: #333;
-       text-transform: uppercase;
-       font-size: 0.8em;
-       letter-spacing: 1px;
-   	text-align: center;
-   	font-weight: 400;
-	}
-
-	#intro
-   {
-   	padding-top: 90px;
-   	margin: 52px;
-   	line-height: 29px;
-   	text-align: center;
-   	font-size: 19px;
-   	font-weight: 300;
-	}
-
-	.cbp-af-header
-   {
-   	position: fixed;
-   	width: 100%;
-   	top: 0px;
-   	left: 0px;
-   	background: #FFF;
-   	z-index: 10000;
-   	height: 110px;
-   	overflow: hidden;
-   	-webkit-transition: height 0.3s;
-   	-moz-transition: height 0.3s;
-   	transition: height 0.3s;
-   	border-bottom: 1px solid #EEE;
-   }
-
-   .cbp-af-header .cbp-af-inner
-   {
-   	width: 200px;
-   	margin: 0 auto;
-   	text-align: center;
-   }
-
-   .cbp-af-header h1
-   {
-   	text-transform: uppercase;
-   	color: #333;
-   	letter-spacing: 4px;
-   	font-size: 2.5em;
-   	margin: 0px;
-   	font-family: 'Roboto Slab', serif;
-   	text-align: center;
-   }
-
-   /* Transitions and class for reduced height */
-   .cbp-af-header h1
-   {
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink
-   {
-      height: 90px;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink h1
-   {
-      line-height: 90px;
-   }
-
-   .cbp-af-header.cbp-af-header-shrink h1
-   {
-      font-size: 2em;
-   }
-
-}
-
-@media screen and (max-width: 300px)
-{
-   .cbp-rfgrid li
-   {
-      width: 100%;
-   }
-
-	#content
-   {
-   	line-height: 32px;
-   	text-align: center;
-   	height: 1900px;
-	}
-
-	footer
-   {
-      text-align: center;
-      margin-bottom: 70px;
-      clear: both;
-   }
-
-	#footersocial li
-   {
-      display: inline-block;
-      font-size: 16px;
-      padding: 23px;
-   }
-}
-
-
-.header-container
-{
-    border-bottom: 20px solid #e44d26;
-}
-
-.footer-container, .main aside
-{
-    border-top: 20px solid #e44d26;
-}
-
-.header-container, .footer-container, .main aside
-{
-    background: #f16529;
-}
-
-.title
-{
-    color: white;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main
-{
-    padding: 30px 0;
-}
-
-.main article h1
-{
-    font-size: 2em;
-}
-
-.main aside
-{
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer
-{
-    color: white;
-    padding: 20px 0;
-}
-
-#footersocial > ul
-{
-   list-style:none;
-   padding: 100px;
-   margin: 0px;
-   font-size: 29px;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title
-{
-    padding-top: 20px;
-}
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px)
-{
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-}
-
-@media only screen and (min-width: 768px)
-{
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-}
-
-@media only screen and (min-width: 1140px)
-{
-
-/* ===============
-    Maximal Width
-   =============== */
-
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir
-{
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before
-{
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden
-{
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden
-{
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus
-{
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible
-{
-    visibility: hidden;
-}
-
-.clearfix:before, .clearfix:after
-{
-    content: " ";
-    display: table;
-}
-
-.clearfix:after
-{
-    clear: both;
-}
-
-.clearfix
-{
-    *zoom: 1;
-}
-
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print
-{
-    *
-    {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a, a:visited
-    {
-        text-decoration: underline;
-    }
-
-    a[href]:after
-    {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after
-    {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after
-    {
-        content: "";
-    }
-
-    pre, blockquote
-    {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead
-    {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr, img
-    {
-        page-break-inside: avoid;
-    }
-
-    img
-    {
-        max-width: 100% !important;
-    }
-
-    @page
-    {
-        margin: 0.5cm;
-    }
-
-    p, h2, h3
-    {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2, h3
-    {
-        page-break-after: avoid;
-    }
-	
-	
-	
-	body{
-    background: url(bg.png);
-}
-h1{
-    border-top: 1px solid lightblue;
-    border-bottom: 1px solid lightblue;
-    padding: 2%;
-    color: lightblue;
-}
-h3{
-    margin-bottom: 2%;
-}
-.wrapper{
-    display: block;
-    width: 75%;
-    margin: auto;
-    padding: 2%;
-    text-align: center;
-}
-
-ul{
-    display: inline-block;
-    width: auto;
-    height: auto;
-    margin: auto;
-    padding: auto;
-}
-
-li{
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    border: 2px solid grey;
-    margin: 0.7%;
-}
-img{
+	border: 5px solid #FFFFFF;
+    float: left;
     width: 100%;
-    border: 0;
-    max-width: 100% !important;
-    vertical-align: middle;
-    height: auto;
+    cursor: pointer;
+    position: relative;
 }
+.cbp-rfgrid li img p
+
+{
+	border: 5px solid #FFFFFF;
+  
+}
+
+
+/*****************************************************
+  Poptrox
+*****************************************************/
+
+.poptrox_popup
+{
+	position: relative;
+	padding: 1em 1em 3em 1em;
+	background: #ffffff;
+}
+
+.poptrox_popup .loader
+{
+	display: block;
+	margin: 55px 0 0 0;
+	text-indent: -9999em;
+	background: url('loader.gif') top center no-repeat;
+}
+
+.poptrox_popup .caption
+{
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+}
+
+.poptrox_popup .closer
+{
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+}
+
+#footer {
+	overflow: hidden;
+	width: 940px;
+	height: 100px;
+	margin: 0px auto;
+}
+
+#footer p {
+	margin: 0px;
+	padding: 40px 0px 0px 0px;
+	text-align: center;
+	font-size: 12px;
 }

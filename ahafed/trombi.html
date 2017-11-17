@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html>
   <head>
     <meta charset="utf-8">
     <title>ma page trombi</title>
-
+<link rel="stylesheet" href="style.css" />
   </head>
 
 <body>
-        <div id="container">
-            <ul id="images">
-        </div>
-        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-        <script>
-      $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=9e94c765c46971f66758aac4bb046e70&photoset_id=72157686701939221&format=json&nojsoncallback=1");
 
 
-  function title(data){
+    <div id="container">
+    <ul id="images">
+</div> 
+
+<h1> Trombinoscope </h1>
+<p> Web Design Mobile 2017-2018 </p>
+<h5> Université Paris VIII Vincennes Saint-Denis </h5>
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+<script>
+		$.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=7164cb481e1d56ad49e8ca89bf5780a2&photoset_id=72157662449222778&format=json&nojsoncallback=1",
+function(data){
         // Debut de la boucle
         $.each(data.photoset.photo, function(i,item){
             // Sockage de l'image dans une variable
@@ -23,10 +28,12 @@
             // Sockage de l'url dans une variable
             var url= 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
             // Affichage des images dans la balise ul#images avec le l'url dans la balise li
-            $("<img/>").attr({src: photo, alt: item.title}).appendTo("#images").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a></li>");
+            $("<img class=scaled >").attr({src: photo, alt: item.title}).appendTo("#images").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a></li>");
         }); //Fin de la boucle
-    };
+    });
     // Fin appel JSON
+
+
 </script>
 
 </body>

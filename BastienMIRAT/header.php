@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="images/loic.ico">
+    <link rel="icon" href="images/icon.ico">
 
     <title>GROS TITRE</title>
 
@@ -23,16 +23,12 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span><img src="images/paco.jpg" style="width: 30px"</span>
-          </button>
-              <a class="navbar-brand" href="index.php">Evain Company</a>
+              <a class="navbar-brand" href="index.php">Mirat Company</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
 
-            <li class="dropdown">
-            <li><a href="#menu-toggle" class="menu" id="menu-toggle">Menu inutile</a></li>
+            <li class="dropdown"><a href="#menu-toggle" class="menu" id="menu-toggle">Menu inutile</a></li>
            
           </ul>
           <ul class="p nav navbar-nav">
@@ -49,9 +45,8 @@
         <div id="wrapper" class="toggled">
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
-                    <li class="sidebar-brand">
-                      <li><br><a href="">Rien</a></li>
-                      <li><a href="">Toujours rien</a></li>
+                    <li class="sidebar-brand"><br><a href="">Rien</a></li>
+                    <li class="sidebar-brand"><a href="">Toujours rien</a></li>
                       
                 </ul>
             </div>

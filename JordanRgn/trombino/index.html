@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Trombinoscope Université Paris 8</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+</head>
+<body>
+	
+	<!--<div class="jumbotron">
+  <h1 class="display-3">Design Web Mobile</h1>
+  <p class="lead">trombinoscope</p>
+  <hr class="my-4">
+  <p>Promotion 2017 - 2018</p>
+</div>-->
+
+<!--<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Trombinoscope Design Web Mobile 17-18</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        
+      </li>
+    </ul>
+  </div>
+</nav>-->
+
+	<div id="header">
+		<div>
+			<a href="index.html" id="logo"><img src="images/logo1.png" alt=""></a>
+			<!--<ul>
+				<li class="selected">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="movies.html">Movies</a>
+					<ul>
+						<li>
+							<a href="#">Now Showing</a>
+						</li>
+						<li>
+							<a href="#">Comming Soon</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="ticket-info.html">Ticket Info</a>
+				</li>
+				<li>
+					<a href="rentals.html">Rentals</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="blog.html">Blog</a>
+				</li>
+			</ul>-->
+		</div>
+	</div>
+	<div class="container">
+		<div class="row" id="etuCards" >
+		</div>
+	</div>
+<script>
+
+var dataPhoto;
+
+//récupération des photos du groupe flickr
+//merci beaucoup à https://etienner.fr/flickr-json
+var urlFlickr = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?"; 
+$.getJSON(urlFlickr,
+function(data){
+	dataPhoto = data;
+	/* Debut de la boucle
+    $.each(data.photoset.photo, function(i,item){
+        // Sockage de l'image dans une variable
+        var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_s.jpg';
+        // Sockage de l'url dans une variable
+        var url= 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
+        // Affichage des images dans la balise ul#images avec le l'url dans la balise li
+        $("<img/>").attr({src: photo, alt: item.title}).appendTo("#images").wrap("<li id='photo"+i+"'><a href=' "+ url +"' title=' "+ item.title +" ' ></a></li>");
+    });
+    Fin de la boucle*/
+
+	//récupération des données du formulaire google
+	var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv';
+    //var url = "data/LPDesignWebMobile_17-18.csv";        
+	d3.csv(url, function(data) {
+		/*construction simple
+		var arrDiv = d3.select("#container")
+	  		.selectAll("div")
+	  		.data(data)
+	  		.enter().append("div")
+		    .text(function(d) { 
+		    		return d['Votre prénom'].toLowerCase() + ' ' + d['Votre nom'].toLowerCase(); 
+		    	});		
+		arrDiv.append("img")
+		    .attr('src',function(d) { 
+		    		var item = dataPhoto.photoset.photo[d['num photo']];
+		        var src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_s.jpg';
+	    			return src; 
+	    		});
+		*/
+		
+		/*construction bootstrap
+		merci à https://getbootstrap.com/docs/4.0/components/card/
+			<div class="col-sm-3 mb-4">
+		  <div class="card">
+				<img class="card-img img-fluid" src="<?php echo $picture_link; ?>" alt="Card image">
+				<p class="card-text"><?php echo $value['Prénom']; ?> <br> <?php echo $value['Nom']; ?> <br>
+				<small class="text-muted"><?php echo $value['E-mail']; ?></small>
+				</p>
+		  </div>
+		</div>
+
+		*/
+		var cards = d3.select('#etuCards').selectAll(".col-sm-3 mb-4").data(data).enter()
+			.append('div').attr('class','col-sm-3 mb-4')
+			.append("div").attr('class','card');
+	  	cards.append("img")
+	  			.attr('class','card-img-top')
+	  			.attr('src',function(d) { 
+		    			var item = dataPhoto.photoset.photo[d['num photo']];
+			        var src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
+		    			return src; 
+			    		});
+		var cardBody = cards.append('div').attr('class','card-body');
+		cardBody.append('h4').attr('class','card-title')	  			
+	    			.text(function(d) { 
+		    			return d['num photo']+ ' : '+ d['Votre prénom'].toLowerCase() + ' ' + d['Votre nom'].toLowerCase(); 
+				    		});
+		cardBody.append('p').attr('class','card-text')	  			
+	    			.text(function(d) { 
+		    			return ''; 
+				    		});
+		cards.append('div').attr('class','card-footer')
+			.append('small').attr('class','text-muted')
+			.text(function(d) { 
+		    			return d['Votre mail'].toLowerCase(); 
+				    		});
+	  	/*construction des graphiques
+		var svg = dimple.newSvg("#chartContainer", 590, 400);
+	    var myChart = new dimple.chart(svg, data);
+	    myChart.setBounds(20, 20, 460, 360)
+	    myChart.addMeasureAxis("p", "Unit Sales");
+	    myChart.addSeries("Owner", dimple.plot.pie);
+	    myChart.addLegend(500, 20, 90, 300, "left");
+	    myChart.draw();
+	  	*/
+	});
+});
+//Fin appel JSON
+
+</script>
+	<!--<div id="body" class="home">
+		<div>
+			<div>
+				<a href="movies.html"><img src="images/baby-with-dog.jpg" alt=""></a>
+				<h2><a href="movies.html">Movie Title</a></h2>
+				<p>-->
+					<!--This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.-->
+				<!--</p>
+				<a href="movies.html">Read More</a>
+			</div>
+			<ul>
+				<li>
+					<h3>Movie Title</h3>
+					<span>Cinema 2</span> <a href="movies.html"><img src="images/surfer.jpg" alt=""></a>
+				</li>
+				<li>
+					<h3>Movie Title</h3>
+					<span>Cinema 3</span> <a href="movies.html"><img src="images/soldiers.jpg" alt=""></a>
+				</li>
+				<li>
+					<h3>Movie Title</h3>
+					<span>Cinema 4</span> <a href="movies.html"><img src="images/ballet-dancer.jpg" alt=""></a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<div>
+				<h3><a href="rentals.html">Rental Services</a></h3>
+				<ul>
+					<li>
+						<a href="rentals.html"><img src="images/conference.jpg" alt=""></a>
+						<h4>Conference Rooms</h4>
+						<p>
+							In sed nibh mauris. Curabitur scelerisque dignissim viverra. Etiam interdum enim nec turpis.
+						</p>
+					</li>
+					<li>
+						<a href="rentals.html"><img src="images/cinema.jpg" alt=""></a>
+						<h4>Cinema Rental</h4>
+						<p>
+							Donec odio nunc, consectetur fringilla tincidunt nec, cursus vitae ipsum.
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3><a href="blog.html">Trombinoscope des acteurs de la licence pro DWM</a></h3>
+				<ul>
+					<li>
+						<a href="blog.html"><img src="images/trainor.jpg" alt=""></a>
+						<div>
+							<span>Posted on August 8, 2023 by Admin</span>
+							<h4>Blog Post Title One</h4>
+							<p>
+								Donec odio nunc, consectetur fringilla tincidunt nec, cursus vitae ipsum. <a href="blog.html" class="more">Read More</a>
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="blog.html"><img src="images/lava.jpg" alt=""></a>
+						<div>
+							<span>Posted on August 8, 2023 by Admin</span>
+							<h4>Blog Post Title Two</h4>
+							<p>
+								Donec odio nunc, consectetur fringilla tincidunt nec, cursus vitae ipsum. <a href="blog.html" class="more">Read More</a>
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="blog.html"><img src="images/castle.jpg" alt=""></a>
+						<div>
+							<span>Posted on August 8, 2023 by Admin</span>
+							<h4>Blog Post Title One</h4>
+							<p>
+								Donec odio nunc, consectetur fringilla tincidunt nec, cursus vitae ipsum. <a href="blog.html" class="more">Read More</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>-->
+	<!--<div class="Candy">
+		<TABLE ALIGN="center"> 
+		<CAPTION ALIGN=TOP >titre du tableau</CAPTION>
+			<tr>
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/36843493893/" title="Régnier Jordan"><img src="https://farm5.staticflickr.com/4512/36843493893_28eeea76b8_k.jpg" width="150" alt="jor"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/36843491863/" title="El Idrissi Yassine"><img src="https://farm5.staticflickr.com/4465/36843491863_72558ca62d_k.jpg" width="150" alt="Yassine"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/37481617502/in/photostream/" title="DWM 17-18"><img src="https://farm5.staticflickr.com/4509/37481617502_784efca2a2_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/23660434108/in/photostream/" title="DWM 17-18"><img src="https://farm5.staticflickr.com/4491/23660434108_2184728f78_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>	
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/36802590234/in/photostream/" title="DOM 17-18"><img src="https://farm5.staticflickr.com/4503/36802590234_e4e3bb0afe_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>	
+			</tr>	
+			<tr>	
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/37464606146/in/photostream/" title="DOM 17-18"><img src="https://farm5.staticflickr.com/4488/37464606146_61c4f1daff_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>	</th>
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/36802586214/" title="DOM 17-18"><img src="https://farm5.staticflickr.com/4460/36802586214_31f33a28a9_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>	
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/23660427738/in/photostream/" title="DOM 17-18"><img src="https://farm5.staticflickr.com/4470/23660427738_101e27b6d9_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/36802581864/in/photostream/" title="DOM 17-18"><img src="https://farm5.staticflickr.com/4475/36802581864_7bd7863013_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>	
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/36802579804/in/photostream/" title="DOM 17-18"><img src="https://farm5.staticflickr.com/4488/36802579804_e53bc31094_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>	
+			</tr>	
+			<tr>	
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/37512717621/in/photostream/" title="DOM 17-18"><img src="https://farm5.staticflickr.com/4465/37512717621_95c3667ece_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>	
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/36843466023/in/photostream/" title="DOM 17-18"><img src="https://farm5.staticflickr.com/4487/36843466023_33b08f9baa_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>	
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/37254423320/in/photostream/" title="DOM 17-18"><img src="https://farm5.staticflickr.com/4454/37254423320_e94a575c66_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>	
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/37254422650/in/photostream/" title="DOM 17-18"><img src="https://farm5.staticflickr.com/4471/37254422650_454350c059_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/37254417410/in/photostream/" title="DOM 17-18"><img src="https://farm5.staticflickr.com/4510/37254417410_4833ba0329_k.jpg" width="150" alt="DOM 17-18"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></th>	
+			</tr>
+			<tr>
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/37254575094/" title="2017-10-27_01-49-55"><img src="https://farm5.staticflickr.com/4458/37254575094_b06a7538fa_k.jpg" width="150" alt="2017-10-27_01-49-55"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+				<th><a data-flickr-embed="true"  href="https://www.flickr.com/photos/152768280@N04/24110472798/in/photostream/" title="20171027_100945"><img src="https://farm5.staticflickr.com/4491/24110472798_5d410e2b11_k.jpg" width="150" alt="20171027_100945"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+			</tr>
+		</TABLE>
+	</div>-->
+	<!--<div id="footer">
+		<div>
+			<div>
+			
+				<span>Quick Links</span>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="ticket-info.html">Ticket Info</a>
+					</li>
+					<li>
+						<a href="#">Location</a>
+					</li>
+					<li>
+						<a href="movies.html">Now Showing</a>
+					</li>
+					<li>
+						<a href="rentals.html">Rentals</a>
+					</li>
+					<li>
+						<a href="about.html">Contact</a>
+					</li>
+					<li>
+						<a href="movies.html">Comming Soon</a>
+					</li>
+					<li>
+						<a href="about.html">The Company</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+				</ul>
+			</div>
+			<div class="section">
+				<span>Recent Tweets</span>
+				<ul>
+					<li>
+						<p>
+							Sed id mattis tellus. Proin egestas velit vel neque placerat sed interdum neque porta.
+						</p>
+						<span><a href="#">- 1 day ago</a></span>
+					</li
+					<li>
+						<p>
+							Praesent at urna ac urna congue convallis.
+						</p>
+						<span><a href="#">- 2 day ago</a></span>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<span>Sign Up For Our Mailing List</span>
+				<p>
+					Praesent at urna ac urna congue convallis. Maecenas sed placerat turpis. Duis in dolor ut nibh molestie faucibus.
+				</p>
+				<form action="about.html">
+					<input type="text" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Enter Email Address Here':this.value;" value="Enter Email Address Here">
+					<input type="submit" value="">
+				</form>
+			</div>
+			<p>
+				&#169; 2023 Trombinoscope
+			</p>
+			<div class="connect">
+				<span>Stay Connected:</span> <a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a> <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a> <a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">google+</a>
+			</div>
+		</div>
+	</div>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
