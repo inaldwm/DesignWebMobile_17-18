@@ -34,7 +34,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0707237"
-     inkscape:cx="375.53549"
+     inkscape:cx="428.77051"
      inkscape:cy="299.58223"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -60,7 +60,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -121,17 +121,18 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="300"
-       y="1444.0916"
+       y="1456.0916"
        id="text4839"><tspan
          sodipodi:role="line"
          id="tspan4837"
          x="300"
-         y="1444.0916">Jeux vidéo</tspan></text>
+         y="1456.0916"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:arial;-inkscape-font-specification:'arial Bold Italic'">Jeux vidéo</tspan></text>
     <circle
        style="fill:#d0d3c9;fill-opacity:0.39234487"
        id="path4966"
-       cx="394.28574"
-       cy="1444.0916"
+       cx="410.83875"
+       cy="1450.6753"
        r="150" />
     <text
        xml:space="preserve"
@@ -162,7 +163,7 @@
          sodipodi:role="line"
          x="24"
          y="1444.0916"
-         style="font-size:21.33333333px;"
+         style="font-size:21.33333333px;fill:#ffff00;-inkscape-font-specification:'Arial Bold Italic';font-family:Arial;font-weight:bold;font-style:italic;font-stretch:normal;font-variant:normal"
          id="tspan5011">Aventure</tspan></text>
     <text
        xml:space="preserve"
@@ -175,7 +176,7 @@
          id="tspan4991"
          x="31.999857"
          y="1674.099"
-         style="font-size:26.66655159px;stroke-width:0.99999577">Gestion</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666603px;font-family:Arial;-inkscape-font-specification:'Arial Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.99999577">Gestion</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -185,30 +186,33 @@
          sodipodi:role="line"
          x="26"
          y="1226.0916"
-         id="tspan5007">Thriller</tspan></text>
+         id="tspan5007"
+         style="-inkscape-font-specification:'Arial Bold Italic';font-family:Arial;font-weight:bold;font-style:italic;font-stretch:normal;font-variant:normal">Thriller</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="318"
-       y="1226.0916"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#800080;fill-opacity:1;stroke:none;"
+       x="334"
+       y="1224.0916"
        id="text5001"><tspan
          sodipodi:role="line"
-         x="318"
-         y="1226.0916"
-         id="tspan5003">Sport</tspan></text>
+         x="334"
+         y="1224.0916"
+         id="tspan5003"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666603px;font-family:arial;-inkscape-font-specification:'arial Bold Italic';fill:#800080;">Sport</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="644"
-       y="1444.0916"
+       y="1450.0916"
        id="text5017"><tspan
          sodipodi:role="line"
          id="tspan5015"
          x="644"
-         y="1444.0916">Course</tspan></text>
+         y="1450.0916"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:arial;-inkscape-font-specification:'arial Bold Italic';fill:#00ffff">Course</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:italic;font-weight:bold;font-size:40px;line-height:1.25;font-family:arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;-inkscape-font-specification:'arial Bold Italic';font-stretch:normal;font-variant:normal;"
        x="650"
        y="1688.0916"
        id="text5021"><tspan
@@ -216,7 +220,7 @@
          id="tspan5019"
          x="650"
          y="1688.0916"
-         style="font-size:26.66666603px">MOBA</tspan></text>
+         style="font-size:26.66666603px;fill:#d40000;-inkscape-font-specification:'arial Bold Italic';font-family:arial;font-weight:bold;font-style:italic;font-stretch:normal;font-variant:normal;">MOBA</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot5023"
@@ -227,7 +231,7 @@
            height="150"
            x="450"
            y="450" /></flowRegion><flowPara
-         id="flowPara5029"></flowPara></flowRoot>    <text
+         id="flowPara5029" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25.60000038px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="362"
@@ -237,7 +241,7 @@
          id="tspan5034"
          x="362"
          y="1688.0916"
-         style="fill:#f2f2f2">Tir</tspan></text>
+         style="fill:#f2f2f2;-inkscape-font-specification:'arial Bold Italic';font-family:arial;font-weight:bold;font-style:italic;font-stretch:normal;font-variant:normal">Tir</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25.60000038px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -248,6 +252,6 @@
          id="tspan5038"
          x="630"
          y="1226.0916"
-         style="font-size:21.33333397px">Reflexion</tspan></text>
+         style="font-size:21.33333397px;fill:#ffcc00;-inkscape-font-specification:'arial Bold Italic';font-family:arial;font-weight:bold;font-style:italic;font-stretch:normal;font-variant:normal">Reflexion</tspan></text>
   </g>
 </svg>
