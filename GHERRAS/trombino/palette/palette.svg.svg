@@ -14,7 +14,7 @@
    viewBox="0 0 211.66667 158.75"
    version="1.1"
    id="svg16"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="PALATTE.svg">
   <defs
      id="defs10" />
@@ -26,16 +26,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.78748264"
-     inkscape:cx="395.67902"
+     inkscape:cx="394.40915"
      inkscape:cy="273.35338"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1280"
+     inkscape:window-height="923"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata13">
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -84,12 +84,6 @@
        id="path180-6-8"
        cx="78.870956"
        cy="258.4902"
-       r="16.269983" />
-    <circle
-       style="fill:#ffff00;stroke-width:0.07164761"
-       id="path180-6-3"
-       cx="117.08305"
-       cy="257.89316"
        r="16.269983" />
     <circle
        style="fill:#ff0000;stroke-width:0.07164761"
@@ -444,17 +438,25 @@
          id="tspan146"
          x="106.03738"
          y="261.40338"
-         style="stroke-width:0.07164761"></tspan></text>
+         style="stroke-width:0.07164761" /></text>
+    <ellipse
+       style="fill:#ffff00;fill-opacity:0.472;stroke-width:0.07164761"
+       id="path180-6-3"
+       cx="130.72154"
+       cy="263.85855"
+       rx="29.205454"
+       ry="24.501646" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.58544827px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07164761"
-       x="109.02268"
-       y="257.29605"
-       id="text152"><tspan
+       style="font-style:normal;font-weight:normal;font-size:3.85092545px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07164761"
+       x="105.96532"
+       y="258.87741"
+       id="text152"
+       transform="scale(1.0186122,0.98172787)"><tspan
          sodipodi:role="line"
          id="tspan150"
-         x="109.02268"
-         y="257.29605"
+         x="105.96532"
+         y="258.87741"
          style="stroke-width:0.07164761">EXTASE</tspan></text>
     <text
        xml:space="preserve"
@@ -489,7 +491,7 @@
            height="241.66667"
            x="1095.8334"
            y="1001.0499" /></flowRegion><flowPara
-         id="flowPara168"></flowPara></flowRoot>    <text
+         id="flowPara168" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.58544827px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07164761"
        x="47.823662"
@@ -533,7 +535,7 @@
            height="108.33334"
            x="1616.6666"
            y="1305.2166" /></flowRegion><flowPara
-         id="flowPara190"></flowPara></flowRoot>    <flowRoot
+         id="flowPara190" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot192"
        style="font-style:normal;font-weight:normal;font-size:64px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -544,7 +546,7 @@
            height="104.16666"
            x="1008.3333"
            y="1309.3832" /></flowRegion><flowPara
-         id="flowPara198"></flowPara></flowRoot>    <path
+         id="flowPara198" /></flowRoot>    <path
        style="font-style:normal;font-weight:normal;font-size:16.93333244px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07164761"
        d="m 189.52544,172.63919 v 1.22025 h -1.22023 v 0.35824 h 1.22023 v 1.22023 h 0.37168 v -1.22023 h 1.22023 v -0.35824 h -1.22023 v -1.22025 z"
        id="text202"
@@ -938,13 +940,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.58544827px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07164761"
-       x="126.78368"
-       y="204.10724"
+       x="128.78625"
+       y="202.51266"
        id="text347"><tspan
          sodipodi:role="line"
          id="tspan345"
-         x="126.78368"
-         y="204.10724"
+         x="128.78625"
+         y="202.51266"
          style="stroke-width:0.07164761">TERREUR</tspan></text>
     <text
        xml:space="preserve"
