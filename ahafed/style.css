@@ -1,0 +1,45 @@
+body {
+	background-color: #fff;
+	color: #000;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+	font-size: 1.4em; /* equiv 14px */
+	line-height: 1.5; /* adapt to your design */
+
+margin-top: 100px;
+		margin-right: 70px;
+		margin-bottom: 100px;
+		margin-left: 70px;
+	
+}
+	
+#container {
+  float: right;
+  width: 30%;
+  text-align: left;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 2em;
+  padding: 0.5em;
+}
+img.scaled {
+  width: 20%;
+circular
+}
+
+
+h1 {position:absolute;
+		top: 300px;
+		left: 400px;
+	
+
+	}
+	
+
+p {
+		position:absolute;
+		top: 370px;
+		left: 400px;
+	}
+	

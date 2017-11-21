@@ -1,61 +1,76 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Trombinoscope</title>
-		<script src="https://d3js.org/d3.v4.min.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700|Roboto:400,100,300,500,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-		<div >
-			<div >
-				<h2>Trombinoscope L3 DWM 2017-2018</h2>
-			</div>
-		</div>
+<!DOCTYPE html >
+
+<html >
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Trombinoscope des étudiants en L3 DWM (2017-2018)</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.poptrox-0.1.js"></script>
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<div id="header" class="container">
+	<div id="logo">
+		<h2><a href="#">Trombinoscope L3 DWM </a></h2>
 		
-		<div id="content">
-			<ul class="cbp-rfgrid">
-				<script>
-				// Définition des variables globales.
-				var urlFlickr = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?";
-				var cpt = 0;
-				var tabEtudiants = [];
-				// Récupération et traitement des données des étudiants dans le fichier "data/LPDesignWebMobile_17-18.csv".
-				d3.csv("LPDesignWebMobile_17-18.csv", function(d)
-				{
-					return {numPhoto : d["num photo"], prenom : d["Votre prénom"], nom : d["Votre nom"]};
-				}, function(data)
-				{
-				  // Copie du contenu du tableau d'objets "data" vers le tableau "tabEtudiants"
-				  tabEtudiants = data;
-				  // Tri des étudiants par numéro d'étudiant (croissant)
-				  tabEtudiants.sort(function(etudiant1, etudiant2)
-				  {
-						return etudiant1.numPhoto - etudiant2.numPhoto;
-				  });
-				});
-				// Récupération des photos sur flickr grâce à l'API.
-				$.getJSON(urlFlickr, function(data)
-				{
-				    $.each(data.photoset.photo, function(i, item)
-					 {
-				      // Sockage de l'image dans une variable.
-				      var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_b.jpg';
-						// Sockage de l'url dans une variable.
-				      
-					  var url = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
-						// Ajout des photos à la liste de classe "cbp-rfgrid" et affichage des noms.
-				      $("<img/>").attr({src: photo, alt: item.title}).appendTo(".cbp-rfgrid").wrap("<li><a href=' "+ url +"' title=' "+ item.title +" ' ></a><div><p>"+ tabEtudiants[cpt].prenom + " " + tabEtudiants[cpt].nom + "</p></div></li>");
-						// Incrémentation du compteur.
-						cpt++;
-				    });
-				});
+	</div>
+
+</div>
+<!-- end #header -->
+<div id="poptrox">
+	<!-- start -->
+	<ul class="cbp-rfgrid">
+	<script>
+$.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?",
+function(data){
+    // Debut de la boucle
+    
+    $.each(data.photoset.photo, function(i,item){
+        // Sockage de l'image dans une variable
+        var photo = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_n.jpg';
+        // Sockage de l'url dans une variable
+        var url= 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_c.jpg';
+        // Affichage des images dans la balise ul#images avec le l'url dans la balise li
+        $("<img/>").attr({src: photo, alt: item.title}).appendTo(".cbp-rfgrid").wrap("<li><a href=' "+ url +"' title=' "+ item.title + " '></a><div id='data"+i+"' ></div></li>");
+        
+        //$("#photo"+i).attr('src', photo); 
+		
+		}); //Fin de la boucle
+        
+        //boucle des data
+		var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv';
+		d3.csv(url, function(data) {
+			dataForm = data;
+			
+			dataForm.forEach(function(d){
+				var np = d['num photo'];
+				var nom = d['Votre nom'];
+				var mail = d['Votre mail'];	
+				var prénom = d['Votre prénom'];
+				var poste = d['poste'];	
+				d3.select("#data"+np)
+				.text(prénom+'  '+nom+' '+mail +'   '+poste);
+			});
+
+
+
+
+			
+		});
+		
+    
+});
 				</script>
-			</ul>
-		</div>
 	
-		 
-	</body>
+	</ul>
+	
+</div>
+
+</body>
 </html>
+
