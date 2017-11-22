@@ -9,18 +9,18 @@
 <body>
 <div align="center">
 	<div id="map">
-		<div id="carte"><img src="planetTweet.png" alt="Palette de tweet" width="1400" border="0" usemap="#panneaux">
+		<div id="carte"><img src="palette.svg" alt="Palette de tweet" width="1400" border="0" usemap="#panneaux">
 			<map name="panneaux">
-			<area shape="circle" coords="340,510,165" alt="Soleil" id="Soleil" onclick="foc()">
-			<area shape="circle" coords="300,150,45"  alt="Mars" onclick="foc1()">
-			<area shape="circle" coords="515,295,42"  alt="Mercure" onclick="foc2()">
-			<area shape="circle" coords="582,130,75"  alt="Uranus" onclick="foc3()">
-			<area shape="circle" coords="698,281,50"  alt="Terre" onclick="foc4()">
-			<area shape="circle" coords="831,154,59"  alt="Venus" onclick="foc5()">
-			<area shape="circle" coords="864,388,37"  alt="Pluton" onclick="foc6()">
-			<area shape="circle" coords="818,553,82"  alt="Saturne" onclick="foc7()">
-			<area shape="circle" coords="1140,368,105" alt="Jupiter" onclick="foc8()">
-			<area shape="circle" coords="1130,605,70"  alt="Neptune" onclick="foc9()">
+			<area shape="circle" coords="290,730,195"  alt="Soleil" id="Soleil" onclick="foc()">
+			<area shape="circle" coords="190,220,65"  alt="Mars" onclick="foc1()">
+			<area shape="circle" coords="330,415,55"  alt="Mercure" onclick="foc2()">
+			<area shape="circle" coords="528,180,125"  alt="Uranus" onclick="foc3()">
+			<area shape="circle" coords="688,441,75"  alt="Terre" onclick="foc4()">
+			<area shape="circle" coords="971,174,90"  alt="Venus" onclick="foc5()">
+			<area shape="circle" coords="874,558,52"  alt="Pluton" onclick="foc6()">
+			<area shape="circle" coords="768,833,135"  alt="Saturne" onclick="foc7()">
+			<area shape="circle" coords="1140,428,145"  alt="Jupiter" onclick="foc8()">
+			<area shape="circle" coords="1200,875,90"  alt="Neptune" onclick="foc9()">
 			</map>
 </div>
 	</div>
@@ -31,34 +31,115 @@
 <script>
 textArea = document.getElementById('tweet');
 function foc(){
-  textArea.value += 'Ceci est le soleil';
+	
+	if (textArea.value == "")
+    {
+        textArea.value += "Ceci est le soleil";
+    }
+	else
+	{
+		textArea.value = "";
+		textArea.value += "Ceci est le soleil";
+	}
 }
 function foc1(){
-  textArea.value += 'Ceci est Mars';
+  if (textArea.value == "")
+    {
+        textArea.value += "Ceci est Mars";
+    }
+	else
+	{
+		textArea.value = "";
+		textArea.value += "Ceci est Mars";
+	}
 }
 function foc2(){
-  textArea.value += 'Ceci est Mercure';
+  if (textArea.value == "")
+    {
+        textArea.value += "Ceci est Mercure";
+    }
+	else
+	{
+		textArea.value = "";
+		textArea.value += "Ceci est Mercure";
+	}
 }
 function foc3(){
-  textArea.value += 'Ceci est Uranus';
+  if (textArea.value == "")
+    {
+        textArea.value += "Ceci est Uranus";
+    }
+	else
+	{
+		textArea.value = "";
+		textArea.value += "Ceci est Uranus";
+	}
 }
 function foc4(){
-  textArea.value += 'Ceci est la Terre';
+  if (textArea.value == "")
+    {
+        textArea.value += "Ceci est la Terre";
+    }
+	else
+	{
+		textArea.value = "";
+		textArea.value += "Ceci est la Terre";
+	}
 }
 function foc5(){
-  textArea.value += 'Ceci est Venus';
+  if (textArea.value == "")
+    {
+        textArea.value += "Ceci est Venus";
+    }
+	else
+	{
+		textArea.value = "";
+		textArea.value += "Ceci est Venus";
+	}
 }
 function foc6(){
-  textArea.value += 'Ceci est Pluton';
+  if (textArea.value == "")
+    {
+        textArea.value += "Ceci est Pluton";
+    }
+	else
+	{
+		textArea.value = "";
+		textArea.value += "Ceci est Pluton";
+	}
 }
 function foc7(){
-  textArea.value += 'Ceci est Saturne';
+  if (textArea.value == "")
+    {
+        textArea.value += "Ceci est Saturne";
+    }
+	else
+	{
+		textArea.value = "";
+		textArea.value += "Ceci est Saturne";
+	}
 }
 function foc8(){
-  textArea.value += 'Ceci est Jupiter';
+  if (textArea.value == "")
+    {
+        textArea.value += "Ceci est Jupiter";
+    }
+	else
+	{
+		textArea.value = "";
+		textArea.value += "Ceci est Jupiter";
+	}
 }
 function foc9(){
-  textArea.value += 'Ceci est Neptune';
+  if (textArea.value == "")
+    {
+        textArea.value += "Ceci est Neptune";
+    }
+	else
+	{
+		textArea.value = "";
+		textArea.value += "Ceci est Neptune";
+	}
 }
 </script>
 
