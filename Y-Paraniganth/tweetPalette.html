@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tweet Palette</title>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+
+<div id='palette'>
+</div>
+
+<script>
+d3.xml("palette/tweet.svg",function(node) { 
+	//return true;
+		//importe le curseur
+		var importedNode = document.importNode(node.documentElement, true);
+		d3.select("#palette").node().appendChild(importedNode);	  
+  	
+});	  
+var allStates = $("svg.us > *");
+
+allStates.on("click", function() {
+  
+  allStates.removeClass("on");
+  $(this).addClass("on");
+  
+});
+function foc(){
+  textArea.value += 'Ceci est le soleil';
+}
+
+</script>
+<circle onclick="circle_click(evt)" cx="300" cy="225" r="100"
+          fill="red"/>
+</body>
+</html>
