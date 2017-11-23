@@ -5479,11 +5479,10 @@ Aj0BWwJCAkYBXQJIAkoBYgJMAkwBZQJmAmcBZgJqAnUBaAKHAqkBdAK/AsEBlwAA")}
 </g>
 <g id="Texte">
 	<rect x="360.231" y="384.359" style="fill:none;" width="53.359" height="40.489"/>
-	<text transform="matrix(0.5176 0 0 1 360.2308 419.7302)" style="font-family:'Corbel'; font-size:50.0303px;"> Bleu<a xlink:href="http://www.w3.org"></text>
-
+	<text transform="matrix(0.5176 0 0 1 360.2308 419.7302)" style="font-family:'Corbel'; font-size:50.0303px;">Bleu</text>
 	<rect x="419.243" y="352.254" style="fill:none;" width="85.202" height="42.332"/>
 	<text transform="matrix(0.4997 0 0 1 419.2435 388.8896)" style="font-family:'Corbel'; font-size:51.8196px;">sombre</text>
-
+	
 		<rect x="473.682" y="43.257" transform="matrix(7.762956e-004 -1 1 7.762956e-004 408.6642 590.7832)" style="fill:none;" width="52.543" height="95.288"/>
 	<text transform="matrix(0.5176 0 0 1 452.3267 96.4067)" style="font-family:'Corbel'; font-size:45px;">parfum</text>
 	<rect x="132.471" y="145.496" style="fill:none;" width="70.06" height="42.493"/>
