@@ -1,20 +1,23 @@
 <head>
     <link rel="stylesheet" type="text/css" href="svg.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="svg.js"></script>
      <script>
-  /*            $(document).ready(function(){
+  
+            var mainn=function(){
     
  $('#flipper').click(function() {    	
     $('this').toggleClass("flip");
     });    
-});
+}
 
 $(function(){
   $("#rectpurple").click(function(){
    
     $("this").toggleClass("spinEffect");
   });
-});/
-*/
+});
+
                function showColor() {
                   alert("La couleur de cet élement SVG est: "+
                   document.getElementById("rect1").getAttributeNS(null,"class"));
@@ -23,9 +26,11 @@ $(function(){
   var randomnumber1 = Math.random();
   var randomnumber2 = Math.random();
   
-  document.getElementById("yellow").style.marginTop = (10* randomnumber1) + "%";
-  document.getElementById("yellow").style.marginLeft = (10 * randomnumber2) + "%";
+  document.getElementById("yellow").style.marginTop = (50* randomnumber1) + "%";
+  document.getElementById("yellow").style.marginLeft = (50 * randomnumber2) + "%";
 }
+
+
 
                // Autre formulation de la fonction flipper 
 
@@ -35,8 +40,18 @@ $(function(){
                 
                }
               **/
+              var main =function(){
+  $("#purple").click(function(){
+    
+    $("#purple").toggleClass("rotate");
+  });
+}
                function hideThis(){
                    document.getElementById("rectblack").style.display="none";
+               }
+
+               function showThis(){
+                 document.getElementById("rectoblack").style.display=""
                }
                
                function showArea(event){
@@ -98,7 +113,7 @@ $(function(){
 
 
 
-<svg width="400" height="180"id="rectpurple" >
+<svg width="400" height="180"id="purple"  >
   <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
   style="fill: purple;stroke:black;stroke-width:5;opacity:0.5" />
 </svg>

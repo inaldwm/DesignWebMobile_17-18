@@ -11,19 +11,13 @@
 </div>
 
 <script>
-d3.xml("palette/tweet.svg",function(node)
-         {
-         		
-         	var importedNode = document.importNode(node.documentElement, true);
-         	d3.select("#palette").node().appendChild(importedNode);
-               
-                d3.select("#palette svg g").selectAll("g").on('click', function()
-               {
-                 var coordonnees = d3.mouse(this);
-                 console.log("alert");
-               })
-         });
-
+d3.xml("palette/tweet.svg",function(node) { 
+	//return true;
+		//importe le curseur
+		var importedNode = document.importNode(node.documentElement, true);
+		d3.select("#palette").node().appendChild(importedNode);	  
+  	
+});	  
 </script>
 
 </body>
