@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="600"
+   viewBox="0 0 211.66667 158.75"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="cible_royaute.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient4632"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4630" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.93566975"
+     inkscape:cx="154.72712"
+     inkscape:cy="254.23727"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer10"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     units="px"
+     inkscape:snap-text-baseline="true"
+     inkscape:measure-start="0,0"
+     inkscape:measure-end="0,0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3765" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Ecuyer"
+     style="display:inline">
+    <g
+       transform="translate(0,-138.25001)"
+       style="display:inline"
+       id="g1270-5">
+      <circle
+         id="path3745-6"
+         cx="104.20701"
+         cy="218.50752"
+         r="68.259171"
+         style="stroke-width:0.0711033" />
+      <text
+         id="text4750-6"
+         y="283.66791"
+         x="95.795731"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332;fill:#ffffff;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+           id="tspan4748-8"
+           y="283.66791"
+           x="95.795731"
+           sodipodi:role="line"><tspan
+             style="stroke-width:0.26458332;fill:#ffffff;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+             id="tspan4746-9"
+             y="283.66791"
+             x="95.795731">Ecuyer</tspan></tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Chevalier"
+     style="display:inline">
+    <g
+       transform="translate(0,-138.25001)"
+       style="display:inline"
+       id="g1139-2">
+      <ellipse
+         ry="59.38203"
+         rx="59.640579"
+         cy="219.02463"
+         cx="104.12082"
+         id="path3808-6"
+         style="fill:#ffffff;stroke-width:0.07086672" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="92.074997"
+         y="275.54849"
+         id="text4744-3"><tspan
+           sodipodi:role="line"
+           x="92.074997"
+           y="275.54849"
+           id="tspan4742-2"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke-width:0.26458332"><tspan
+             x="92.074997"
+             y="275.54849"
+             id="tspan4740-3"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke-width:0.26458332">Chevalier</tspan></tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Baron"
+     style="display:inline">
+    <g
+       transform="translate(0,-138.25001)"
+       style="display:inline"
+       id="g1132-7">
+      <g
+         id="g4792-2">
+        <ellipse
+           style="fill:#000000;stroke-width:0.08120271"
+           id="path3810-0"
+           cx="104.33627"
+           cy="218.80917"
+           rx="51.194378"
+           ry="51.108189" />
+        <text
+           id="text4738-4"
+           y="267.32822"
+           x="96.663872"
+           style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332;fill:#ffffff;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+             id="tspan4736-3"
+             y="267.32822"
+             x="96.663872"
+             sodipodi:role="line"><tspan
+               style="stroke-width:0.26458332;fill:#ffffff;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+               id="tspan4734-2"
+               y="267.32822"
+               x="96.663872">Baron</tspan></tspan></text>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Compte"
+     style="display:inline">
+    <g
+       transform="translate(0,-138.25001)"
+       style="display:inline"
+       id="g1125-9">
+      <g
+         id="g4786-0">
+        <circle
+           style="fill:#ffffff;stroke-width:0.09241556"
+           id="path3812-6"
+           cx="104.27164"
+           cy="218.57216"
+           r="42.51115" />
+        <text
+           id="text4732-6"
+           y="258.15875"
+           x="94.199951"
+           style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000"
+             id="tspan4730-1"
+             y="258.15875"
+             x="94.199951"
+             sodipodi:role="line"><tspan
+               style="stroke-width:0.26458332;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000"
+               id="tspan4728-5"
+               y="258.15875"
+               x="94.199951">Compte</tspan></tspan></text>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="Marquis"
+     style="display:inline">
+    <g
+       transform="translate(0,-138.25001)"
+       style="display:inline"
+       id="g1118-1">
+      <g
+         transform="matrix(0.26873688,0,0,0.26873688,-1.0689683,218.54382)"
+         id="g3821-6">
+        <ellipse
+           style="fill:#000000;stroke-width:0.27791402"
+           id="path3814-2"
+           cx="391.58334"
+           cy="0.025253175"
+           rx="127"
+           ry="128.44318" />
+      </g>
+      <text
+         id="text5093-0"
+         y="249.65779"
+         x="94.074234"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.26458332"
+           y="249.65779"
+           x="94.074234"
+           id="tspan5091-8"
+           sodipodi:role="line">Marquis</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="Duc"
+     style="display:inline">
+    <g
+       transform="translate(0,-138.25001)"
+       style="display:inline"
+       id="g1112-2">
+      <ellipse
+         ry="25.597187"
+         rx="25.424814"
+         cy="218.72298"
+         cx="103.77608"
+         id="path3816-2"
+         style="fill:#ffffff;stroke-width:0.06722701" />
+      <text
+         id="text5089-0"
+         y="241.23578"
+         x="99.127785"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="fill:#000000;stroke-width:0.26458332;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+           y="241.23578"
+           x="99.127785"
+           id="tspan5087-6"
+           sodipodi:role="line">Duc</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="Barre"
+     style="display:inline">
+    <g
+       id="g1220-2"
+       transform="matrix(1,0,0,0.97016652,0,-131.72406)"
+       style="display:inline;fill:#ff0000">
+      <g
+         id="g1232-9">
+        <g
+           style="fill:#ff0000"
+           id="g1208-6">
+          <path
+             inkscape:connector-curvature="0"
+             id="path1148-4-3"
+             d="M 129.94178,281.85896 107.43149,225.84027"
+             style="fill:#ff0000;stroke:#000000;stroke-width:1.00426161;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             sodipodi:nodetypes="ccc"
+             inkscape:connector-curvature="0"
+             id="path1150-3-5"
+             d="m 99.712418,225.59986 -18.86844,46.6196 -3.804433,9.40002"
+             style="fill:#ff0000;stroke:#000000;stroke-width:0.98480076;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path1148-7"
+             d="m 77.882748,155.63341 22.502002,55.56474"
+             style="fill:#ff0000;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             sodipodi:nodetypes="ccc"
+             inkscape:connector-curvature="0"
+             id="path1150-2"
+             d="m 108.10098,211.43661 18.86149,-46.24182 3.80303,-9.32384"
+             style="fill:#ff0000;stroke:#000000;stroke-width:0.98062176;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+        <g
+           style="fill:#ff0000"
+           id="g1202-9"
+           transform="matrix(0.96419637,0,0,1.0000846,18.320971,-32.294482)">
+          <path
+             inkscape:connector-curvature="0"
+             id="path1148-4-4-4"
+             d="M 150.77303,225.43287 94.754337,247.94316"
+             style="fill:#ff0000;stroke:#000000;stroke-width:1.00426161;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             sodipodi:nodetypes="ccc"
+             inkscape:connector-curvature="0"
+             id="path1150-3-6-5"
+             d="m 94.513927,255.66223 46.619603,18.86844 9.40002,3.80444"
+             style="fill:#ff0000;stroke:#000000;stroke-width:0.98480076;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path1148-2-9"
+             d="m 24.547477,277.4919 55.56474,-22.502"
+             style="fill:#ff0000;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             sodipodi:nodetypes="ccc"
+             inkscape:connector-curvature="0"
+             id="path1150-8-2"
+             d="m 80.350677,247.27367 -46.24182,-18.86149 -9.32384,-3.80303"
+             style="fill:#ff0000;stroke:#000000;stroke-width:0.98062176;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="Prince"
+     style="display:inline">
+    <g
+       transform="translate(0,-138.25001)"
+       style="display:inline"
+       id="g1107-6">
+      <ellipse
+         ry="17.301802"
+         rx="17.086338"
+         cy="218.61525"
+         cx="104.0131"
+         id="path4636-9"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.10746082;stroke-opacity:1" />
+      <text
+         id="text5039-0"
+         y="232.16719"
+         x="96.134705"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611107px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.26458332"
+           y="232.16719"
+           x="96.134705"
+           id="tspan5037-2"
+           sodipodi:role="line">Prince</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="Roi"
+     style="display:inline">
+    <g
+       id="g4696-4"
+       transform="matrix(0.26873688,0,0,0.26873688,-0.786194,80.51795)">
+      <g
+         id="g5484">
+        <g
+           id="g5591">
+          <g
+             id="g4686-3"
+             transform="translate(-162.04415,16.835755)"
+             style="fill:#000000">
+            <g
+               id="g5018">
+              <g
+                 style="display:inline"
+                 transform="translate(160.99192,-16.617551)"
+                 id="g4901-4">
+                <a
+                   id="a4884-6">
+                  <g
+                     id="g4726-5">
+                    <g
+                       id="g4718-7">
+                      <g
+                         id="g4711-4">
+                        <g
+                           id="g4705-7">
+                          <g
+                             id="g4700-0">
+                            <g
+                               id="g4689-0">
+                              <ellipse
+                                 ry="30.868053"
+                                 rx="31.188761"
+                                 cy="0.26579434"
+                                 cx="390.70135"
+                                 id="path4640-2"
+                                 style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.16353187;stroke-opacity:1" />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </a>
+              </g>
+              <text
+                 xml:space="preserve"
+                 style="font-style:normal;font-weight:normal;font-size:17.0654335px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.98454422"
+                 x="536.40942"
+                 y="-11.564832"
+                 id="text5024"><tspan
+                   sodipodi:role="line"
+                   x="536.40942"
+                   y="-11.564832"
+                   id="tspan5022"
+                   style="stroke-width:0.98454422;fill:#ffffff"><tspan
+                     x="536.40942"
+                     y="-11.564832"
+                     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.98454422;fill:#ffffff"
+                     id="tspan5020">Roi</tspan></tspan></text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
