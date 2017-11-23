@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+
+      <meta charset="UTF-8">
+
+      <title>Tweet Palette</title>
+
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+
+   </head>
+
+   <body>
+
+      <div id='palette'>
+
+         <script>
+
+         d3.xml("tweet1.svg",function(node)
+
+         {
+
+         		// Importe le svg et l'ajoute à "#palette".
+
+         		var importedNode = document.importNode(node.documentElement, true);
+
+         		d3.select("#palette").node().appendChild(importedNode);
+
+
+
+               // Evénement click : toutes les balises "g" sont écoutées
+
+               d3.select("#palette svg").selectAll("rect").on('click', function()
+
+               {
+
+                  // Affiche la position de la souris et les propriétés de l'élément cliqué.
+
+                  var coordonnees = d3.mouse(this);
+
+               function showColor() {
+                  alert("La couleur de cet élement SVG est: "+
+                  document.getElementById("rect1").getAttributeNS(null,"class"));
+               }
+
+               })
+
+         });
+
+         </script>
+
+      </div>
+
+   </body>
+
+</html>
+</script>
+
+
+
+</body>
+
+</html>
