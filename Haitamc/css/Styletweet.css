@@ -1,0 +1,22 @@
+
+h1{
+	text-align: center;
+	font-family: helvetica, sans-serif;
+}
+
+p{
+	vertical-align: baseline;
+    font-family: helvetica;
+    text-align: center;
+    font-size: 100%;
+ 
+}
+
+
+
+svg{
+
+	width:  800px;
+	height: 600px;
+	margin-left: 600px;
+}
