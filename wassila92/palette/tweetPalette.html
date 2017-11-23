@@ -18,7 +18,7 @@
 <script>
 
 
-d3.xml("http://localhost/DesignWebMobile_17-18/wassila92/palette/tweetPalette.html",function(node) { 
+d3.xml("http://localhost/DesignWebMobile_17-18/wassila92/palette/tweet.svg",function(node) { 
 	//return true;
 		//importe le curseur
  //d3.selectAll("g").attr("onclick")
@@ -28,6 +28,8 @@ d3.xml("http://localhost/DesignWebMobile_17-18/wassila92/palette/tweetPalette.ht
 		var importedNode = document.importNode(node.documentElement, true);
 		d3.select("#palette").node().appendChild(importedNode);	  
   	
+
+
 
 });
 
