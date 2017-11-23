@@ -14,8 +14,8 @@
          		var importedNode = document.importNode(node.documentElement, true);
          		d3.select("#palette").node().appendChild(importedNode);
 
-               // Evénement click : toutes les balises "g" sont écoutées
-               d3.select("#palette svg").selectAll("g").on('click', function()
+               // Evénement click : toutes les balises "g", à l'intérieur du premier calque, sont écoutées
+               d3.select("#palette svg g").selectAll("g").on('click', function()
                {
                   // Affiche la position de la souris et les propriétés de l'élément cliqué.
                   var coordonnees = d3.mouse(this);
