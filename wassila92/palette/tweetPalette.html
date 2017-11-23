@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Tweet Palette</title>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+ </head>
+ <body>
+  
+
+<div id='palette'>
+</div>
+
+<script>
+
+
+d3.xml("http://localhost/DesignWebMobile_17-18/wassila92/palette/tweet.svg",function(node) { 
+	//return true;
+		//importe le curseur
+ 
+
+
+
+		var importedNode = document.importNode(node.documentElement, true);
+		d3.select("#palette").node().appendChild(importedNode);	 
+		
+		
+  	//d3.select("#text4533").attr("onclick", function(){return alert('je ne suis pas cliquable')})
+	$("#text4533").click(function(){
+		return console.log("click")})
+
+
+});
+
+
+
+
+</script>
+
+
+
+ </body>
+</html>
+
+
+

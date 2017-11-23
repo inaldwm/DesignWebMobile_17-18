@@ -1,0 +1,46 @@
+.montweet{
+stroke:blue;
+stroke-width:1px;
+}
+.montweet:hover{
+stroke-width:2px;
+}
+.blue:hover{
+  fill:red;
+  stroke-width:1px;
+}
+.sombre:hover{
+  fill:green;
+  stroke-width:1px;
+}
+.pur:hover{
+  fill:white;
+  stroke-width:1px;
+}
+.absurde:hover{
+  fill:grey;
+  stroke-width:1px;
+}
+.life:hover{
+  fill:cyan;
+  stroke-width:1px;
+}
+.onctueux:hover{
+  fill:purple;
+  stroke-width:1px;
+}
+.parfum:hover{
+  fill:blue;
+  stroke-width:1px;
+}
+.crumble:hover{
+  fill:blue;
+  stroke-width:1px;
+}
+.books:hover{
+  fill:blue;
+  stroke-width:1px;
+}
+.!:hover{
+  fill:velvet;
+  stroke-width:1px;
