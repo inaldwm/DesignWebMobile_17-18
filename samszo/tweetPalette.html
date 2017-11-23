@@ -7,17 +7,43 @@
 </head>
 <body>
 
-<div id='palette'>
+<div id='palettes'>
 </div>
 
 <script>
-d3.xml("palette/tweet.svg",function(node) { 
-	//return true;
-		//importe le curseur
-		var importedNode = document.importNode(node.documentElement, true);
-		d3.select("#palette").node().appendChild(importedNode);	  
-  	
-});	  
+var dataForm;
+var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv';
+//var url = "data/LPDesignWebMobile_17-18.csv";        
+d3.csv(url, function(data) {
+	dataForm = data;
+	
+	var plts = d3.select('#palettes').selectAll("div").data(dataForm).enter()
+	.append('div')
+		.attr('class','palette')
+		.attr('id',function(d, i){
+			return 'plt'+i;
+		})
+		.each(chargeSVG);
+	/*
+	*/
+});
+
+function chargeSVG(d, i){
+	var url = "../"+d['Votre compte GitHub']+"/palette/tweet.svg";
+	console.log(url);
+	d3.xml(url,function(node) {	 
+		//return true;
+			//importe le curseur			
+			if(node){
+				var importedNode = document.importNode(node.documentElement, true);
+				d3.select('#plt'+i).text("BRAVO "+d['Votre prénom']).node().appendChild(importedNode);	  
+			}else
+				d3.select('#plt'+i).html("OUUUUUUUUUUUU !!! "+d['Votre prénom']);
+	});	  			
+	
+}
+
+
 
 </script>
 
