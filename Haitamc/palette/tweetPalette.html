@@ -2,42 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/styletweet.css">
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <title> Palette tweet </title>
+    <link rel="stylesheet" type="text/css" href="../css/styletweet.css">
+    <title> palette tweet </title>
 </head>
 
 
 <body> 
 
-    
-     <h1> LES PHASES DU CYCLE DE VIE D'UN PRODUIT </h1><br/><br/>
+  
+ 
+    <h1> LES PHASES DU CYCLE DE VIE D'UN PRODUIT </h1><br/><br/>
 
     <p>
         Concrètement, en gérant le projet depuis son lancement, c’est-à-dire depuis la phase avant-vente et commerciale <br/>
         le PLM va pouvoir piloter la conception et la customisation des produits en fonction  des exigences et des contraintes définies lors du lancement d’affaire. <br/>
         Ainsi, il sera facile de suivre les écarts et de piloter les processus d’évolution et de modification en fonction des attentes du projet .
     </p>
+   
+<div id='palette'>
+</div>
+
+<script>
+d3.xml("tweet.svg",function(node) { 
+	//return true;
+		//importe le curseur
+		var importedNode = document.importNode(node.documentElement, true);
+		d3.select("#palette").node().appendChild(importedNode);	  
+  	
+});	  
+</script>
 
 
- <div id='palette'>
-         <script>
-         d3.xml("palette/tweet.svg",function(node)
-         {
-                // Importe le svg et l'ajoute à "#palette".
-                var importedNode = document.importNode(node.documentElement, true);
-                d3.select("#palette").node().appendChild(importedNode);
-               // Evénement click : toutes les balises "g", à l'intérieur du premier calque, sont écoutées
-               d3.select("#palette svg g").selectAll("g").on('click', function()
-               {
-                  // Affiche la position de la souris et les propriétés de l'élément cliqué.
-                  var coordonnees = d3.mouse(this);
-                  console.log("Position de la souris : x =", coordonnees[0], "y =", coordonnees[1]);
-                  console.log(this);
-               })
-         });
-         </script>
-      </div>
+
 
 
 </body>
