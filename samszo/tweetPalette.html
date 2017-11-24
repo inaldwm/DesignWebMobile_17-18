@@ -3,7 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Tweet Palette</title>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css" />
+
+
 <style type="text/css">
 
 div{ 
@@ -16,22 +21,85 @@ iframe{
     width: 800px;
 }
 
+.w2ui-field input {
+    width: 200px;
+}
+.w2ui-field > div > span {
+    margin-left: 20px;
+}
 </style>
 
 
 </head>
 <body>
 
+<div id="layout" style="width: 100%; height: 900px;"></div>
+
+
+
 <div id='palettes'>
 </div>
 
 <script>
+
+var pstyle = 'border: 1px solid #dfdfdf; padding: 5px;';
+var ddl = '<div class="w2ui-field">';
+	ddl += '<label style="width:140px;" >Liste des étudiants:</label>';
+	ddl += '<div> <input type="list">';
+	ddl += '<span class="legend">Choisissez un étudiant</span>';
+	ddl += '</div>';
+	ddl += '</div>';
+$('#layout').w2layout({
+    name: 'layout',
+    panels: [
+        { type: 'top', size: 80, resizable: false, style: pstyle, content: ddl, title: '"Tweet Palette" des étudiants DWM 17-18' },
+        { type: 'left', size: 200, resizable: true, style: pstyle, content: '', title: 'Tweet' },
+        { type: 'main', style: pstyle + 'border-top: 0px;', content: '', title: 'Palette de tweet'}
+    ]
+});
+
+
 var dataForm;
 var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv';
 //var url = "data/LPDesignWebMobile_17-18.csv";        
 d3.csv(url, function(data) {
 	dataForm = data;
+	var dtEtu = [];
+	dataForm.forEach(function(d){
+		var txt = d["Votre prénom"].substring(0,1).toUpperCase()+d["Votre prénom"].substring(1).toLowerCase()
+		+' '
+		+d["Votre nom"].substring(0,1).toUpperCase()+d["Votre nom"].substring(1).toLowerCase();
+		dtEtu.push({id:d["Votre compte GitHub"],text:txt});
+	});
 	
+	//var people = ['George Washington', 'John Adams', 'Thomas Jefferson', 'James Buchanan', 'James Madison', 'Abraham Lincoln', 'James Monroe', 'Andrew Johnson', 'John Adams', 'Ulysses Grant', 'Andrew Jackson', 'Rutherford Hayes', 'Martin Van Buren', 'James Garfield', 'William Harrison', 'Chester Arthur', 'John Tyler', 'Grover Cleveland', 'James Polk', 'Benjamin Harrison', 'Zachary Taylor', 'Grover Cleveland', 'Millard Fillmore', 'William McKinley', 'Franklin Pierce', 'Theodore Roosevelt', 'John Kennedy', 'William Howard', 'Lyndon Johnson', 'Woodrow Wilson', 'Richard Nixon', 'Warren Harding', 'Gerald Ford', 'Calvin Coolidge', 'James Carter', 'Herbert Hoover', 'Ronald Reagan', 'Franklin Roosevelt', 'George Bush', 'Harry Truman', 'William Clinton', 'Dwight Eisenhower', 'George W. Bush', 'Barack Obama'];
+	//people.sort();
+	$('input[type=list]').w2field('list', { 
+		items: dtEtu})
+		.on('change', function () {
+			var dt = $(this).data('selected');
+			console.log(dt);			
+			w2ui['layout'].load('main', "../"+dt.id+"/palette/tweet.svg", 'pop-in', function () {
+			    console.log('content loaded');
+			    d3.json("../"+dt.id+"/palette/palette.json", function(data) {
+			    		data.zones.forEach(function(d){
+			    			d3.select('svg').select("#"+d.id)
+			    				.attr('tweet',d.text)
+			    				.on("click",function(e){
+			    				var t = d3.select(this).attr('tweet');
+			    				w2ui['layout'].content('left', t, 'pop-out');
+			    			});
+			    		});				    	
+			    });
+
+			});
+			
+			
+	    });
+	
+	
+	
+	/*
 	var plts = d3.select('#palettes').selectAll("div").data(dataForm).enter()
 	.append('div')
 		.attr('class','palette')
@@ -51,11 +119,10 @@ d3.csv(url, function(data) {
 		return 'iframe2'+i;
 	})
 	plts.each(chargeSVG);
-
-	
-	/*
 	*/
+	
 });
+
 
 function chargeSVG(d, i){
 	//charge le svg
