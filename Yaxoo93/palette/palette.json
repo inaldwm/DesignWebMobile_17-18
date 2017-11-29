@@ -1,0 +1,41 @@
+{
+	"titre": "type de jeux vidéos",
+	"zones": [
+		{
+			"id": "thriller",
+			"text": "attention y a de la tension."
+		},
+		{
+			"id": "sport",
+			"text": "Que ce soit sur la Play ou la Xbox tout cela n'a rien de physique."
+		},
+		{
+			"id": "reflexion",
+			"text": "Muscle ton cerveau !"
+		},
+		{
+			"id": "aventure",
+			"text": "Pokémon, Zelda, Mario <3"
+		},
+		{
+			"id": "jeux vidéo",
+			"text": "La globalité."
+		},
+		{
+			"id": "Course",
+			"text": "Pas de radar = pas de pv"
+		},
+		{
+			"id": "gestion",
+			"text": "Gérer de la ville c'est pas facile..."
+		},
+		{
+			"id": "tir",
+			"text": "Tu tir ou tu pointes"
+		},
+		{
+			"id": "MOBA",
+			"text": "Stop feed please"
+		},
+	]
+}
