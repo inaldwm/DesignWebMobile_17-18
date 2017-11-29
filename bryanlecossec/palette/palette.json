@@ -1,0 +1,29 @@
+{
+	"titre": "swimmingPool",
+	"zones": [
+		{
+			"id": "water",
+			"text": "De l'eau, des vagues, des baignades."
+		},
+		{
+			"id": "orangefrie",
+			"text": "Flap, flip , flosh , swish, swamp, splouf."
+		},
+		{
+			"id": "yellowfrie",
+			"text": "Plastique, ludique , aquatique, iodique."
+		},
+		{
+			"id": "feet",
+			"text": "Attention à ne pas courrir sur le bord."
+		},
+		{
+			"id": "ball",
+			"text": "Une sphère remplie d'air, idéal pour la mer."
+		},
+		{
+			"id": "carpet",
+			"text": "Du repos, enfin du repos."
+		}
+	]
+}
