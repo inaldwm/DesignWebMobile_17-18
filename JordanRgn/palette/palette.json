@@ -1,0 +1,48 @@
+{
+	"titre": "Planète du système solaire",
+	"zones": [
+		{
+			"id": "Le Soleil",
+			"text": "Le soleil est une étoile de type naine jaune. C'est une énorme sphère gazeuse de 1,4 millions de kilomètres de diamètre, composée d'hydrogène (pour 74% de sa masse) et d'hélium (pour 24% de sa masse). Il représente à lui seul 99,86% de la masse de notre système solaire."
+		},
+		{
+			"id": "Mars",
+			"text": "Mars est la quatrième planète du système solaire en partant du Soleil. ... Cette caractéristique lui a également valu le surnom de planète rouge. Cette planète possède deux satellites naturels : Déimos (la terreur) et Phobos (la peur), ainsi nommés en référence à la mythologie grecque"
+		},
+        {
+			"id": "Mercure",
+			"text": "Mercure est la plus petite des quatre planètes telluriques du Système solaire interne. Depuis le XVII e siècle, les hommes l'observent au télescope. Elle fait à peu près une fois et demie la taille de la lune. L'atmosphère de Mercure est presque inexistante."
+		},
+         {
+			"id": "Uranus",
+			"text": "Uranus est une planète géante de glaces de type Neptune froid. Il s'agit de la 7e planète du Système solaire par sa distance au Soleil, de la 3e par la taille et de la 4e par la masse. Elle doit son nom à la divinité romaine du ciel, Uranus, père de Saturne et grand-père de Jupiter."
+		},
+         {
+			"id": "La terre",
+			"text": "La Terre est une planète tellurique. C'est la 3ème en partant du Soleil. Elle est exceptionnelle car c'est la seule que nous connaissons à abriter de l'eau à l'état liquide et la vie."
+		},
+         {
+			"id": "Venus",
+			"text": "Vénus est la deuxième planète du système solaire. Même si elle a certains points communs avec la Terre, les deux astres sont très différents."
+		},
+         {
+			"id": "Pluton",
+			"text": "Pluton, officiellement désignée par (134340), est une planète naine, la plus volumineuse connue dans le Système solaire (2 372 km de diamètre, contre 2 326 km pour Éris), et la deuxième en termes de masse (après Éris). Pluton est ainsi le neuvième plus gros objet connu orbitant autour du Soleil (exception faite des lunes des géantes gazeuses) et le dixième par la masse."
+		},
+         {
+			"id": "Saturne",
+			"text": "Saturne est la sixième planète du Système solaire par ordre de distance au Soleil et la deuxième après Jupiter tant par sa taille que par sa masse."
+		},
+         {
+			"id": "Jupiter",
+			"text": "Jupiter est une planète géante gazeuse. Il s'agit de la plus grosse planète du Système solaire, plus volumineuse et massive que toutes les autres planètes réunies, et la cinquième planète par sa distance au Soleil (après Mercure, Vénus, la Terre et Mars)."
+		},
+		 {
+			"id": "Neptune",
+			"text": "Neptune est la huitième et dernière planète du Système solaire par distance croissante au Soleil. Neptune orbite autour du Soleil à une distance d'environ 30 UA, avec une excentricité orbitale moitié moindre que celle de la Terre, en bouclant une révolution complète en 164,79 ans."
+		
+		}
+        
+        
+	]
+}

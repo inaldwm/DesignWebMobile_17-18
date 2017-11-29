@@ -1,0 +1,13 @@
+{
+	"titre": "Filmographie",
+	"zones": [
+		{
+			"id": "rect1-13",
+			"text": "Film"
+		},
+		{
+			"id": "rect1",
+			"text": "Humour"
+		}
+	]
+}

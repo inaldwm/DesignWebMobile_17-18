@@ -1,0 +1,43 @@
+{
+	"titre": "Cycle de vie d'un produit",
+	"zones": [
+		{
+			"id": "Calque_1",
+			"text": "Le Produit "
+		},
+		{
+			"id": "idée",
+			"text": "1er Phase"
+		},
+        {
+			"id": "recherche",
+			"text": "2eme Phase"
+		},
+         {
+			"id": "concéption",
+			"text": "3eme Phase"
+		},
+         {
+			"id": "development",
+			"text": "4eme Phase"
+		},
+         {
+			"id": "documentation",
+			"text": "5eme Phase"
+		},
+         {
+			"id": "maintenance",
+			"text": "6eme Phase"
+		},
+         {
+			"id": "revue",
+			"text": "7eme Phase"
+		},
+         {
+			"id": "approbation",
+			"text": "8eme Phase"
+		}
+        
+        
+	]
+}

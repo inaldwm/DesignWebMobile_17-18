@@ -1,0 +1,37 @@
+{
+	"titre": "Cible des courtisanes <(^_^)> ",
+	"zones": [
+		{
+			"id": "layer10",
+			"text": "Régicide !!"
+		},
+		{
+			"id": "layer9",
+			"text": "Prince touché"
+		},
+		{
+			"id": "layer8",
+			"text": "Duc touché"
+		},
+		{
+			"id": "layer7",
+			"text": "Marquis touché"
+		},
+		{
+			"id": "layer6",
+			"text": "Compte touché"
+		},
+		{
+			"id": "layer5",
+			"text": "Baron touché"
+		},
+		{
+			"id": "layer3",
+			"text": "Chevalier touché"
+		},
+		{
+			"id": "layer2",
+			"text": "Ecuyer touché"
+		}
+	]
+}

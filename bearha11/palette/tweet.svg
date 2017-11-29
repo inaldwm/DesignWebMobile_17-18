@@ -51,7 +51,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.76015625"
-     inkscape:cx="421.51948"
+     inkscape:cx="438.62123"
      inkscape:cy="343.23713"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -441,151 +441,171 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332">LANGAGE INFORMATIQUE</tspan></text>
     <ellipse
        style="opacity:0.875;fill:#ff5555;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684"
+       id="C__"
        cx="142.35835"
        cy="154.8157"
        rx="16.010962"
-       ry="12.356286" />
+       ry="12.356286"
+       inkscape:label="#path4684" />
     <ellipse
        style="opacity:0.875;fill:#ff5555;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-8"
+       id="C"
        cx="150.36382"
        cy="186.31552"
        rx="16.010962"
-       ry="12.356286" />
+       ry="12.356286"
+       inkscape:label="#path4684-8" />
     <ellipse
        style="opacity:0.875;fill:#ff5555;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.32513243;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-2"
+       id="BASIC"
        cx="187.43268"
        cy="170.65262"
        rx="24.160408"
-       ry="12.32622" />
+       ry="12.32622"
+       inkscape:label="#path4684-2" />
     <ellipse
        style="opacity:0.875;fill:#ff5555;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.3180984;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-6"
+       id="JAVA"
        cx="183.95204"
        cy="151.16103"
        rx="23.119732"
-       ry="12.329737" />
+       ry="12.329737"
+       inkscape:label="#path4684-6" />
     <ellipse
        style="opacity:0.875;fill:#87cdde;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3"
+       id="SQL"
        cx="23.668381"
        cy="151.16103"
        rx="16.010962"
-       ry="12.356286" />
+       ry="12.356286"
+       inkscape:label="#path4684-3" />
     <ellipse
        style="opacity:0.875;fill:#87cdde;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-4"
+       id="DMX"
        cx="62.303524"
        cy="151.16103"
        rx="16.010962"
-       ry="12.356286" />
+       ry="12.356286"
+       inkscape:label="#path4684-3-4" />
     <ellipse
        style="opacity:0.875;fill:#87cdde;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.3685576;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-3"
+       id="PROLOG"
        cx="39.157249"
        cy="163.34328"
        rx="31.099983"
-       ry="12.304507" />
+       ry="12.304507"
+       inkscape:label="#path4684-3-3" />
     <ellipse
        style="opacity:0.875;fill:#87cdde;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.3251324;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-1"
+       id="XPATH"
        cx="26.974991"
        cy="203.37068"
        rx="24.160408"
-       ry="12.32622" />
+       ry="12.32622"
+       inkscape:label="#path4684-3-1" />
     <ellipse
        style="opacity:0.875;fill:#87cdde;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.37261695;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-8"
+       id="XQUERY"
        cx="57.604664"
        cy="183.87907"
        rx="31.794083"
-       ry="12.302478" />
+       ry="12.302478"
+       inkscape:label="#path4684-3-8" />
     <ellipse
        style="opacity:0.875;fill:#b7c8c4;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.36753562;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-6"
+       id="UPDATE"
        cx="57.08255"
        cy="283.42548"
        rx="30.926462"
-       ry="12.305018" />
+       ry="12.305018"
+       inkscape:label="#path4684-3-6" />
     <ellipse
        style="opacity:0.875;fill:#b7c8c4;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.36753562;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-6-8"
+       id="CREATE"
        cx="36.894833"
        cy="231.91196"
        rx="30.926464"
-       ry="12.305018" />
+       ry="12.305018"
+       inkscape:label="#path4684-3-6-8" />
     <ellipse
        style="opacity:0.875;fill:#b7c8c4;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.36753562;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-6-0"
+       id="DROP"
        cx="30.629663"
        cy="268.11066"
        rx="30.926464"
-       ry="12.305018" />
+       ry="12.305018"
+       inkscape:label="#path4684-3-6-0" />
     <ellipse
        style="opacity:0.875;fill:#b7c8c4;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.36753562;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-6-5"
+       id="ALTER"
        cx="59.867081"
        cy="251.0555"
        rx="30.926464"
-       ry="12.305018" />
+       ry="12.305018"
+       inkscape:label="#path4684-3-6-5" />
     <ellipse
        style="opacity:0.875;fill:#ff9955;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.30724066;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-6-2"
+       id="SGML"
        cx="186.21445"
        cy="279.5968"
        rx="21.558872"
-       ry="12.335166" />
+       ry="12.335166"
+       inkscape:label="#path4684-3-6-2" />
     <ellipse
        style="opacity:0.875;fill:#ff9955;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.36753562;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-6-2-9"
+       id="XML"
        cx="160.80576"
        cy="254.1881"
        rx="30.926466"
-       ry="12.305018" />
+       ry="12.305018"
+       inkscape:label="#path4684-3-6-2-9" />
     <ellipse
        style="opacity:0.875;fill:#ff9955;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.29978037;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-6-2-0"
+       id="HTML"
        cx="192.13156"
        cy="235.04454"
        rx="20.518412"
-       ry="12.338896" />
+       ry="12.338896"
+       inkscape:label="#path4684-3-6-2-0" />
     <ellipse
        style="opacity:0.875;fill:#87cdde;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.22143619;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-1-6"
+       id="LLDD"
        cx="-200.67485"
        cy="-94.329323"
        rx="11.159841"
        ry="12.378068"
        transform="rotate(-136.29168)"
        inkscape:transform-center-x="-39.331278"
-       inkscape:transform-center-y="66.132238" />
+       inkscape:transform-center-y="66.132238"
+       inkscape:label="#path4684-3-1-6" />
     <ellipse
        style="opacity:0.875;fill:#b7c8c4;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.15871979;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-6-0-2"
+       id="REQUETE"
        cx="-117.21055"
        cy="220.08139"
        rx="5.9702363"
        ry="11.887329"
-       transform="rotate(-46.175542)" />
+       transform="rotate(-46.175542)"
+       inkscape:label="#path4684-3-6-0-2" />
     <ellipse
        style="opacity:0.875;fill:#ff9955;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.19983725;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-3-6-2-9-1"
+       id="BALISAGE"
        cx="-1.0519365"
        cy="272.79034"
        rx="15.695481"
        ry="7.167901"
        transform="rotate(-28.640372)"
        inkscape:transform-center-x="29.933539"
-       inkscape:transform-center-y="34.458377" />
+       inkscape:transform-center-y="34.458377"
+       inkscape:label="#path4684-3-6-2-9-1" />
     <ellipse
        style="opacity:0.875;fill:#ff5555;fill-opacity:0.86764706;fill-rule:nonzero;stroke:#171100;stroke-width:0.27736527;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.06632655"
-       id="path4684-8-7"
+       id="PROGRAMMATION"
        cx="185.60974"
        cy="105.46408"
        rx="25.882902"
        ry="8.3734579"
-       transform="matrix(0.82531535,0.56467209,-0.20333157,0.97910994,0,0)" />
+       transform="matrix(0.82531535,0.56467209,-0.20333157,0.97910994,0,0)"
+       inkscape:label="#path4684-8-7" />
   </g>
 </svg>
