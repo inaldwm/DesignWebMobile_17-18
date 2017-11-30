@@ -2,7 +2,7 @@
 	"titre": "type de jeux vidéos",
 	"zones": [
 		{
-			"id": "thriller",
+			"id": "path4808",
 			"text": "attention y a de la tension."
 		},
 		{
@@ -14,7 +14,7 @@
 			"text": "Muscle ton cerveau !"
 		},
 		{
-			"id": "aventure",
+			"id": "text4989",
 			"text": "Pokémon, Zelda, Mario <3"
 		},
 		{
@@ -34,7 +34,7 @@
 			"text": "Tu tir ou tu pointes"
 		},
 		{
-			"id": "MOBA",
+			"id": "text5021",
 			"text": "Stop feed please"
 		}
 	]
