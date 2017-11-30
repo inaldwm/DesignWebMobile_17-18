@@ -2,16 +2,6 @@ div {
     heigth: 100%;
     width: 100%;
 }
-
-iframe {
-    heigth: 600px;
-    width: 800px;
-}
-
-.w2ui-field input {
-    width: 200px;
-}
-
-.w2ui-field>div>span {
-    margin-left: 20px;
+svg{
+    width: 100%;
 }

@@ -4,10 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tweet Palette</title>
+	<!-- favicons -->
+    <link rel="icon" href="favicon.ico">
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,15 +24,23 @@
 	</div>
 
 	<script>
-		var pstyle = 'border: 1px solid #dfdfdf; padding: 5px;';
+		var pstyle = 'border: 1px solid #dfdfdf; text-align:center; font-weight: bold;padding-top: 15%;';
+		var topText = '<h4 class="text-center text-primary">';
+			topText += 'Que pense les devs de ces langages ?? Eh bien il suffit de cliquez pour le decouvrir...';
+			topText += '<i class="fa fa-smile-o text-warning"></i> <i class="fa fa-smile-o text-warning"></i>';
+			topText += '</h4>';
+		var leftText = '<h5 class="text-center text-primary">';
+			leftText += '<i class="fa fa-twitter"> </i> tweet zone <i class="fa fa-twitter"></i>';
+			leftText += '</h5>';
 		$('#layout').w2layout({
 			name: 'layout',
 			panels: [{
 					type: 'top',
-					size: 80,
+					size: 125,
 					resizable: false,
-					style: pstyle,
-					title: '"Tweet Palette" des étudiants DWM 17-18'
+					style: "border: 1px solid #dfdfdf; padding: 1%;",
+					title: '<h4 class="text-center">Tweet Palette</h4>',
+					content: topText
 				},
 				{
 					type: 'left',
@@ -35,13 +48,13 @@
 					resizable: true,
 					style: pstyle,
 					content: '',
-					title: 'Tweet'
+					title: leftText
 				},
 				{
 					type: 'main',
-					style: pstyle + 'border-top: 0px;',
+					style: 'border-top: 0px;padding: 2%;text-align: center;',
 					content: '',
-					title: 'Palette de tweet'
+					title: '<h5 class="text-center text-primary"> <i class="fa fa-code"></i> <i class="fa fa-code"></i></h5>'
 				}
 			]
 		});
