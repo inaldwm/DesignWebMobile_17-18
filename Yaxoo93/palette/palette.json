@@ -3,39 +3,40 @@
 	"zones": [
 		{
 			"id": "path4783",
-			"text": "attention y a de la tension."
+			"text": "Le jeu Dead Space, un survival horror sortie en 2008, probablement l'un des meilleurs jeu de son genre !"
 		},
 		{
 			"id": "path4785",
-			"text": "Que ce soit sur la Play ou la Xbox tout cela n'a rien de physique."
+			"text": "FIFA18 et NBA2K18, les jeux de sport les plus connus!"
 		},
 		{
 			"id": "path4787",
-			"text": "Muscle ton cerveau !"
+			"text": "Les Sims un classique"
 		},
 		{
 			"id": "path4789",
-			"text": "Pokémon, Zelda, Mario <3"
-		},
-		{
-			"id": "path4791",
-			"text": "La globalité."
+			"text": "League of Legend le leader des MOBA mais surtout le jeu le plus joué au monde !!!"
 		},
 		{
 			"id": "path4793",
-			"text": "Pas de radar = pas de pv"
+			"text": "Qui n'aime pas les jeux de réfléxion ? Tétris, Candy Crush, Pac-Man ou encore le démineur des classiques pour tout âge !"
 		},
 		{
 			"id": "path4806",
-			"text": "Gérer de la ville c'est pas facile..."
+			"text": "Pokémon, Zelda, Mario <3 (que dire de plus?)"
+		},
+		{
+			"id": "path4791",
+			"text": "Counter Strike, Battlefield ou encore Call of Duty les jeux de guerre par excellence"
 		},
 		{
 			"id": "path4808",
-			"text": "Tu tir ou tu pointes"
+			"text": "Forza et Grand Turismo, les indétronables"
 		},
 		{
 			"id": "path4966",
-			"text": "Stop feed please"
+			"text": "L'histoire des jeux vidéos commence aux alentours de 1950 grace à Ralph Baer, il est reconnu comme 'le père des jeux vidéos' "
 		}
+
 	]
 }
