@@ -1,3 +1,5 @@
+
+{
 "titre": "Emotion",
  	"zones": [
  		{
@@ -22,16 +24,17 @@
  		},
 			{"id": "path180-6-9",
 			
+			
  			"text": "L'intolérance des tolérants existe, de même que la rage des modérés.Victor Hugo / Les Travailleurs de la Mer  "
  		},
 		{"id": "path180-4",
 			
  			"text": " Jamais il ne faut découvrir son aversion ni à ses envieux ni à ses ennemis.Proverbe oriental "
  		},
-		{"id": "tspan357",
+		{"id": "ETONNEMENT",
 			
  			"text": "On ne devrait s'étonner que de pouvoir encore s'étonner.François de La Rochefoucauld  "
- 		},
+ 		}
  	]
  
- 
+ }

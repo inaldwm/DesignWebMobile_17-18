@@ -1,0 +1,53 @@
+{
+	"titre": "Les différents genres de films",
+	"zones": [
+		{
+			"id": "g3076",
+			"text": "J'aime regarder des thrillers fantastiques."
+		},
+		{
+			"id": "g3066",
+			"text": "J'aime regarder des thrillers d'épouvante."
+		},
+		{
+			"id": "g3921",
+			"text" : "J'aime regarder des thrillers."
+		},
+		{
+			"id" : "g3107",
+			"text" : "J'aime regarder des drames fantastiques."
+		},
+		{
+			"id": "g3123",
+			"text": "J'aime regarder des drames historiques."
+		},
+		{
+			"id" : "g3260",
+			"text": "J'aime regarder des drames."
+		},
+      {
+			"id": "g3134",
+			"text": "J'aime regarder des films de capes et d'épées"
+		},
+      {
+			"id": "g3240",
+			"text": "J'aime regarder des films d'aventures."
+		},
+      {
+			"id": "g3152",
+			"text": "J'aime regarder des comédies dramatiques."
+		},
+      {
+			"id": "g3158",
+			"text": "J'aime regarder des comédies romantiques."
+		},
+      {
+			"id": "g3145",
+			"text": "J'aime regarder des comédies musicales."
+		},
+      {
+			"id": "g3265",
+			"text": "J'aime regarder des comédies."
+		}
+	]
+}

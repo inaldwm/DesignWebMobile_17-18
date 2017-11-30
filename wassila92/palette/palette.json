@@ -1,0 +1,34 @@
+{
+	"titre": "la technologie medical ",
+	"zones": [
+		{
+			"id": "text4537",
+			"text": "tweet sur les soins"
+		},
+		{
+			"id": "text4533",
+			"text": "tweet sur le futur"
+		},
+		{
+			"id": "text4541",
+			"text": "tweet sur les nouvelles technos"
+		},
+		{
+			"id": "text4545",
+			"text" : "tweet sur medical"
+		},
+		{
+			"id":"path4553",
+			"text": "tweet sur sante"
+		},
+		{
+			"id": "path4559",
+			"text" : "tweet sur vision"
+		},
+		{
+			"id" : "path4551",
+			"text": "tweet sur le monde"
+		}
+
+	]
+}
