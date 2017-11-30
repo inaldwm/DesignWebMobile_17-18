@@ -79,16 +79,19 @@ d3.csv(url, function(data) {
 		.on('change', function () {
 			var dt = $(this).data('selected');
 			console.log(dt);			
-			w2ui['layout'].load('main', "../"+dt.id+"/palette/tweet.svg", 'pop-in', function () {
+			w2ui['layout'].load('main', "../"+dt.id+"/palette/tweet.svg", null, function () {
 			    console.log('content loaded');
 			    d3.json("../"+dt.id+"/palette/palette.json", function(data) {
 			    		data.zones.forEach(function(d){
-			    			d3.select('svg').select("#"+d.id)
-			    				.attr('tweet',d.text)
+			    			var g = d3.select('svg').select("#"+d.id)
+			    				.attr('tweet',function(dt){
+			    					return d.text;
+			    				})
 			    				.on("click",function(e){
-			    				var t = d3.select(this).attr('tweet');
-			    				w2ui['layout'].content('left', t, 'pop-out');
-			    			});
+			    					var t = d3.select(this).attr('tweet');
+			    					w2ui['layout'].content('left', t, 'pop-out');
+			    				});
+			    			var t =1;
 			    		});				    	
 			    });
 
