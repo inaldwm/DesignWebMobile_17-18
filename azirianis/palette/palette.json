@@ -1,0 +1,33 @@
+{
+	"titre": "Filmographie",
+	"zones": [
+		{
+			"id": "rect1-13",
+			"text": "Film"
+		},
+		{
+			"id": "rect1",
+			"text": "Humour"
+		},
+		{
+			"id": "rect1-1",
+			"text": "Action"
+		},
+		{
+			"id": "rect1-8",
+			"text": "Comédie"
+		},
+		{
+			"id": "rect1-7",
+			"text": "Aventure"
+		},
+		{
+			"id": "rect1-4",
+			"text": "Romance"
+		},
+		{
+			"id": "rect1-0",
+			"text": "Drame"
+		}
+	]
+}
