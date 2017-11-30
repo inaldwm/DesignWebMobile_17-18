@@ -3,28 +3,29 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#175472;}
-	.st1{fill:url(#SVGID_1_);}
-	.st2{fill:url(#SVGID_2_);}
-	.st3{fill:url(#SVGID_3_);}
-	.st4{fill:url(#SVGID_4_);}
-	.st5{fill:#032E44;}
-	.st6{fill:#FFFFFF;}
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#175472;}
+	.st2{fill:url(#SVGID_1_);}
+	.st3{fill:url(#SVGID_2_);}
+	.st4{fill:url(#SVGID_3_);}
+	.st5{fill:url(#SVGID_4_);}
+	.st6{fill:#032E44;}
 	.st7{font-family:'nevis-Bold';}
 	.st8{font-size:32.1463px;}
 	.st9{font-size:23.3388px;}
 	.st10{font-size:18.7016px;}
 	.st11{font-size:16.0368px;}
 </style>
+<rect class="st0" width="800" height="600"/>
 <g>
 	<g>
-		<path class="st0" d="M584.4,368.6L584.4,368.6c-9.3,14.5-21.2,13.2-28.7,4.1v0.2c-5.2-6.3-12.9-10.4-21.7-10.4
+		<path class="st1" d="M584.4,368.6L584.4,368.6c-9.3,14.5-21.2,13.2-28.7,4.1v0.2c-5.2-6.3-12.9-10.4-21.7-10.4
 			c-15.5,0-28.1,12.6-28.1,28.1c0,5.8,1.8,11.3,4.8,15.8l0,0c15.7,23.3,19.2,49.5-17.8,74.6c-11.9,8.1-19.8,21.7-19.8,37.2
 			c0,24.8,20.1,44.9,44.9,44.9c24.8,0,44.9-20.1,44.9-44.9c0-11.4-4.3-21.9-11.4-29.8l0.1,0c-29.8-33.6-19.9-58.1,1.1-76.8l-0.2,0
 			c1.2-1,2.2-2.1,3.2-3.3v0.2c7.4-9,19.2-10.3,28.4,3.7c7.8,13,2.4,22.5-8.5,25.1l0.1,0c-13.3,3.1-23.2,15-23.2,29.2
 			c0,16.6,13.5,30.1,30.1,30.1s30.1-13.5,30.1-30.1c0-4.6-1.1-9-3-12.9l0.1,0.1c-4.8-10.2-0.7-20.4,14.6-22.4l-0.1,0
 			c20.2-2.5,35.9-19.8,35.9-40.7c0-22.7-18.4-41.1-41.1-41.1C604.5,349.5,591.7,357.1,584.4,368.6z"/>
-		<path class="st0" d="M346.3,537.1L346.3,537.1c2.9-12.6,7.3-17.2,24.6-17.6l0,0c29.7-0.7,53.6-24.9,53.6-54.7
+		<path class="st1" d="M346.3,537.1L346.3,537.1c2.9-12.6,7.3-17.2,24.6-17.6l0,0c29.7-0.7,53.6-24.9,53.6-54.7
 			c0-5.7-0.9-11.2-2.5-16.4c-4.1-13.6,6.4-22.3,16.6-18.8l0,0c4.2,1.4,8.6,2.2,13.3,2.2c22.7,0,41.1-18.4,41.1-41.1
 			c0-22.7-18.4-41.1-41.1-41.1c-22.7,0-41.1,18.4-41.1,41.1c0,3.2,0.4,6.2,1.1,9.2l0,0c2.4,10.5-7.4,20.1-20.6,14.5
 			c-6.6-2.8-13.9-4.4-21.5-4.4c-3.6,0-7.1,0.4-10.5,1l0,0c-34.4,6.7-43.9-7.2-47.5-25.9l0,0c-2.6-13.8-14.7-24.2-29.3-24.2
@@ -34,7 +35,7 @@
 			c18.3,0,33.2-14.8,33.2-33.2c0-5.7-1.5-11.1-4-15.8c-9.1-17.1-2.5-30.5,13.6-34.7c17.5,1.3,30.9,9.5,30,42.5l0.1-0.1
 			c0,0.1,0,0.3,0,0.4l0,0c-0.4,17.3-5,21.8-17.7,24.6l0,0c-18.4,4.1-32.1,20.5-32.1,40.1c0,22.7,18.4,41.1,41.1,41.1
 			C325.8,569.2,342.2,555.4,346.3,537.1z"/>
-		<circle class="st0" cx="423.5" cy="546.5" r="28.8"/>
+		<circle class="st1" cx="423.5" cy="546.5" r="28.8"/>
 	</g>
 	<g>
 		
@@ -42,7 +43,7 @@
 			<stop  offset="0" style="stop-color:#2ABCAD"/>
 			<stop  offset="1" style="stop-color:#1C9699"/>
 		</linearGradient>
-		<path class="st1" d="M492.9,296.5c0-4.1-0.6-8.1-1.8-11.9l0,0c0-0.1,0-0.2-0.1-0.2c0,0,0-0.1,0-0.1c-11.3-37.7-1.4-59.9,39.9-72.4
+		<path class="st2" d="M492.9,296.5c0-4.1-0.6-8.1-1.8-11.9l0,0c0-0.1,0-0.2-0.1-0.2c0,0,0-0.1,0-0.1c-11.3-37.7-1.4-59.9,39.9-72.4
 			l0,0c18.4-5.6,31.9-22.7,31.9-42.9c0-24.8-20.1-44.9-44.9-44.9c-24.8,0-44.9,20.1-44.9,44.9c0,4.9,0.8,9.7,2.3,14.1l0,0
 			c13.6,41.1,1.1,62-36.5,74.4l0,0c-5.6,1.9-10.6,4.9-14.9,8.8v-0.1c-33.3,30.6-97.4,27.3-123.1,6.8v0.2c-5.1-4.1-11.5-6.6-18.6-6.6
 			c-7.7,0-14.6,3-19.9,7.8v-0.1c-16.1,14.4-31.2,17-51-5.1v0.1c-7.5-8.4-18.4-13.8-30.6-13.8c-22.7,0-41.1,18.4-41.1,41.1
@@ -54,7 +55,7 @@
 			<stop  offset="0" style="stop-color:#2ABCAD"/>
 			<stop  offset="1" style="stop-color:#1C9699"/>
 		</linearGradient>
-		<path class="st2" d="M552.5,220.6c0,2.4,0.3,4.6,0.9,6.8l-0.1,0c5.7,24.7-2.5,36.4-25.6,41.8l0.1,0c-12.5,2.9-21.8,14-21.8,27.3
+		<path class="st3" d="M552.5,220.6c0,2.4,0.3,4.6,0.9,6.8l-0.1,0c5.7,24.7-2.5,36.4-25.6,41.8l0.1,0c-12.5,2.9-21.8,14-21.8,27.3
 			c0,15.5,12.6,28.1,28.1,28.1c9.8,0,18.4-5,23.4-12.6v0c5.7-8.6,18.2-9.9,25.2,3.5v0c6.9,13.1,20.6,22.1,36.4,22.1
 			c22.7,0,41.1-18.4,41.1-41.1c0-22.7-18.4-41.1-41.1-41.1c-15.8,0-29.5,9-36.4,22.1v0c-5.9,11.4-15.8,12.1-22.2,6.9
 			c-2.2-19,5.8-29.7,28.1-34.4c0,0,0,0,0.1,0c0,0,0,0,0.1,0l0,0c13.6-2.8,23.9-14.9,23.9-29.4c0-16.6-13.5-30.1-30.1-30.1
@@ -64,33 +65,33 @@
 			<stop  offset="0" style="stop-color:#2ABCAD"/>
 			<stop  offset="1" style="stop-color:#1C9699"/>
 		</linearGradient>
-		<circle class="st3" cx="299.7" cy="152.5" r="34.5"/>
+		<circle class="st4" cx="299.7" cy="152.5" r="34.5"/>
 		
 			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="269.9383" y1="118.634" x2="269.9383" y2="492.5963" gradientTransform="matrix(6.123234e-17 1 -1 6.123234e-17 725.5858 -74.3013)">
 			<stop  offset="0" style="stop-color:#2ABCAD"/>
 			<stop  offset="1" style="stop-color:#1C9699"/>
 		</linearGradient>
-		<path class="st4" d="M262.1,242.4c19.6-14.9,39.3-19.2,63.9,13.2l0-0.1c10,13.2,25.8,21.7,43.6,21.7c30.3,0,54.8-24.5,54.8-54.8
+		<path class="st5" d="M262.1,242.4c19.6-14.9,39.3-19.2,63.9,13.2l0-0.1c10,13.2,25.8,21.7,43.6,21.7c30.3,0,54.8-24.5,54.8-54.8
 			c0-10.3-2.9-19.9-7.8-28.1l0.1,0.1c-8.1-13.7-0.7-22.7,7.7-23l-0.1-0.1c15.5-0.5,27.9-13.1,27.9-28.7c0-15.9-12.9-28.8-28.8-28.8
 			s-28.8,12.9-28.8,28.8c0,3.5,0.7,6.8,1.9,10l-0.1-0.1c2.9,7.8-2.7,18.1-18.4,15.7l0.1,0.1c-2.8-0.4-5.6-0.7-8.4-0.7
 			c-15.8,0-30,6.8-40,17.5l0-0.1c-27.7,29.7-46.9,23.5-64.9,6.7l0,0c-5.9-5.5-13.9-9-22.6-9c-18.3,0-33.2,14.8-33.2,33.2
 			c0,18.3,14.8,33.2,33.2,33.2C249.6,249.2,256.6,246.6,262.1,242.4L262.1,242.4z"/>
 	</g>
 </g>
-<rect class="st5" width="800" height="78"/>
-<text transform="matrix(1 0 0 1 206.4355 49.5481)" class="st6 st7 st8">BRAIN MUSIC TWEETS</text>
-<text transform="matrix(1 0 0 1 326.0005 229.7207)" class="st6 st7 st9">HOUSE</text>
-<text transform="matrix(1 0 0 1 326.5479 472.1992)" class="st6 st7 st10">TECHNO</text>
-<text transform="matrix(1 0 0 1 220.2646 476.3242)" class="st6 st7 st11">FOLK</text>
-<text transform="matrix(1 0 0 1 154.5479 394.1992)" class="st6 st7 st10">DEEP</text>
-<text transform="matrix(1 0 0 1 285.5479 536.1992)" class="st6 st7 st10">POP</text>
-<text transform="matrix(1 0 0 1 572.5479 398.1992)" class="st6 st7 st10">TRANCE</text>
-<text transform="matrix(1 0 0 1 415.5479 300.1992)" class="st6 st7 st10">METAL</text>
-<text transform="matrix(1 0 0 1 598.5479 303.1992)" class="st6 st7 st10">R&amp;B</text>
-<text transform="matrix(1 0 0 1 486.5479 175.1992)" class="st6 st7 st10">BLUES</text>
-<text transform="matrix(1 0 0 1 147.5479 303.1992)" class="st6 st7 st10">ELECTRO</text>
-<text transform="matrix(1 0 0 1 426.5479 398.1992)" class="st6 st7 st10">JAZZ</text>
-<text transform="matrix(1 0 0 1 406.5479 553.1992)" class="st6 st7 st10">RAI</text>
-<text transform="matrix(1 0 0 1 278.5479 159.1992)" class="st6 st7 st10">RAP</text>
-<text transform="matrix(1 0 0 1 489.5479 525.1992)" class="st6 st7 st10">ROCK</text>
+<rect class="st6" width="800" height="78"/>
+<text transform="matrix(1 0 0 1 206.4355 49.5481)" class="st0 st7 st8">BRAIN MUSIC TWEETS</text>
+<text transform="matrix(1 0 0 1 326.0005 229.7207)" class="st0 st7 st9">HOUSE</text>
+<text transform="matrix(1 0 0 1 326.5479 472.1992)" class="st0 st7 st10">TECHNO</text>
+<text transform="matrix(1 0 0 1 220.2646 476.3242)" class="st0 st7 st11">FOLK</text>
+<text transform="matrix(1 0 0 1 154.5479 394.1992)" class="st0 st7 st10">DEEP</text>
+<text transform="matrix(1 0 0 1 285.5479 536.1992)" class="st0 st7 st10">POP</text>
+<text transform="matrix(1 0 0 1 572.5479 398.1992)" class="st0 st7 st10">TRANCE</text>
+<text transform="matrix(1 0 0 1 415.5479 300.1992)" class="st0 st7 st10">METAL</text>
+<text transform="matrix(1 0 0 1 598.5479 303.1992)" class="st0 st7 st10">R&amp;B</text>
+<text transform="matrix(1 0 0 1 486.5479 175.1992)" class="st0 st7 st10">BLUES</text>
+<text transform="matrix(1 0 0 1 147.5479 303.1992)" class="st0 st7 st10">ELECTRO</text>
+<text transform="matrix(1 0 0 1 426.5479 398.1992)" class="st0 st7 st10">JAZZ</text>
+<text transform="matrix(1 0 0 1 406.5479 553.1992)" class="st0 st7 st10">RAI</text>
+<text transform="matrix(1 0 0 1 278.5479 159.1992)" class="st0 st7 st10">RAP</text>
+<text transform="matrix(1 0 0 1 489.5479 525.1992)" class="st0 st7 st10">ROCK</text>
 </svg>
