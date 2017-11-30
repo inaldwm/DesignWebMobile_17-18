@@ -2,39 +2,39 @@
 	"titre": "type de jeux vidéos",
 	"zones": [
 		{
-			"id": "path4808",
+			"id": "path4783",
 			"text": "attention y a de la tension."
 		},
 		{
-			"id": "sport",
+			"id": "path4785",
 			"text": "Que ce soit sur la Play ou la Xbox tout cela n'a rien de physique."
 		},
 		{
-			"id": "reflexion",
+			"id": "path4787",
 			"text": "Muscle ton cerveau !"
 		},
 		{
-			"id": "text4989",
+			"id": "path4789",
 			"text": "Pokémon, Zelda, Mario <3"
 		},
 		{
-			"id": "jeux vidéo",
+			"id": "path4791",
 			"text": "La globalité."
 		},
 		{
-			"id": "Course",
+			"id": "path4793",
 			"text": "Pas de radar = pas de pv"
 		},
 		{
-			"id": "gestion",
+			"id": "path4806",
 			"text": "Gérer de la ville c'est pas facile..."
 		},
 		{
-			"id": "tir",
+			"id": "path4808",
 			"text": "Tu tir ou tu pointes"
 		},
 		{
-			"id": "text5021",
+			"id": "path4966",
 			"text": "Stop feed please"
 		}
 	]
