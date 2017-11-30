@@ -3,35 +3,35 @@
 	"zones": [
 		{
 			"id": "layer10",
-			"text": "Régicide !!"
+			"text": "Vous êtes le nouveau roi "
 		},
 		{
 			"id": "layer9",
-			"text": "Prince touché"
+			"text": "Dommage seulement le Prince déchu..."
 		},
 		{
 			"id": "layer8",
-			"text": "Duc touché"
+			"text": "Attention,qui dit Duc ne dit pas ennuque."
 		},
 		{
 			"id": "layer7",
-			"text": "Marquis touché"
+			"text": "La marquise de Pompadour, née Poisson."
 		},
 		{
 			"id": "layer6",
-			"text": "Compte touché"
+			"text": "Bien joué Godefroy de Montmirail"
 		},
 		{
 			"id": "layer5",
-			"text": "Baron touché"
+			"text": "Enfin le fameux Von Richthofen"
 		},
 		{
 			"id": "layer3",
-			"text": "Chevalier touché"
+			"text": "Le nouveau Chevalier Noir"
 		},
 		{
 			"id": "layer2",
-			"text": "Ecuyer touché"
+			"text": "Jacquouille la Fripouille  OK !"
 		}
 	]
 }

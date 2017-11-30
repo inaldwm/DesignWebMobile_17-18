@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="paletteDylan.svg">
+   sodipodi:docname="tweet.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.76"
-     inkscape:cx="386.57653"
+     inkscape:cx="185.91864"
      inkscape:cy="285.37209"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g104"
      showgrid="true"
      units="px"
      inkscape:window-width="1366"
@@ -107,33 +107,12 @@
        rx="8.3552628"
        ry="9.0515347" />
     <ellipse
-       style="fill:#003380;stroke-width:0.26458332"
-       id="path3731"
-       cx="43.691063"
-       cy="185.24837"
-       rx="22.454771"
-       ry="23.325109" />
-    <ellipse
-       style="fill:#ffffff;stroke-width:0.26458332"
-       id="path3733"
-       cx="43.865135"
-       cy="185.07431"
-       rx="19.84375"
-       ry="19.321545" />
-    <ellipse
        style="fill:#ffffff;stroke-width:0.26458332"
        id="path3735"
        cx="49.261238"
        cy="187.16312"
        rx="3.6554275"
        ry="2.2628837" />
-    <ellipse
-       style="fill:#003380;stroke-width:0.23140007"
-       id="path3737"
-       cx="43.691055"
-       cy="184.90024"
-       rx="16.536459"
-       ry="17.406797" />
     <ellipse
        style="fill:#003380;stroke-width:0.26458332"
        id="path3739"
@@ -350,27 +329,16 @@
        ry="7.3108549" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:13.39752197px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0066ff;fill-opacity:1;stroke:none;stroke-width:0.33493805"
-       x="142.35315"
-       y="227.09882"
+       style="font-style:normal;font-weight:normal;font-size:19.95147133px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0066ff;fill-opacity:1;stroke:none;stroke-width:0.49878681"
+       x="102.17601"
+       y="290.97122"
        id="text51"
-       transform="scale(0.96196949,1.039534)"><tspan
+       transform="scale(1.2235377,0.81730215)"><tspan
          sodipodi:role="line"
          id="tspan49"
-         x="142.35315"
-         y="227.09882"
-         style="fill:#0066ff;stroke-width:0.33493805">Pop</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0066ff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="31.332235"
-       y="188.03346"
-       id="text55"><tspan
-         sodipodi:role="line"
-         id="tspan53"
-         x="31.332235"
-         y="188.03346"
-         style="fill:#0066ff;stroke-width:0.26458332">Rock</tspan></text>
+         x="102.17601"
+         y="290.97122"
+         style="fill:#0066ff;stroke-width:0.49878681">Pop</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:9.04604626px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0044aa;fill-opacity:1;stroke:none;stroke-width:0.22615117"
@@ -477,5 +445,50 @@
          x="17.339914"
          y="221.13193"
          style="fill:#00112b;stroke-width:0.1589454">Grunge</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="rock">
+    <g
+       id="g89"
+       transform="translate(0,-138.25002)">
+      <g
+         transform="translate(0,-1.7406798)"
+         id="g104">
+        <ellipse
+           style="fill:#003380;stroke-width:0.26458332"
+           id="path3731"
+           cx="43.691063"
+           cy="185.24837"
+           rx="22.454771"
+           ry="23.325109" />
+        <ellipse
+           style="fill:#ffffff;stroke-width:0.26458332"
+           id="path3733"
+           cx="43.865135"
+           cy="185.07431"
+           rx="19.84375"
+           ry="19.321545" />
+        <ellipse
+           style="fill:#003380;stroke-width:0.23140007"
+           id="path3737"
+           cx="43.691055"
+           cy="184.90024"
+           rx="16.536459"
+           ry="17.406797" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:16.78421402px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0066ff;fill-opacity:1;stroke:none;stroke-width:0.41960537"
+           x="24.457205"
+           y="190.53348"
+           id="text55"><tspan
+             sodipodi:role="line"
+             id="tspan53"
+             x="24.457205"
+             y="190.53348"
+             style="fill:#0066ff;stroke-width:0.41960537">Rock</tspan></text>
+      </g>
+    </g>
   </g>
 </svg>

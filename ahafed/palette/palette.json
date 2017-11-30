@@ -2,27 +2,27 @@
 	"titre": "Cible des courtisanes <(^_^)> ",
 	"zones": [
 		{
-			"id": "Forme 1",
+			"id": "Forme1",
 			"text": "Régicide !!"
 		},
 		{
-			"id": "Forme 2",
+			"id": "Forme2",
 			"text": "Prince touché"
 		},
 		{
-			"id": "Forme 3",
+			"id": "Forme3",
 			"text": "Duc touché"
 		},
 		{
-			"id": "Forme 4",
+			"id": "Forme4",
 			"text": "Marquis touché"
 		},
 		{
-			"id": "Forme 5",
+			"id": "Forme5",
 			"text": "Compte touché"
 		},
 		{
-			"id": "Forme 6",
+			"id": "Forme6",
 			"text": "Baron touché"
 		}
 	]
