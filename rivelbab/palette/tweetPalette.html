@@ -73,7 +73,7 @@
 							.attr('tweet', d.text)
 							.on("click", function(e) {
 								var t = d3.select(this).attr('tweet');
-								w2ui['layout'].content('left', t, 'pop-out');
+								w2ui['layout'].content('left', t, 'flip-left');
 							});
 					});
 				});

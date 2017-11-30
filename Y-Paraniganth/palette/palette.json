@@ -2,56 +2,56 @@
 	"titre": "Le prochain film à voir selon le genre ",
 	"zones": [
 		{
-			"id": "comedie",
+			"id": "text3534",
 			"text": "EPOUSE-MOI MON POTE de Tarek Boudali "
 		},
 		{
-			"id": "fantastique",
+			"id": "text3530",
 			"text": "Jumanji : Bienvenue dans le jungle  de Jake Kasdan "
 		},
 		
 		
 			{
-			"id": "thriller",
+			"id": "text3526",
 			"text": " Jigsaw de Michael Spierig "
 		},
 		
 		
 			{
-			"id": "western",
+			"id": "text3542",
 			"text": "SHÉRIF JACKSON de  Logan Miller"
 		},
 		
 		
 			{
-			"id": "historique",
+			"id": "text3538",
 			"text": "The Birth of a Nation de Nate Parker "
 		},
 		
 			{
-			"id": "horreur",
+			"id": "text3506",
 			"text": "Insidious : la dernière clé de  Adam Robitel "
 		},
 		
 			{
-			"id": "action",
+			"id": "text3510",
 			"text": "Justice League de Zack Snyder "
 		},
 		
 			{
-			"id": "romance",
+			"id": "text3514",
 			"text": "FOREVER MY GIRL de  Bethany Ashton Wolf  "
 		},
 		
 			{
-			"id": "aventure",
+			"id": "text3518",
 			"text": "L'Ecole buissonnière de Nicolas Vanier"
 		},
 		
 			{
-			"id": "drame",
+			"id": "text3522",
 			"text": "Madame de Amanda Sthers "
-		},
+		}
 		
 	
 	

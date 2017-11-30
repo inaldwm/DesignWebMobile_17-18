@@ -11,7 +11,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.91 r13725"
    width="800"
    height="600"
    viewBox="0 0 800 600"
@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,13 +39,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
+     inkscape:window-width="1280"
+     inkscape:window-height="962"
      id="namedview4"
      showgrid="false"
      inkscape:zoom="1.0208854"
-     inkscape:cx="302.848"
-     inkscape:cy="414.20472"
+     inkscape:cx="304.31731"
+     inkscape:cy="296.65969"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -58,7 +58,7 @@
      inkscape:connector-curvature="0" />
   <circle
      style="fill:#241c1c"
-     id="film"
+     id="path3357"
      cx="423.38721"
      cy="315.91791"
      r="45" />
@@ -124,146 +124,136 @@
      r="27.5" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Segoe Script';-inkscape-font-specification:'Segoe Script';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Segoe Script';-inkscape-font-specification:'Segoe Script';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="390.6301"
      y="324.73993"
-     id="text3502"><tspan
+     id="text3502"
+     sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3504"
        x="390.6301"
-       y="324.73993"
-       style="font-size:25px;line-height:1.25">Film</tspan></text>
+       y="324.73993">Film</tspan></text>
   <text
-     id="horreur"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="302.677"
+     style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="303.07678"
      y="418.96777"
-     id="text3506"><tspan
+     id="text3506"
+     sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3508"
-       x="302.677"
-       y="418.96777"
-       style="font-size:12.5px;line-height:1.25">Horreur</tspan></text>
+       x="303.07678"
+       y="418.96777">Horreur</tspan></text>
   <text
-    id="action"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="215.00569"
+     style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="214.92329"
      y="430.16003"
-     id="text3510"><tspan
+     id="text3510"
+     sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3512"
-       x="215.00569"
-       y="430.16003"
-       style="font-size:12.5px;line-height:1.25">Action</tspan></text>
+       x="214.92329"
+       y="430.16003">Action</tspan></text>
   <text
-    id="romance"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="149.33057"
-     y="319.92242"
-     id="text3514"><tspan
+     style="font-style:normal;font-weight:normal;font-size:11.25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="149.08887"
+     y="319.9389"
+     id="text3514"
+     sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3516"
-       x="149.33057"
-       y="319.92242"
-       style="font-size:11.25px;line-height:1.25">Romance</tspan></text>
+       x="149.08887"
+       y="319.9389">Romance</tspan></text>
   <text
-    id="aventure"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="201.92641"
+     style="font-style:normal;font-weight:normal;font-size:11.25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="202.11043"
      y="213.521"
-     id="aventure"><tspan
+     id="text3518"
+     sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3520"
-       x="201.92641"
-       y="213.521"
-       style="font-size:11.25px;line-height:1.25">Aventure</tspan></text>
+       x="202.11043"
+       y="213.521">Aventure</tspan></text>
   <text
-    id="drame"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="306.06445"
      y="216.96777"
-     id="text3522"><tspan
+     id="text3522"
+     sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3524"
        x="306.06445"
-       y="216.96777"
-       style="font-size:12.5px;line-height:1.25">Drame</tspan></text>
+       y="216.96777">Drame</tspan></text>
   <text
-    id="thriller"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="490.53955"
      y="221.16003"
-     id="text3526"><tspan
+     id="text3526"
+     sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3528"
        x="490.53955"
-       y="221.16003"
-       style="font-size:12.5px;line-height:1.25">Thriller</tspan></text>
+       y="221.16003">Thriller</tspan></text>
   <text
-    id="fantastique"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e3e2db;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e3e2db;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="607.31598"
      y="210.9173"
-     id="text3530"><tspan
+     id="text3530"
+     sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3532"
        x="607.31598"
-       y="210.9173"
-       style="font-size:12.5px;line-height:1.25">F<tspan
+       y="210.9173">F<tspan
    style="font-size:12.5px;fill:#e3e2db"
    id="tspan3550">antas</tspan></tspan><tspan
        sodipodi:role="line"
        x="607.31598"
        y="226.5423"
        id="tspan3548"
-       style="font-size:12.5px;line-height:1.25;fill:#e3e2db">tique</tspan></text>
+       style="font-size:12.5px;fill:#e3e2db">tique</tspan></text>
   <text
-    id="historique"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="font-style:normal;font-weight:normal;font-size:10px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="486.63086"
      y="415.25879"
-     id="text3538"><tspan
+     id="text3538"
+     sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3540"
        x="486.63086"
-       y="415.25879"
-       style="font-size:10px;line-height:1.25">Historique</tspan></text>
+       y="415.25879">Historique</tspan></text>
   <text
-    id="western"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e3dbdb;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#e3dbdb;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="603.2121"
      y="417.60172"
-     id="text3542"><tspan
+     id="text3542"
+     sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3544"
        x="603.2121"
-       y="417.60172"
-       style="font-size:12.5px;line-height:1.25">Western</tspan></text>
+       y="417.60172">Western</tspan></text>
   <circle
      style="fill:#ffff00"
-     id="path3359-9-6-3-8-88"
-     cx="668.00659"
+     id="path3359-9-6-3-8-8-0-4-8-1"
+     cx="668.04755"
      cy="315.91791"
      r="27.5" />
   <text
-    id="comedie"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="643.38898"
-     y="320.43604"
-     id="text3534-8"><tspan
+     style="font-style:normal;font-weight:normal;font-size:11.25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="643.12506"
+     y="320.33716"
+     id="text3534"
+     sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       id="tspan3536-8"
-       x="643.38898"
-       y="320.43604"
-       style="font-size:11.25px;line-height:1.25;fill:#000000">Comédie</tspan></text>
+       id="tspan3536"
+       x="643.12506"
+       y="320.33716">Comédie</tspan></text>
 </svg>

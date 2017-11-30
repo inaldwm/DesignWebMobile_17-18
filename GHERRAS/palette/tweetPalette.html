@@ -1,27 +1,53 @@
- <<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
    <head>
       <meta charset="UTF-8">
       <title>Tweet Palette</title>
       <script src="https://d3js.org/d3.v4.min.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+   	<script type="text/javascript" src="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>
+   	<link rel="stylesheet" type="text/css" href="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css" />
    </head>
    <body>
-      <div id='palette'>
+      <div id="layout" style="width: 100%; height: 900px;"></div>
          <script>
-         d3.xml("tweet.svg",function(node)
+         var pstyle = 'border: 1px solid #dfdfdf; padding: 5px;';
+   		$('#layout').w2layout({
+   			name: 'layout',
+   			panels: [
+   				{
+   					type: 'left',
+   					size: 200,
+   					resizable: true,
+   					style: pstyle,
+   					content: '',
+   					title: 'Tweet'
+   				},
+   				{
+   					type: 'main',
+   					style: pstyle + 'border-top: 0px;',
+   					content: '',
+   					title: 'Palette de tweet'
+   				}
+   			]
+   		});
+         w2ui['layout'].load("main","tweet.svg", 'pop-in', function()
          {
-         		// Importe le svg et l'ajoute à "#palette".
-         		var importedNode = document.importNode(node.documentElement, true);
-         		d3.select("#palette").node().appendChild(importedNode);
-               // Evénement click : toutes les balises "g" sont écoutées
-               d3.select("#palette svg").selectAll("g").on('click', function()
+            d3.json("palette.json", function(data)
+            {
+					data.zones.forEach(function(d)
                {
-                  // Affiche la position de la souris et les propriétés de l'élément cliqué.
-                  var coordonnees = d3.mouse(this);
-                  console.log("Position de la souris : x =", coordonnees[0], "y =", coordonnees[1]);
-                  console.log(this);
-               })
-         });
+						d3.select('svg').select("#" + d.id)
+							.attr('tweet', d.text)
+							.on("click", function(e)
+                     {
+								var t = d3.select(this).attr('tweet');
+								w2ui['layout'].content('left', t, 'pop-out');
+							});
+					});
+				});
+			});
+      
          </script>
       </div>
    </body>
