@@ -27,6 +27,9 @@ iframe{
 .w2ui-field > div > span {
     margin-left: 20px;
 }
+.zone{
+	cursor: pointer;
+}
 </style>
 
 
@@ -49,11 +52,17 @@ var ddl = '<div class="w2ui-field">';
 	ddl += '<span class="legend">Choisissez un étudiant</span>';
 	ddl += '</div>';
 	ddl += '</div>';
+//<!--Thanks to Dhananjay Kumar as the post "How to Post a Tweet using JavaScript" at https://debugmode.net/2012/06/27/how-to-post-a-tweet-using-javascript/
+	var divTweet = '<div class="container">';
+	divTweet += '<h3>Cliquer pour envoyer un Tweet!!</h3>';
+	divTweet += "<h4 id='txtTweet'>ici s'affiche votre tweet</h4>";
+	divTweet += '<button id="btnTweet">Balance le Tweet</button>';
+	divTweet += '</div>'
 $('#layout').w2layout({
     name: 'layout',
     panels: [
         { type: 'top', size: 80, resizable: false, style: pstyle, content: ddl, title: '"Tweet Palette" des étudiants DWM 17-18' },
-        { type: 'left', size: 200, resizable: true, style: pstyle, content: '', title: 'Tweet' },
+        { type: 'left', size: 200, resizable: true, style: pstyle, content: divTweet, title: 'Tweet' },
         { type: 'main', style: pstyle + 'border-top: 0px;', content: '', title: 'Palette de tweet'}
     ]
 });
@@ -87,9 +96,11 @@ d3.csv(url, function(data) {
 			    				.attr('tweet',function(dt){
 			    					return d.text;
 			    				})
+			    				.attr('class','zone')
 			    				.on("click",function(e){
-			    					var t = d3.select(this).attr('tweet');
-			    					w2ui['layout'].content('left', t, 'pop-out');
+			    					datTweet = d3.select(this).attr('tweet');
+			    					//w2ui['layout'].content('left', t, 'pop-out');
+			    					d3.select('#txtTweet').text(datTweet);
 			    				});
 			    			var t =1;
 			    		});				    	
@@ -150,8 +161,23 @@ function chargeSVG(d, i){
 }
 
 
+var datTweet = " ";
+
+$(document).ready(function () {
+	 $('#btnTweet').click(function (e) {
+	     //var textToTweet = "Hi I am tweeting from here";
+	     if (datTweet.length > 250) {
+	         alert('Tweet trop long !');
+	     }else {
+	         var twtLink = 'https://twitter.com/home?status=' +encodeURIComponent(datTweet);
+	         window.open(twtLink,'_blank');
+	     }
+    });
+});
+
 
 </script>
+
 
 </body>
 </html>
