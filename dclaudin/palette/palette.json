@@ -1,52 +1,48 @@
-<<<<<<< HEAD
-{"titre": "Les Musiques les plus écoutés",
-=======
 { "titre": "Les Musiques les plus écoutés",
->>>>>>> cc2fc5bd80c801308eeae927fe7dd9e1f0e89b62
 "zones": [
     {
-        "id": "path3737",
+        "id": "text55",
         "text": "11% de personnes écoute du Rock."
     },
     {
-        "id": "path3709",
+        "id": "text51",
         "text": "20% de personnes écoute de la Pop."
     },
     {
-        "id": "path4598",
+        "id": "text67",
         "text": "18% de personnes écoute de la musique classique."
     },
      {
-        "id": "path3759",
+        "id": "text71",
         "text": "16% de personnes écoute du Reggae."
     },
      {
-        "id": "path4604",
+        "id": "text83",
         "text": "13% de personnes écoute du Rap."
     },
      {
-        "id": "path3749",
+        "id": "text75",
         "text": "11% de personnes écoute du Jazz."
     },
      {
-        "id": "path3727",
-        "text": "9% écoute du R&B."
+        "id": "text95",
+        "text": "9% personnes écoute du R&B."
     },
      {
-        "id": "path3779",
+        "id": "text103",
         "text": "8% de personnes écoute du métal."
     },
      {
-        "id": "path3773",
-        "text": "5% écoute du grunge"
+        "id": "text107",
+        "text": "5% de personnes écoute du grunge"
     },
      {
-        "id": "path3755",
-        "text": "2% écoute du punk."
+        "id": "text99",
+        "text": "2% de personnes écoute du punk."
     
     },
     {
-        "id": "path4606",
+        "id": "text79",
         "text": "1% écoute de la country"
     }
     
