@@ -1,48 +1,48 @@
 "titre": "Les Musiques les plus écoutés",
 "zones": [
     {
-        "id": "rock",
+        "id": "layer14",
         "text": "11% de personnes écoute du Rock."
     },
     {
-        "id": "Pop",
+        "id": "layer20",
         "text": "20% de personnes écoute de la Pop."
     },
     {
-        "id": "Classique",
+        "id": "layer25",
         "text": "18% de personnes écoute de la musique classique."
     },
      {
-        "id": "Reggae",
+        "id": "layer17",
         "text": "16% de personnes écoute du Reggae."
     },
      {
-        "id": "Rap",
+        "id": "layer16",
         "text": "13% de personnes écoute du Rap."
     },
      {
-        "id": "Jazz",
+        "id": "layer24",
         "text": "11% de personnes écoute du Jazz."
     },
      {
-        "id": "Rb",
+        "id": "layer21",
         "text": "9% écoute du R&B."
     },
      {
-        "id": "metal",
+        "id": "layer22",
         "text": "8% de personnes écoute du métal."
     },
      {
-        "id": "Grunge",
+        "id": "layer23",
         "text": "5% écoute du grunge"
     },
      {
-        "id": "Punk",
+        "id": "layer18",
         "text": "2% écoute du punk."
     
     },
     {
-        "id": "country",
+        "id": "layer19",
         "text": "1% écoute de la country"
     }
     
