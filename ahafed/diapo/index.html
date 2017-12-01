@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <title>Mon diaporama</title>
 <meta charset="utf-8" />
-<script type="text/javascript" src="../../public/js/d3.js"></script>
-<script type="text/javascript" src="../../public/js/svg_slides.js"></script>
+<script type="text/javascript" src="DesignWebMobile_17-18/samszo/js/d3.js"></script>
+<script type="text/javascript" src="DesignWebMobile_17-18/samszo/js/svg_slides.js"></script>
 <script type="text/javascript">
 
     // There are probably better ways of loading the SVG, but this is one example I found
 	var svg,diagIframe;
-    d3.xml("CoursSemio.svg", "image/svg+xml", function(xml) {
+    d3.xml("diapo.svg", "image/svg+xml", function(xml) {
         d3.select("body").node().appendChild(xml.documentElement);
 
         svg=d3.select("body").select("svg")
             .attr("height","96%")
             .attr("width","100%");
         slides = svg_slides(svg,1500);
-        diagIframe = document.getElementById("diagIframe");      
+        diagIframe = document.getElementById("diagIframe");
 
     });
 
