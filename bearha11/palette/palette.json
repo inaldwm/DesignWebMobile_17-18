@@ -1,0 +1,112 @@
+{
+	"titre": "Langage informatique",
+	"zones": [
+		{
+			"id": "SQL",
+			"text": "SQL est un langage informatique normalisé servant à exploiter des bases de données relationnelles"
+		},
+		{
+			"id": "DMX",
+			"text": "DMX langage pour les modèles d'explorations de données "
+		},
+		
+		
+			{
+			"id": "PROLOG",
+			"text": "  Le nom Prolog est un acronyme de PROgrammation en LOGique. "
+		},
+		
+		
+			{
+			"id": "XQUERY",
+			"text": " XQUERY il permet d'extraire des informations d'un document XML et effectuer des calcules "
+		},
+		
+		
+			{
+			"id": "XPATH",
+			"text": "XPATH offre un moyen d'identifier un ensemble de noeuds dans un document XML. "
+		},
+		
+			{
+			"id": "CREATE",
+			"text": " CREATE : requete qui permet de créer une table en sql  "
+		},
+		
+			{
+			"id": "ALTER",
+			"text": "ALTER: requete qui permet de modifier une table existante  "
+		},
+		
+			{
+			"id": "DROP",
+			"text": "DROP : permet de supprimer définitivement une table d’une base de données "
+		},
+		
+			{
+			"id": "UPDATE",
+			"text": "Update  : permet d’effectuer des modifications sur des lignes existantes "
+		},
+		
+			{
+			"id": "CC",
+			"text": "C++ est un langage de programmation compilé permettant la programmation sous de multiples paradigmes comme la programmation procédurale la programmation orientée objet et la programmation générique "
+		},
+		
+			{
+			"id": "JAVA",
+			"text": "JAVA : permet de produire des logiciels indépendants de toute architecture matérielle. Cette technologie s’appuie sur différents éléments qui, par abus de langage, sont souvent tous appelés Java  "
+		},
+		
+			{
+			"id": "BASIC",
+			"text": "BASIC : permet de créer des programmes a partir d'insctruction simple utilisant des mots courant"
+		},
+		
+			{
+			"id": "C",
+			"text": "C est un langage de programmation impératif et généraliste. Inventé au début des années 1970 pour réécrire UNIX, C est devenu un des langages les plus utilisés "
+		},
+		
+			{
+			"id": "HTML",
+			"text": "L’HyperText Markup Language, généralement abrégé HTML, est le format de données conçu pour représenter les pages web. C’est un langage de balisage permettant d’écrire de l’hypertexte "
+		},
+		
+			{
+			"id": "XML",
+			"text": " XML: permet de décrire et structurer un ensemble de données selon un jeu de règles et des contraintes définies."
+		},
+		
+			{
+			"id": "SGML",
+			"text": " SGML : Standard Generalized Markup Language ou langage standard de balisage généralisé, est une norme de l'Organisation internationale de normalisation (ISO)."
+		},
+		
+	{
+			"id": "LLDD",
+			"text": "est un langage de programmation et un sous-ensemble de SQL pour manipuler les structures de données d'une base de données, et non les données elles-mêmes.s"
+		},
+		
+		{
+			"id": "PROGRAMMATION",
+			"text": " langage de programmation est une notation conventionnelle destinée à formuler des algorithmes et produire des programmes informatiques qui les appliquent."
+		},
+			{
+			"id": "BALISAGE",
+			"text": " En informatique, un langage de balisage est un langage permettant de structurer (ranger) ou mettre en forme (présenter) des données en les organisant à l'aide de balises."
+		},
+		
+			{
+			"id": "REQUETE",
+			"text": "Un langage de requête est un langage informatique utilisé pour accéder aux données d'une base de données ou d'autres systèmes d'information. Il permet d'obtenir les données vérifiant certaines conditions"
+		},
+		
+					{
+			"id": "llinformaique",
+			"text": "On appelle langage informatique un langage formel non nécessairement Turing-complet utilisé lors de la conception, la mise en œuvre, ou l'exploitation d'un système d'information. Le terme est toutefois utilisé dans certains contextes dans le sens plus restrictif de langage de programmation."
+		}
+		
+	
+	]
+}
