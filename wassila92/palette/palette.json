@@ -3,31 +3,31 @@
 	"zones": [
 		{
 			"id": "text4537",
-			"text": "tweet sur les soins"
+			"text": "Apportez des soins à ceux qui ont en besoin, une cause noble"
 		},
 		{
 			"id": "text4533",
-			"text": "tweet sur le futur"
+			"text": "Il est de notre devoir d'inciter les jeunes à aimer la medecine car le futur c'est eux"
 		},
 		{
 			"id": "text4541",
-			"text": "tweet sur les nouvelles technos"
+			"text": "Il faut veillez à ce que les NT sauvent des vies et pas l'inverse"
 		},
 		{
 			"id": "text4545",
-			"text" : "tweet sur medical"
+			"text" : "Le recrutement medical pose un vrai problème en ce moment; il faut investir dessus"
 		},
 		{
 			"id":"path4553",
-			"text": "tweet sur sante"
+			"text": "La santé n'a pas de prix, faites tout pour la conserver"
 		},
 		{
 			"id": "path4559",
-			"text" : "tweet sur vision"
+			"text" : "Tout le monde peut contribuer à faire de ce monde un monde meilleur, ayez une bonne vision"
 		},
 		{
 			"id" : "path4551",
-			"text": "tweet sur le monde"
+			"text": "Le monde est malade, il nous reviens à tous et toutes de le soigner"
 		}
 
 	]
