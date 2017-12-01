@@ -1,56 +1,56 @@
 {
-	"titre": "Le prochain film à voir selon le genre ",
+	"titre": "Citation ",
 	"zones": [
 		{
 			"id": "text3534",
-			"text": "EPOUSE-MOI MON POTE de Tarek Boudali "
+			"text": "@GameofThrones : ' Winter is coming . ' "
 		},
 		{
 			"id": "text3530",
-			"text": "Jumanji : Bienvenue dans le jungle  de Jake Kasdan "
+			"text": "@HistoryVikings : ' How the little piglets would grunt if they knew how the old boar suffered. ' #lastword "
 		},
 		
 		
 			{
 			"id": "text3526",
-			"text": " Jigsaw de Michael Spierig "
+			"text": " @BreakingBad_AMC : ' I'm the one who knocks. ' @hall "
 		},
 		
 		
 			{
 			"id": "text3542",
-			"text": "SHÉRIF JACKSON de  Logan Miller"
+			"text": "@TheWalkingDead: ' I’m Negan. ' "
 		},
 		
 		
 			{
 			"id": "text3538",
-			"text": "The Birth of a Nation de Nate Parker "
+			"text": "@NarcosNetflix : ' Plata o plomo. ' "
 		},
 		
 			{
 			"id": "text3506",
-			"text": "Insidious : la dernière clé de  Adam Robitel "
+			"text": "@PrisonBreak : 'I believe in being part of the solution, not the problem. Be the change you wanth to see in the world.”' "
 		},
 		
 			{
 			"id": "text3510",
-			"text": "Justice League de Zack Snyder "
+			"text": "@HouseofCards : 'Shake with your right hand, but hold a rock in your left.' "
 		},
 		
 			{
-			"id": "text3514",
-			"text": "FOREVER MY GIRL de  Bethany Ashton Wolf  "
+			"id": "text3518-3",
+			"text": "@FriendsTV : ' I’ll be there for you.'  "
 		},
 		
 			{
 			"id": "text3518",
-			"text": "L'Ecole buissonnière de Nicolas Vanier"
+			"text": "@ThePunisher : 'One batch. Two batch. Penny and dime.'"
 		},
 		
 			{
 			"id": "text3522",
-			"text": "Madame de Amanda Sthers "
+			"text": "@CW_Arrow: “You have failed this city.” "
 		}
 		
 	
