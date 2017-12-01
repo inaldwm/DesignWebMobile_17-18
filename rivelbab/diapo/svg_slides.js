@@ -55,7 +55,7 @@ function svg_slides(svg,delay) {
 		.attr("value",'1')
 		.attr("step",'1')
 		.on("input", function() {
-			changeImage(this.value);	
+	    	changeImage(this.value);	
 		});
 	nav.append("span")
 		.text("38")

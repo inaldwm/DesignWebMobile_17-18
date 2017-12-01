@@ -73,7 +73,9 @@
 							.attr('tweet', d.text)
 							.on("click", function(e) {
 								var t = d3.select(this).attr('tweet');
-								w2ui['layout'].content('left', t, 'flip-left');
+								var tweetBtn = '<a class="btn btn-primary" href="https://twitter.com/intent/tweet?text='+ t +'">tweetez ici </a>';
+								w2ui['layout'].content('left', t+'<hr>'+tweetBtn, 'flip-left');
+
 							});
 					});
 				});
