@@ -1,0 +1,56 @@
+{
+    "titre": "Festivals Music Tweets",
+    "zones": [{
+            "id": "TRANCE",
+            "text": "A State of Trance 17/02/2018, Utrecht, NETHERLANDS."
+        },
+        {
+            "id": "HOUSE",
+            "text": "Defected in the House, 04/08/2018, CROATIA."
+        },
+        {
+            "id": "ELECTRO",
+            "text": "Ultra Festival Music Miami 23/03/2017, USA."
+        },
+        {
+            "id": "JAZZ",
+            "text": "EUROPA JAZZ Pays de la loire FRANCE."
+        },
+        {
+            "id": "ROCK",
+            "text": "Rock In Rio Lisboa 23/06/2018."
+        },
+        {
+            "id": "TECHNO",
+            "text": "DGTL Amsterdam, 31/03/2018, NETHERLANDS."
+        },
+        {
+            "id": "RAI",
+            "text": "Festival du raï à Oran, 04/08/2018, ALGERIE"
+        },
+        {
+            "id": "BLUES",
+            "text": "Bluesfest Eutin 18/05/2018, GERMANY."
+        },
+        {
+            "id": "DEEP",
+            "text": "Time Warp 07/04/2018, GERMANY."
+        },
+        {
+            "id": "METAL",
+            "text": "Tons Of Metal, 05/02/2018, USA."
+        },
+        {
+            "id": "RAP",
+            "text": "Scred Connexion Festival, 19/01/2018, FRANCE."
+        },
+        {
+            "id": "FOLK",
+            "text": "National Folk Festival, 29/03/2018, CANBERRA, AUSTRALIA."
+        },
+		{
+            "id": "R&B",
+            "text": "Maitre Gims, 16/12/2017, BRUXELLES, BELGIUM."
+        }
+    ]
+}
