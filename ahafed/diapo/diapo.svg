@@ -26,16 +26,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-126.42857"
+     inkscape:cx="-289.28571"
      inkscape:cy="520"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="747"
-     inkscape:window-height="413"
-     inkscape:window-x="-9"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -66,5 +66,82 @@
        height="122.85714"
        x="434.28571"
        y="612.36218" />
+    <rect
+       style="fill:#ff0000"
+       id="slide_3"
+       width="80"
+       height="91.428574"
+       x="465.71429"
+       y="66.647919" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3342"
+       width="88.571426"
+       height="100"
+       x="562.85712"
+       y="235.21935" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3344"
+       width="105.71429"
+       height="28.571428"
+       x="580"
+       y="432.36221" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3346"
+       width="91.428574"
+       height="45.714287"
+       x="322.85715"
+       y="495.21936" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3348"
+       width="31.428572"
+       height="77.14286"
+       x="165.71428"
+       y="540.93365" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3350"
+       width="54.285713"
+       height="71.428574"
+       x="274.28571"
+       y="698.07648" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3352"
+       width="77.14286"
+       height="68.571426"
+       x="85.714287"
+       y="746.64795" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3354"
+       width="122.85714"
+       height="97.14286"
+       x="288.57144"
+       y="898.07648" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3356"
+       width="68.571426"
+       height="80"
+       x="602.85712"
+       y="955.21936" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3358"
+       width="137.14285"
+       height="91.428574"
+       x="488.57144"
+       y="783.79077" />
+    <rect
+       style="fill:#ff0000"
+       id="rect3360"
+       width="74.285713"
+       height="60"
+       x="82.85714"
+       y="918.07648" />
   </g>
 </svg>
