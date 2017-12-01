@@ -1,0 +1,33 @@
+{
+	"titre": "Filmographie",
+	"zones": [
+		{
+			"id": "rect1-13",
+			"text": "Film"
+		},
+		{
+			"id": "rect1",
+			"text": "Film d'horreur du moment : JigSaw"
+		},
+		{
+			"id": "rect1-1",
+			"text": "Film d'action du moment : Fast & Furious 7"
+		},
+		{
+			"id": "rect1-8",
+			"text": "Film comédie du moment :  C'est tout pour moi, par N.madani"
+		},
+		{
+			"id": "rect1-7",
+			"text": "Film d'aventure du moment : Coco"
+		},
+		{
+			"id": "rect1-4",
+			"text": "Film de romance du moment : Plonger"
+		},
+		{
+			"id": "rect1-0",
+			"text": "Film dramatique du moment: La Villa"
+		}
+	]
+}
