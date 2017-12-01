@@ -3,51 +3,51 @@
 	"zones": [
 		{
 			"id": "g3076",
-			"text": "J'aime regarder des thrillers fantastiques."
+			"text": "J'aime regarder des thrillers fantastiques. #ThrillersFantastiques"
 		},
 		{
 			"id": "g3066",
-			"text": "J'aime regarder des thrillers d'épouvante."
+			"text": "J'aime regarder des thrillers d'épouvante. #ThrillersEpouvante"
 		},
 		{
 			"id": "g3921",
-			"text" : "J'aime regarder des thrillers."
+			"text" : "J'aime regarder des thrillers. #Thrillers"
 		},
 		{
 			"id" : "g3107",
-			"text" : "J'aime regarder des drames fantastiques."
+			"text" : "J'aime regarder des drames fantastiques. #DramesFantastiques"
 		},
 		{
 			"id": "g3123",
-			"text": "J'aime regarder des drames historiques."
+			"text": "J'aime regarder des drames historiques. #DramesHistoriques"
 		},
 		{
 			"id" : "g3260",
-			"text": "J'aime regarder des drames."
+			"text": "J'aime regarder des drames. #Drames"
 		},
       {
 			"id": "g3134",
-			"text": "J'aime regarder des films de capes et d'épées"
+			"text": "J'aime regarder des films de capes et d'épées. #CapesEtEpées"
 		},
       {
 			"id": "g3240",
-			"text": "J'aime regarder des films d'aventures."
+			"text": "J'aime regarder des films d'aventures. #FilmsAventures"
 		},
       {
 			"id": "g3152",
-			"text": "J'aime regarder des comédies dramatiques."
+			"text": "J'aime regarder des comédies dramatiques. #ComédiesDramatiques"
 		},
       {
 			"id": "g3158",
-			"text": "J'aime regarder des comédies romantiques."
+			"text": "J'aime regarder des comédies romantiques. #ComédiesRomantiques"
 		},
       {
 			"id": "g3145",
-			"text": "J'aime regarder des comédies musicales."
+			"text": "J'aime regarder des comédies musicales. #ComédiesMusicales"
 		},
       {
 			"id": "g3265",
-			"text": "J'aime regarder des comédies."
+			"text": "J'aime regarder des comédies. #Comédies"
 		}
 	]
 }
