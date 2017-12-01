@@ -3,27 +3,27 @@
 	"zones": [
 		{
 			"id": "Forme1",
-			"text": "Régicide !!"
+			"text": "Pur Bleu Books ! "
 		},
 		{
 			"id": "Forme2",
-			"text": "Prince touché"
+			"text": "life absurde au pur bleu sombre"
 		},
 		{
 			"id": "Forme3",
-			"text": "Duc touché"
+			"text": "Onctueux parfum de crumble"
 		},
 		{
 			"id": "Forme4",
-			"text": "Marquis touché"
+			"text": "Life books"
 		},
 		{
 			"id": "Forme5",
-			"text": "Compte touché"
+			"text": "l'absurde est sombrement bleu"
 		},
 		{
 			"id": "Forme6",
-			"text": "Baron touché"
+			"text": "bleu life de pur absurdité avec un sombre crumble books de parfum onctueux ! "
 		}
 	]
 }
