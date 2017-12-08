@@ -1,0 +1,39 @@
+<INCLURE{fond=inclure/tete}>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+
+<!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+  
+    <BOUCLEart(ARTICLES){id_article}>
+	  <h4><b>#TITRE</b></h4>
+	  <BOUCLEartDoc(DOCUMENTS){id_article}{0,1}>    
+		<img src="#FICHIER" alt="Me" class="w3-image w3-padding-32" width="#LARGEUR" height="#HAUTEUR">
+	  </BOUCLEartDoc>        
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>#SOUSTITRE</h4>
+      #TEXTE
+    </div>
+    
+  </div>
+  
+    <div class="w3-row-padding">
+
+
+        <div class="w3-third">
+        <h3>MOT CLEFS</h3>
+        <p>
+      <BOUCLE_mots(MOTS){id_article}{par titre}>
+          <span class="w3-tag w3-black w3-margin-bottom">#TITRE</span>
+      </BOUCLE_mots>
+        </p>
+      </div>
+    </div>
+
+    </BOUCLEart>
+  
+</div>
+
+<INCLURE{fond=inclure/pied}>
+

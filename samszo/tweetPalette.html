@@ -70,6 +70,7 @@ $('#layout').w2layout({
 
 var dataForm;
 var url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT4vIu2pcoPH6Vng35aQzwRAxQV9ogt8B9fyp-3cr1aVEdEh5rAhDfj_sB7OYoeLRZGalhq1trkCLRd/pub?gid=2097717787&single=true&output=csv';
+var ht = " #DWM17_18 #P8 ";
 //var url = "data/LPDesignWebMobile_17-18.csv";        
 d3.csv(url, function(data) {
 	dataForm = data;
@@ -87,10 +88,13 @@ d3.csv(url, function(data) {
 		items: dtEtu})
 		.on('change', function () {
 			var dt = $(this).data('selected');
-			console.log(dt);			
-			w2ui['layout'].load('main', "../"+dt.id+"/palette/tweet.svg", null, function () {
+			console.log(dt);
+			var urlSvg = "../"+dt.id+"/palette/tweet.svg";
+			urlSvg = "https://raw.githubusercontent.com/samszo/DesignWebMobile_17-18/master/"+dt.id+"/palette/tweet.svg";
+			var urlJson = "https://raw.githubusercontent.com/samszo/DesignWebMobile_17-18/master/"+dt.id+"/palette/palette.json";
+			w2ui['layout'].load('main', urlSvg, null, function () {
 			    console.log('content loaded');
-			    d3.json("../"+dt.id+"/palette/palette.json", function(data) {
+			    d3.json(urlJson, function(data) {
 			    		data.zones.forEach(function(d){
 			    			var g = d3.select('svg').select("#"+d.id)
 			    				.attr('tweet',function(dt){
@@ -100,6 +104,10 @@ d3.csv(url, function(data) {
 			    				.on("click",function(e){
 			    					datTweet = d3.select(this).attr('tweet');
 			    					//w2ui['layout'].content('left', t, 'pop-out');
+			    					//ajouter le lien vers la palette
+			    					var ml = "https://github.com/samszo/DesignWebMobile_17-18/blob/master/"+dt.id+"/palette/tweet.svg";
+			    					var vl = "http://www.samszo.univ-paris8.fr/DWM/17-18/tweetPalette.html";
+			    					datTweet += ht+" "+ml+" "+vl;
 			    					d3.select('#txtTweet').text(datTweet);
 			    				});
 			    			var t =1;
@@ -162,7 +170,6 @@ function chargeSVG(d, i){
 
 
 var datTweet = " ";
-
 $(document).ready(function () {
 	 $('#btnTweet').click(function (e) {
 	     //var textToTweet = "Hi I am tweeting from here";
