@@ -2,48 +2,48 @@
 "zones": [
     {
         "id": "text55",
-        "text": "11% de personnes écoute du Rock."
+        "text": "11% de personnes écoute du Rock. #rock #elvis"
     },
     {
         "id": "text51",
-        "text": "20% de personnes écoute de la Pop."
+        "text": "20% de personnes écoute de la Pop. #pop #MichaelJackson #KingOfPop"
     },
     {
         "id": "text67",
-        "text": "18% de personnes écoute de la musique classique."
+        "text": "18% de personnes écoute de la musique classique. #classique #mozart"
     },
      {
         "id": "text71",
-        "text": "16% de personnes écoute du Reggae."
+        "text": "16% de personnes écoute du Reggae. #reggae #BobMarley"
     },
      {
         "id": "text83",
-        "text": "13% de personnes écoute du Rap."
+        "text": "13% de personnes écoute du Rap. #rap #tupac #us"
     },
      {
         "id": "text75",
-        "text": "11% de personnes écoute du Jazz."
+        "text": "11% de personnes écoute du Jazz. #jazz #Armstrong"
     },
      {
         "id": "text95",
-        "text": "9% personnes écoute du R&B."
+        "text": "9% personnes écoute du R&B. #r&b #rihanna"
     },
      {
         "id": "text103",
-        "text": "8% de personnes écoute du métal."
+        "text": "8% de personnes écoute du métal. #metal"
     },
      {
         "id": "text107",
-        "text": "5% de personnes écoute du grunge"
+        "text": "5% de personnes écoute du grunge. #grunge #Nirvana"
     },
      {
         "id": "text99",
-        "text": "2% de personnes écoute du punk."
+        "text": "2% de personnes écoute du punk. #punk #MinorThreat"
     
     },
     {
         "id": "text79",
-        "text": "1% écoute de la country"
+        "text": "1% écoute de la country. #country #GarthBrooks"
     }
     
     
