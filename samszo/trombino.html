@@ -57,7 +57,8 @@ var vals = {"Pas besoin":1, "Besoin d'approfondissement":5, "Besoin urgent":10, 
 
 //récupération des photos du groupe flickr
 //merci beaucoup à https://etienner.fr/flickr-json
-var urlFlickr = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?"; 
+//var urlFlickr = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157686701939221&extras=original_format&format=json&jsoncallback=?"; 
+var urlFlickr = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=79672885f8a018343cd8849f57e8a50a&photoset_id=72157689942197932&extras=original_format&format=json&jsoncallback=?";
 $.getJSON(urlFlickr,
 function(data){
 	dataPhoto = data;
