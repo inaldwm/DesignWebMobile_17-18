@@ -1,0 +1,2 @@
+git reset --hard md5_commit
+git push --force
